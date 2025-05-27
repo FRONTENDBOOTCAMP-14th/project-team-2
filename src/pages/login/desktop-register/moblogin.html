@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="회원가입 페이지 - 새로운 계정을 만들어 서비스를 이용하세요" />
+    <meta name="keywords" content="회원가입, 계정생성, 가입, 이용약관" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="moblogin.css">
+    <title>회원가입 | 사이트명</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">회원가입</h1>
+        
+        <div class="form">
+            <div class="form__field">
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            아이디
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <input type="text" class="input" placeholder="아이디를 입력해주세요">
+                    <button class="btn btn--small">중복확인</button>
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            비밀번호
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <input type="password" class="input" placeholder="비밀번호를 입력해주세요">
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            비밀번호 확인
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <input type="password" class="input" placeholder="비밀번호를 한번 더 입력해주세요">
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            이름
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <input type="text" class="input" placeholder="이름을 입력해주세요">
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            이메일
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <input type="email" class="input" placeholder="예) marketkarly@karly.com">
+                    <button class="btn btn--small">중복확인</button>
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            휴대폰
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <input type="text" class="input" placeholder="숫자만 입력해주세요.">
+                    <button class="btn btn--small">인증번호 받기</button>
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">
+                            주소
+                            <span class="label__required">*</span>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <button class="btn btn--address">주소 검색</button>
+                        <div class="address__note">배송지에 따라 상품 정보가 달라질 수 있습니다.</div>
+                    </div>
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">성별</div>
+                    </div>
+                    <div class="radio">
+                        <div class="radio__group">
+                            <div class="radio__input" data-name="gender"></div>
+                            <span class="radio__label">남자</span>
+                        </div>
+                        <div class="radio__group">
+                            <div class="radio__input" data-name="gender"></div>
+                            <span class="radio__label">여자</span>
+                        </div>
+                        <div class="radio__group">
+                            <div class="radio__input radio__input--selected" data-name="gender"></div>
+                            <span class="radio__label">선택안함</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">생년월일</div>
+                    </div>
+                    <input type="text" class="input input--birthdate" placeholder="YYYY   /   MM   /   DD">
+                </div>
+
+                <div class="form__row">
+                    <div class="label">
+                        <div class="label__text">추가입력 사항</div>
+                    </div>
+                    <div class="radio">
+                        <div class="radio__group">
+                            <div class="radio__input" data-name="additional"></div>
+                            <span class="radio__label">친구초대 추천인 아이디</span>
+                        </div>
+                        <div class="radio__group">
+                            <div class="radio__input" data-name="additional"></div>
+                            <span class="radio__label">참여 이벤트명</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note">
+                    필수입력사항
+                    <span class="label__required">*</span>
+                </div>
+            </div>
+
+            <div class="agreement">
+                <div class="agreement__label">
+                    <div class="label__text">
+                        이용약관동의
+                        <span class="label__required">*</span>
+                    </div>
+                </div>
+                <div class="agreement__content">
+                    <div class="agreement__all">
+                        <div class="agreement__all-row">
+                            <div class="checkbox" id="all-agree"></div>
+                            <span class="agreement__all-text">전체 동의합니다.</span>
+                        </div>
+                        <div class="agreement__all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
+                    </div>
+
+                    <div class="agreement__item">
+                        <div class="agreement__row">
+                            <div class="agreement__left">
+                                <div class="checkbox" data-required="true"></div>
+                                <span class="agreement__text">이용약관 동의 (필수)</span>
+                            </div>
+                            <a href="#" class="agreement__link">
+                                약관보기
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="agreement__item">
+                        <div class="agreement__row">
+                            <div class="agreement__left">
+                                <div class="checkbox" data-required="true"></div>
+                                <span class="agreement__text">개인정보 수집 · 이용 동의 (필수)</span>
+                            </div>
+                            <a href="#" class="agreement__link">
+                                약관보기
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="agreement__item">
+                        <div class="agreement__row">
+                            <div class="agreement__left">
+                                <div class="checkbox"></div>
+                                <span class="agreement__text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+                            </div>
+                            <a href="#" class="agreement__link">
+                                약관보기
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="agreement__item">
+                        <div class="agreement__row">
+                            <div class="agreement__left">
+                                <div class="checkbox" data-required="true"></div>
+                                <span class="agreement__text">본인은 만 14세 이상입니다. (필수)</span>
+                            </div>
+                            <a href="#" class="agreement__link">
+                                약관보기
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button class="btn btn--submit">가입하기</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.radio__input').forEach(radio => {
+            radio.addEventListener('click', function() {
+                const name = this.getAttribute('data-name');
+                if (name) {
+                    document.querySelectorAll(`[data-name="${name}"]`).forEach(r => r.classList.remove('radio__input--selected'));
+                    this.classList.add('radio__input--selected');
+                }
+            });
+        });
+
+        document.querySelectorAll('.checkbox').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                this.classList.toggle('checkbox--checked');
+                
+                if (this.id === 'all-agree') {
+                    const isChecked = this.classList.contains('checkbox--checked');
+                    document.querySelectorAll('.checkbox:not(#all-agree)').forEach(cb => {
+                        if (isChecked) {
+                            cb.classList.add('checkbox--checked');
+                        } else {
+                            cb.classList.remove('checkbox--checked');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

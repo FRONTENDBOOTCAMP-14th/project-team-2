@@ -1,0 +1,79 @@
+<div class="radio-component">
+    <div class="radio">
+        <div class="radio__group">
+            <div class="radio__input" data-name="example"></div>
+            <span class="radio__label">옵션 1</span>
+        </div>
+        <div class="radio__group">
+            <div class="radio__input" data-name="example"></div>
+            <span class="radio__label">옵션 2</span>
+        </div>
+        <div class="radio__group">
+            <div class="radio__input radio__input--selected" data-name="example"></div>
+            <span class="radio__label">옵션 3</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- CSS 구간입니다 -->
+
+
+
+<style>
+.radio {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.radio__group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.radio__input {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio__input--selected {
+    border-color: #5F0080;
+}
+
+.radio__input--selected::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #5F0080;
+    border-radius: 50%;
+}
+
+.radio__label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+</style>
+
+<script>
+document.querySelectorAll('.radio__input').forEach(radio => {
+    radio.addEventListener('click', function() {
+        const name = this.getAttribute('data-name');
+        if (name) {
+            document.querySelectorAll(`[data-name="${name}"]`).forEach(r => r.classList.remove('radio__input--selected'));
+            this.classList.add('radio__input--selected');
+        }
+    });
+});
+</script> 
