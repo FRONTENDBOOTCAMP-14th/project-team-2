@@ -18,7 +18,6 @@ body {
 }
 .header {
   position: fixed;
-  /* inset: 90px 0 auto 0; */
   top: 30px;
   left: 0;
   right: 0;
@@ -29,8 +28,8 @@ body {
   .header-width {
     width: clamp(375px, 100%, 1050px);
     margin-inline: auto;
-    padding-inline: 15px;
-    height: 45px;
+    padding-inline: 0.9375rem;
+    height: 2.8125rem;
   }
 
   .header-top {
@@ -44,13 +43,13 @@ body {
     .logo {
       svg {
         display: block;
-        height: 25px;
+        height: 1.5625rem;
         fill: var(--white);
       }
     }
     .header-link {
       width: 8.75rem;
-      height: 26px;
+      height: 1.625rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -78,14 +77,19 @@ body {
     .header-search {
       display: none;
     }
-    .header-btn {
+    .header-btn-wrapper {
       display: flex;
       gap: var(--m-gap);
+      .header-address {
+        svg {
+          width: 1.125rem;
+        }
+      }
       .header-like {
         display: none;
       }
       svg {
-        width: 20px;
+        width: 1.375rem;
         stroke: var(--white);
       }
     }
@@ -134,6 +138,9 @@ body {
           display: block;
         }
       }
+      svg {
+        display: block;
+      }
     }
     .lnb {
       position: absolute;
@@ -176,4 +183,37 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .header {
+    font-size: var(--s-textSize);
+
+    .header-top {
+      .header-search {
+        display: block;
+        position: relative;
+        border-radius: var(--xs-gap);
+        overflow: hidden;
+        width: 250px;
+
+        .header-search-input {
+          width: 100%;
+          padding: var(--s-gap) var(--m-gap);
+          appearance: none;
+          border: none;
+          background: var(--white);
+        }
+        .header-search-label {
+          position: absolute;
+          top: 50%;
+          right: var(--m-gap);
+          translate: 0 -50%;
+          color: var(--primary-200);
+        }
+      }
+      .header-btn-wrapper {
+        .header-like {
+          display: block;
+        }
+      }
+    }
+  }
 }
