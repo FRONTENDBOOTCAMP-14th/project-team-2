@@ -10,7 +10,7 @@ body {
   justify-content: center;
   gap: var(--s-gap);
   position: relative;
-  &:has(.active) {
+  &.hidden {
     display: none;
   }
   a {
@@ -48,6 +48,7 @@ body {
 }
 .header {
   margin-top: var(--banner-height);
+  transition: margin-top 0.3s ease;
   position: fixed;
   top: 0;
   left: 0;
