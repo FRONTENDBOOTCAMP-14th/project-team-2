@@ -56,22 +56,22 @@ body {
     display: flex;
 }
 
-.flex--center {
+.flex-center {
     justify-content: center;
     align-items: center;
 }
 
-.flex--end {
+.flex-end {
     justify-content: flex-end;
 }
 
-.flex--column {
+.flex-column {
     flex-direction: column;
 }
 
-.flex--gap-4 { gap: 4px; }
-.flex--gap-12 { gap: 12px; }
-.flex--gap-28 { gap: 28px; }
+.flex-gap-4 { gap: 4px; }
+.flex-gap-12 { gap: 12px; }
+.flex-gap-28 { gap: 28px; }
 
 .p-12 { padding: 12px 20px; }
 .p-16 { padding: 16px; }
@@ -98,7 +98,7 @@ body {
     gap: 28px;
 }
 
-.form__section {
+.form-section {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -148,12 +148,12 @@ body {
     display: block;
 }
 
-.btn--primary {
+.btn-primary {
     background-color: #5F0080;
     color: #FFFFFF;
 }
 
-.btn--secondary {
+.btn-secondary {
     background-color: transparent;
     color: #5F0080;
     border: 1px solid #5F0080;

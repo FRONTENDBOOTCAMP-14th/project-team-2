@@ -57,33 +57,33 @@ body {
     display: flex;
 }
 
-.flex--center {
+.flex-center {
     justify-content: center;
     align-items: center;
 }
 
-.flex--between {
+.flex-between {
     justify-content: space-between;
 }
 
-.flex--end {
+.flex-end {
     justify-content: flex-end;
     align-items: center;
 }
 
-.flex--start {
+.flex-start {
     align-items: flex-start;
 }
 
-.flex--column {
+.flex-column {
     flex-direction: column;
 }
 
-.flex--gap-4 {
+.flex-gap-4 {
     gap: 4px;
 }
 
-.flex--gap-8 {
+.flex-gap-8 {
     gap: 8px;
 }
 
@@ -135,14 +135,14 @@ body {
     align-items: center;
 }
 
-.form__field {
+.form-field {
     width: 640px;
     border-bottom: 1px solid #333333;
     border-top: 2px solid #333333;
     padding: 0;
 }
 
-.form__row {
+.form-row {
     padding: 20px 0;
     border-bottom: 1px solid #C4C4C4;
     display: flex;
@@ -150,7 +150,7 @@ body {
     gap: 8px;
 }
 
-.form__row:last-child {
+.form-row:last-child {
     border-bottom: none;
 }
 
@@ -162,7 +162,7 @@ body {
     gap: 4px;
 }
 
-.label__text {
+.label-text {
     font-size: 16px;
     font-weight: 600;
     color: #333333;
@@ -171,7 +171,7 @@ body {
     padding: 4px;
 }
 
-.label__required {
+.label-required {
     color: #F03F40;
     font-size: 16px;
     font-weight: 600;
@@ -194,7 +194,7 @@ body {
     color: #333333;
 }
 
-.input--birthdate {
+.input-birthdate {
     color: #C4C4C4;
     letter-spacing: 0.1em;
 }
@@ -211,7 +211,7 @@ body {
     display: block;
 }
 
-.btn--small {
+.btn-small {
     background-color: #5F0080;
     color: #FFFFFF;
     padding: 12px 20px;
@@ -222,7 +222,7 @@ body {
     justify-content: center;
 }
 
-.btn--address {
+.btn-address {
     background-color: #FFFFFF;
     color: #333333;
     border: 1px solid #C4C4C4;
@@ -234,7 +234,7 @@ body {
     justify-content: center;
 }
 
-.btn--submit {
+.btn-submit {
     background-color: #5F0080;
     color: #FFFFFF;
     padding: 16px;
@@ -256,7 +256,7 @@ body {
     gap: 4px;
 }
 
-.address__note {
+.address-note {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.6em;
@@ -271,13 +271,13 @@ body {
     align-items: center;
 }
 
-.radio__group {
+.radio-group {
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.radio__input {
+.radio-input {
     width: 24px;
     height: 24px;
     border: 1px solid #C4C4C4;
@@ -286,11 +286,11 @@ body {
     position: relative;
 }
 
-.radio__input--selected {
+.radio-input-selected {
     border-color: #5F0080;
 }
 
-.radio__input--selected::after {
+.radio-input-selected::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -302,22 +302,23 @@ body {
     border-radius: 50%;
 }
 
-.radio__label {
+.radio-label {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
 }
 
 .note {
-    padding: 12px 0;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.6em;
     color: #898989;
+    padding: 4px;
     display: flex;
     gap: 4px;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 12px;
 }
 
 .agreement {
@@ -328,35 +329,35 @@ body {
     gap: 8px;
 }
 
-.agreement__label {
+.agreement-label {
     padding: 4px;
 }
 
-.agreement__content {
+.agreement-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.agreement__all {
+.agreement-all {
     padding: 20px 0;
     border-top: 2px solid #333333;
 }
 
-.agreement__all-row {
+.agreement-all-row {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 4px;
 }
 
-.agreement__all-text {
+.agreement-all-text {
     font-size: 16px;
     font-weight: 600;
     color: #333333;
 }
 
-.agreement__all-note {
+.agreement-all-note {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.6em;
@@ -365,30 +366,30 @@ body {
     margin-top: 4px;
 }
 
-.agreement__item {
+.agreement-item {
     border-bottom: 1px solid #C4C4C4;
     padding: 20px 0;
 }
 
-.agreement__row {
+.agreement-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.agreement__left {
+.agreement-left {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.agreement__text {
+.agreement-text {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
 }
 
-.agreement__link {
+.agreement-link {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
@@ -407,9 +408,20 @@ body {
     position: relative;
 }
 
-.checkbox--checked {
+.checkbox-checked {
     background-color: #5F0080;
     border-color: #5F0080;
+}
+
+.checkbox-checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .arrow {
@@ -420,14 +432,12 @@ body {
     background-position: center;
 }
 
-
 .submit {
-    width: 640px;
-    padding: 40px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 40px 0;
 }
-
 
 .sr-only {
     position: absolute;
@@ -447,12 +457,12 @@ body {
         padding: 40px 20px;
     }
     
-    .form__field {
+    .form-field {
         width: 100%;
     }
     
-    .input, .btn--address, .input--birthdate {
-        font-size: 14px;
+    .input, .btn-address, .input-birthdate {
+        width: 100%;
     }
     
     .radio {
