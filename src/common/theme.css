@@ -1,0 +1,36 @@
+:root {
+  /* 폰트 사이즈 */
+  --s-textSize: 12px;
+  --m-textSize: 16px;
+  --l-textSize: 22px;
+  --xl-textSize: 28px;
+  --xxl-textSize: 38px;
+
+  /* 행간 */
+  --s-textLineHeight: 1.2;
+  --m-textLineHeight: 1.5;
+  --l-textLineHeight: 1.6;
+
+  /* 색상 */
+  --black: #000;
+  --white: #fff;
+  --gray-100: #E1E1E1;
+  --gray-400: #898989;
+  --content: #333;
+  --acent-yellow: #FA622F;
+  --secondary-100: #d7acff;
+  --secondary-200: #bd76ff;
+  --secondary-300: #a544ff;
+  --primary-100: #710097;
+  --primary-200: #5f0080;
+  --primary-300: #400055;
+  --errOR:#F03F40
+
+  /* 간격 */
+  --xs-gap: .25rem;
+  --s-gap: .5rem;
+  --m-gap: .75rem;
+  --l-gap: 1rem;
+  --xl-gap: 1.25rem;
+  --xxl-gap: 1.5rem;
+}
