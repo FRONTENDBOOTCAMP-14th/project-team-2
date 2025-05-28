@@ -1,54 +1,64 @@
-<div class="checkbox-component">
-    <div class="checkbox" data-required="false"></div>
-    <span class="checkbox__label">체크박스 라벨</span>
-</div>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Component</title>
+</head>
+<body>
+    <div class="checkbox-component">
+        <div class="checkbox" data-required="false"></div>
+        <span class="checkbox-label">체크박스 라벨</span>
+    </div>
 
-<!-- CSS 구간입니다 -->
+    <!-- CSS 구간입니다 -->
 
 
-<style>
-.checkbox-component {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+    <style>
+    .checkbox-component {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 
-.checkbox {
-    width: 24px;
-    height: 24px;
-    border: 1px solid #C4C4C4;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-}
+    .checkbox {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+    }
 
-.checkbox--checked {
-    background-color: #5F0080;
-    border-color: #5F0080;
-}
+    .checkbox-checked {
+        background-color: #5F0080;
+        border-color: #5F0080;
+    }
 
-.checkbox--checked::after {
-    content: '✓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
+    .checkbox-checked::after {
+        content: '✓';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
 
-.checkbox__label {
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-}
-</style>
+    .checkbox-label {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+    }
+    </style>
 
-<script>
-document.querySelectorAll('.checkbox').forEach(checkbox => {
-    checkbox.addEventListener('click', function() {
-        this.classList.toggle('checkbox--checked');
+    <script>
+    document.querySelectorAll('.checkbox').forEach(checkbox => {
+        checkbox.addEventListener('click', function() {
+            this.classList.toggle('checkbox-checked');
+        });
     });
-});
-</script> 
+    </script>
+</body>
+</html> 

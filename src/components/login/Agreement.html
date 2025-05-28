@@ -1,209 +1,215 @@
-<div class="agreement-component">
-    <div class="agreement">
-        <div class="agreement__label">
-            <div class="label__text">
-                이용약관동의
-                <span class="label__required">*</span>
-            </div>
-        </div>
-        <div class="agreement__content">
-            <div class="agreement__all">
-                <div class="agreement__all-row">
-                    <div class="checkbox" id="all-agree"></div>
-                    <span class="agreement__all-text">전체 동의합니다.</span>
-                </div>
-                <div class="agreement__all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
-            </div>
-
-            <div class="agreement__item">
-                <div class="agreement__row">
-                    <div class="agreement__left">
-                        <div class="checkbox" data-required="true"></div>
-                        <span class="agreement__text">이용약관 동의 (필수)</span>
-                    </div>
-                    <a href="#" class="agreement__link">
-                        약관보기
-                        <div class="arrow"></div>
-                    </a>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreement Component</title>
+</head>
+<body>
+    <div class="agreement-component">
+        <div class="agreement">
+            <div class="agreement-label">
+                <div class="label-text">
+                    이용약관동의
+                    <span class="label-required">*</span>
                 </div>
             </div>
-
-            <div class="agreement__item">
-                <div class="agreement__row">
-                    <div class="agreement__left">
-                        <div class="checkbox" data-required="true"></div>
-                        <span class="agreement__text">개인정보 수집 · 이용 동의 (필수)</span>
+            <div class="agreement-content">
+                <div class="agreement-all">
+                    <div class="agreement-all-row">
+                        <div class="checkbox" id="all-agree"></div>
+                        <span class="agreement-all-text">전체 동의합니다.</span>
                     </div>
-                    <a href="#" class="agreement__link">
-                        약관보기
-                        <div class="arrow"></div>
-                    </a>
+                    <div class="agreement-all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
                 </div>
-            </div>
 
-            <div class="agreement__item">
-                <div class="agreement__row">
-                    <div class="agreement__left">
-                        <div class="checkbox"></div>
-                        <span class="agreement__text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+                <div class="agreement-item">
+                    <div class="agreement-row">
+                        <div class="agreement-left">
+                            <div class="checkbox" data-required="true"></div>
+                            <span class="agreement-text">이용약관 동의 (필수)</span>
+                        </div>
+                        <a href="#" class="agreement-link">
+                            약관보기
+                            <div class="arrow"></div>
+                        </a>
                     </div>
-                    <a href="#" class="agreement__link">
-                        약관보기
-                        <div class="arrow"></div>
-                    </a>
+                </div>
+
+                <div class="agreement-item">
+                    <div class="agreement-row">
+                        <div class="agreement-left">
+                            <div class="checkbox" data-required="true"></div>
+                            <span class="agreement-text">개인정보 수집 · 이용 동의 (필수)</span>
+                        </div>
+                        <a href="#" class="agreement-link">
+                            약관보기
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="agreement-item">
+                    <div class="agreement-row">
+                        <div class="agreement-left">
+                            <div class="checkbox"></div>
+                            <span class="agreement-text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+                        </div>
+                        <a href="#" class="agreement-link">
+                            약관보기
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <style>
+    .agreement {
+        width: 640px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
+    .agreement-label {
+        padding: 4px;
+    }
 
-<!-- CSS 구간입니다 -->
- 
-<style>
-.agreement {
-    width: 640px;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+    .label-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333333;
+        display: flex;
+        gap: 4px;
+        padding: 4px;
+    }
 
-.agreement__label {
-    padding: 4px;
-}
+    .label-required {
+        color: #F03F40;
+        font-size: 16px;
+        font-weight: 600;
+    }
 
-.label__text {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333333;
-    display: flex;
-    gap: 4px;
-    padding: 4px;
-}
+    .agreement-content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
-.label__required {
-    color: #F03F40;
-    font-size: 16px;
-    font-weight: 600;
-}
+    .agreement-all {
+        padding: 20px 0;
+        border-top: 2px solid #333333;
+    }
 
-.agreement__content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+    .agreement-all-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px;
+    }
 
-.agreement__all {
-    padding: 20px 0;
-    border-top: 2px solid #333333;
-}
+    .agreement-all-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333333;
+    }
 
-.agreement__all-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 4px;
-}
+    .agreement-all-note {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.6em;
+        color: #898989;
+        padding: 4px;
+        margin-top: 4px;
+    }
 
-.agreement__all-text {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333333;
-}
+    .agreement-item {
+        border-bottom: 1px solid #C4C4C4;
+        padding: 20px 0;
+    }
 
-.agreement__all-note {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.6em;
-    color: #898989;
-    padding: 4px;
-    margin-top: 4px;
-}
+    .agreement-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.agreement__item {
-    border-bottom: 1px solid #C4C4C4;
-    padding: 20px 0;
-}
+    .agreement-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 
-.agreement__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .agreement-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+    }
 
-.agreement__left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+    .agreement-link {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
 
-.agreement__text {
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-}
+    .checkbox {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+    }
 
-.agreement__link {
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
+    .checkbox-checked {
+        background-color: #5F0080;
+        border-color: #5F0080;
+    }
 
-.checkbox {
-    width: 24px;
-    height: 24px;
-    border: 1px solid #C4C4C4;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-}
+    .checkbox-checked::after {
+        content: '✓';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
 
-.checkbox--checked {
-    background-color: #5F0080;
-    border-color: #5F0080;
-}
+    .arrow {
+        width: 6px;
+        height: 11px;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='11' viewBox='0 0 6 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L1 10' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    </style>
 
-.checkbox--checked::after {
-    content: '✓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.arrow {
-    width: 6px;
-    height: 11px;
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='11' viewBox='0 0 6 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L1 10' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-</style>
-
-<script>
-document.querySelectorAll('.checkbox').forEach(checkbox => {
-    checkbox.addEventListener('click', function() {
-        this.classList.toggle('checkbox--checked');
-        
-        if (this.id === 'all-agree') {
-            const isChecked = this.classList.contains('checkbox--checked');
-            document.querySelectorAll('.checkbox:not(#all-agree)').forEach(cb => {
-                if (isChecked) {
-                    cb.classList.add('checkbox--checked');
-                } else {
-                    cb.classList.remove('checkbox--checked');
-                }
-            });
-        }
+    <script>
+    document.querySelectorAll('.checkbox').forEach(checkbox => {
+        checkbox.addEventListener('click', function() {
+            this.classList.toggle('checkbox-checked');
+            
+            if (this.id === 'all-agree') {
+                const isChecked = this.classList.contains('checkbox-checked');
+                document.querySelectorAll('.checkbox:not(#all-agree)').forEach(cb => {
+                    if (isChecked) {
+                        cb.classList.add('checkbox-checked');
+                    } else {
+                        cb.classList.remove('checkbox-checked');
+                    }
+                });
+            }
+        });
     });
-});
-</script> 
+    </script>
+</body>
+</html> 

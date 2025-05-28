@@ -1,32 +1,37 @@
-<div class="input-component">
-    <input type="text" class="input" placeholder="입력해주세요">
-</div>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Component</title>
+</head>
+<body>
+    <div class="input-component">
+        <input type="text" class="input" placeholder="입력해주세요">
+    </div>
 
+    <style>
+    .input {
+        border: 1px solid #A6A6A6;
+        border-radius: 4px;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6em;
+        color: #898989;
+        width: 100%;
+        outline: none;
+    }
 
-<!-- CSS 구간입니다 -->
+    .input:focus {
+        border-color: #5F0080;
+        color: #333333;
+    }
 
-
-
-<style>
-.input {
-    border: 1px solid #A6A6A6;
-    border-radius: 4px;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6em;
-    color: #898989;
-    width: 100%;
-    outline: none;
-}
-
-.input:focus {
-    border-color: #5F0080;
-    color: #333333;
-}
-
-.input--birthdate {
-    color: #C4C4C4;
-    letter-spacing: 0.1em;
-}
-</style> 
+    .input-birthdate {
+        color: #C4C4C4;
+        letter-spacing: 0.1em;
+    }
+    </style>
+</body>
+</html> 
