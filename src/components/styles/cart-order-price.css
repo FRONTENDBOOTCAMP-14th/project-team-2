@@ -1,0 +1,78 @@
+@import url(../../common/theme.css);
+@import url(../../common/modern-reset.css);
+
+/* 주문금액 컴포넌트 스타일링 */
+.section-order-price {
+  --orange: #fa622f;
+
+  display: flex;
+  flex-flow: column nowrap;
+  color: var(--content);
+  font-size: var(--m-textSize);
+
+  padding-inline: 15px;
+
+  .section-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    column-gap: 225px;
+    padding-block: var(--s-gap);
+  }
+
+  .section-discount {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .section-discount-group {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      column-gap: 199px;
+      margin-block: 5px;
+
+      .section-discount-group-2 {
+        justify-items: center;
+        color: var(--orange);
+      }
+    }
+
+    p {
+      display: flex;
+      font-size: var(--s-textSize);
+      justify-content: end;
+    }
+  }
+}
+
+.section-delivery {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 14px;
+  column-gap: 247px;
+}
+
+.section-pay {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-block: 17px;
+
+  .section-pay-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    column-gap: 164px;
+
+    .section-pay-group-2 {
+      font-size: var(--l-textSize);
+      font-weight: 700;
+    }
+  }
+
+  p {
+    display: flex;
+    font-size: var(--s-textSize);
+    line-height: var(--l-textLineHeight);
+    justify-content: end;
+  }
+}
