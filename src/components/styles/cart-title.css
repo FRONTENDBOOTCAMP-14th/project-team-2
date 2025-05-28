@@ -1,0 +1,16 @@
+@import url(../../common/theme.css);
+@import url(../../common/modern-reset.css);
+
+/* 제목 컴포넌트 스타일링 */
+.title {
+  display: flex;
+  align-items: center;
+  padding-inline: 19px;
+  padding-block: 11px;
+  margin-block-start: 34px;
+  column-gap: var(--xl-gap);
+
+  h2 {
+    font-size: var(--m-textSize);
+  }
+}
