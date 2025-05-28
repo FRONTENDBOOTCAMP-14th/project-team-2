@@ -7,8 +7,8 @@
 </head>
 <body>
     <div class="checkbox-component">
-        <div class="checkbox" data-required="false"></div>
-        <span class="checkbox-label">체크박스 라벨</span>
+        <input type="checkbox" id="checkbox1" class="checkbox-input">
+        <label for="checkbox1" class="checkbox-label">체크박스 라벨</label>
     </div>
 
     <!-- CSS 구간입니다 -->
@@ -21,44 +21,49 @@
         gap: 8px;
     }
 
-    .checkbox {
-        width: 24px;
-        height: 24px;
-        border: 1px solid #C4C4C4;
-        border-radius: 4px;
-        cursor: pointer;
-        position: relative;
+    /* 실제 체크박스 input 숨기기 */
+    .checkbox-input {
+        display: none;
     }
 
-    .checkbox-checked {
-        background-color: #5F0080;
-        border-color: #5F0080;
-    }
-
-    .checkbox-checked::after {
-        content: '✓';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 14px;
-        font-weight: bold;
-    }
-
+    /* 체크박스 스타일링 */
     .checkbox-label {
         font-size: 16px;
         font-weight: 400;
         color: #333333;
+        cursor: pointer;
+        position: relative;
+        padding-left: 32px;
+    }
+
+    .checkbox-label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        background-color: white;
+    }
+
+    .checkbox-input:checked + .checkbox-label::before {
+        background-color: #5F0080;
+        border-color: #5F0080;
+    }
+
+    .checkbox-input:checked + .checkbox-label::after {
+        content: '✓';
+        position: absolute;
+        left: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
     }
     </style>
-
-    <script>
-    document.querySelectorAll('.checkbox').forEach(checkbox => {
-        checkbox.addEventListener('click', function() {
-            this.classList.toggle('checkbox-checked');
-        });
-    });
-    </script>
 </body>
 </html> 

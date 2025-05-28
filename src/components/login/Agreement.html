@@ -17,8 +17,8 @@
             <div class="agreement-content">
                 <div class="agreement-all">
                     <div class="agreement-all-row">
-                        <div class="checkbox" id="all-agree"></div>
-                        <span class="agreement-all-text">전체 동의합니다.</span>
+                        <input type="checkbox" id="all-agree" class="checkbox-input">
+                        <label for="all-agree" class="agreement-all-text">전체 동의합니다.</label>
                     </div>
                     <div class="agreement-all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
                 </div>
@@ -26,8 +26,8 @@
                 <div class="agreement-item">
                     <div class="agreement-row">
                         <div class="agreement-left">
-                            <div class="checkbox" data-required="true"></div>
-                            <span class="agreement-text">이용약관 동의 (필수)</span>
+                            <input type="checkbox" id="terms" class="checkbox-input" required>
+                            <label for="terms" class="agreement-text">이용약관 동의 (필수)</label>
                         </div>
                         <a href="#" class="agreement-link">
                             약관보기
@@ -39,8 +39,8 @@
                 <div class="agreement-item">
                     <div class="agreement-row">
                         <div class="agreement-left">
-                            <div class="checkbox" data-required="true"></div>
-                            <span class="agreement-text">개인정보 수집 · 이용 동의 (필수)</span>
+                            <input type="checkbox" id="privacy" class="checkbox-input" required>
+                            <label for="privacy" class="agreement-text">개인정보 수집 · 이용 동의 (필수)</label>
                         </div>
                         <a href="#" class="agreement-link">
                             약관보기
@@ -52,8 +52,8 @@
                 <div class="agreement-item">
                     <div class="agreement-row">
                         <div class="agreement-left">
-                            <div class="checkbox"></div>
-                            <span class="agreement-text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+                            <input type="checkbox" id="marketing" class="checkbox-input">
+                            <label for="marketing" class="agreement-text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
                         </div>
                         <a href="#" class="agreement-link">
                             약관보기
@@ -115,6 +115,9 @@
         font-size: 16px;
         font-weight: 600;
         color: #333333;
+        cursor: pointer;
+        position: relative;
+        padding-left: 32px;
     }
 
     .agreement-all-note {
@@ -147,6 +150,9 @@
         font-size: 16px;
         font-weight: 400;
         color: #333333;
+        cursor: pointer;
+        position: relative;
+        padding-left: 32px;
     }
 
     .agreement-link {
@@ -159,26 +165,39 @@
         gap: 4px;
     }
 
-    .checkbox {
+    /* 실제 체크박스 input 숨기기 */
+    .checkbox-input {
+        display: none;
+    }
+
+    /* 체크박스 스타일링 */
+    .agreement-all-text::before,
+    .agreement-text::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
         width: 24px;
         height: 24px;
         border: 1px solid #C4C4C4;
         border-radius: 4px;
-        cursor: pointer;
-        position: relative;
+        background-color: white;
     }
 
-    .checkbox-checked {
+    .checkbox-input:checked + .agreement-all-text::before,
+    .checkbox-input:checked + .agreement-text::before {
         background-color: #5F0080;
         border-color: #5F0080;
     }
 
-    .checkbox-checked::after {
+    .checkbox-input:checked + .agreement-all-text::after,
+    .checkbox-input:checked + .agreement-text::after {
         content: '✓';
         position: absolute;
+        left: 6px;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateY(-50%);
         color: white;
         font-size: 14px;
         font-weight: bold;
@@ -192,24 +211,5 @@
         background-position: center;
     }
     </style>
-
-    <script>
-    document.querySelectorAll('.checkbox').forEach(checkbox => {
-        checkbox.addEventListener('click', function() {
-            this.classList.toggle('checkbox-checked');
-            
-            if (this.id === 'all-agree') {
-                const isChecked = this.classList.contains('checkbox-checked');
-                document.querySelectorAll('.checkbox:not(#all-agree)').forEach(cb => {
-                    if (isChecked) {
-                        cb.classList.add('checkbox-checked');
-                    } else {
-                        cb.classList.remove('checkbox-checked');
-                    }
-                });
-            }
-        });
-    });
-    </script>
 </body>
 </html> 
