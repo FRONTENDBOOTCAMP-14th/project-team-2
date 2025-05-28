@@ -1,0 +1,154 @@
+@import url(../../common/theme.css);
+@import url(../../common/modern-reset.css);
+
+:root {
+  /* 색상 */
+  --gray-50: #ebeef3;
+
+  /* 사이즈 */
+  --size-14: 14px;
+}
+
+/* 공통적용 */
+input {
+  margin: 0;
+  accent-color: var(--black);
+  inline-size: var(--xl-gap);
+  block-size: var(--xl-gap);
+
+  aspect-ratio: 1 / 1;
+  border-radius: 50% 50%;
+}
+
+/* 주문상품 컴포넌트 스타일링 */
+.section-order-items {
+  background: var(--gray-50);
+  display: flex;
+  flex-flow: column nowrap;
+  padding-inline: var(--xl-gap);
+  padding-block: var(--s-gap);
+
+  .section-background {
+    background: var(--white);
+    border-radius: 12px;
+    padding-inline: var(--s-gap);
+
+    .input-name {
+      margin-block-end: 30px;
+    }
+
+    figure {
+      display: flex;
+      margin-inline-start: 50px;
+      column-gap: var(--l-gap);
+      position: relative;
+
+      img {
+        inline-size: 64px;
+        block-size: 82px;
+        border-radius: 6px;
+      }
+
+      em {
+        font-weight: 700;
+        font-size: var(--m-textSize);
+      }
+
+      s {
+        font-size: var(--size-14);
+        color: var(--content);
+      }
+    }
+
+    .input-delivery {
+      display: flex;
+      padding-inline: var(--l-gap);
+      padding-block: var(--xxl-gap);
+      column-gap: var(--l-gap);
+
+      border-bottom: 1px solid var(--gray-50);
+    }
+
+    .section-product-status {
+      display: flex;
+      column-gap: var(--s-gap);
+      padding-inline-start: var(--l-gap);
+      padding-block-start: var(--size-14);
+      padding-block-end: var(--xl-gap);
+
+      align-items: center;
+    }
+
+    .input-name {
+      display: flex;
+      column-gap: var(--size-14);
+      justify-content: space-between;
+
+      .input-itmes-name {
+        display: flex;
+        align-items: center;
+        column-gap: var(--size-14);
+      }
+    }
+  }
+
+  .input-delivery,
+  .section-product-status,
+  .input-name {
+    padding-inline: var(--l-gap);
+  }
+
+  .section-price-total {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2px;
+    background: var(--gray-50);
+    margin: var(--xl-gap);
+    padding-inline: 64px;
+    padding-block: var(--l-gap);
+    text-align: center;
+    align-items: center;
+    border-radius: var(--s-gap);
+
+    p {
+      color: gray;
+      font-size: var(--size-14);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    output {
+      color: var(--black);
+      font-weight: 700;
+    }
+  }
+}
+
+.btn-quantity {
+  display: flex;
+  background: var(--gray-50);
+  border: none;
+  border-radius: var(--l-gap);
+  padding: 5px 10px;
+  opacity: 1;
+
+  position: absolute;
+  top: 220px;
+  left: 160px;
+  margin-top: var(--l-gap);
+
+  output {
+    font-size: var(--size-14);
+  }
+
+  .btn-increase,
+  .btn-decrease {
+    border: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-increase {
+    order: 1;
+  }
+}
