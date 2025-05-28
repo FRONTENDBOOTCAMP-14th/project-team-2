@@ -1,0 +1,35 @@
+@import url(../../common/theme.css);
+@import url(../../common/modern-reset.css);
+
+/* 상품선택 컴포넌트 스타일링 */
+.section-select-items {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-inline: 15px;
+  padding-block: var(--l-gap);
+  column-gap: 150px;
+  justify-content: space-between;
+
+  .input-select {
+    display: flex;
+    column-gap: var(--l-gap);
+    align-items: center;
+
+    input {
+      accent-color: var(--black);
+      inline-size: var(--xl-gap);
+      block-size: var(--xl-gap);
+    }
+  }
+
+  .btn-select {
+    --size-6: 6px;
+    --size-14: 14px;
+
+    border: 1px solid #dbd6d3;
+    border-radius: var(--size-6);
+    padding-inline: var(--m-gap);
+    padding-block: var(--size-6);
+    font-size: var(--size-14);
+  }
+}
