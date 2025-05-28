@@ -1,0 +1,21 @@
+@import url(../../common/theme.css);
+@import url(../../common/modern-reset.css);
+
+/* 버튼 컴포넌트 스타일링 */
+.section-btn {
+  padding-inline: 12px;
+}
+
+.btn-login {
+  inline-size: 100%;
+  block-size: 55px;
+  background: var(--primary-200);
+  border: none;
+  border-radius: 9px;
+  padding: 0;
+  margin-block-start: 15px;
+
+  font-size: var(--m-textSize);
+  color: var(--white);
+  text-align: center;
+}
