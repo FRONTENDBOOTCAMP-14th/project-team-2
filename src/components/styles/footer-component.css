@@ -61,6 +61,7 @@ body {
           border: 1px solid var(--content-100);
         }
         p {
+          word-break: keep-all;
           align-self: center;
           grid-column: 2 / 3;
 
@@ -96,11 +97,10 @@ body {
     }
   }
   .footer-about {
-    .mobile-only {
-      .footer-about-adress {
-        font-style: normal;
-        margin-block-end: var(--xl-gap);
-      }
+    word-break: keep-all;
+    .footer-about-adress {
+      font-style: normal;
+      margin-block-end: var(--xl-gap);
     }
   }
   .footer-sns {
