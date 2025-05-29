@@ -7,7 +7,6 @@
   flex-flow: row nowrap;
   padding-inline: var(--l-gap);
   padding-block: var(--l-gap);
-  column-gap: 9.375rem;
   justify-content: space-between;
 
   .input-select {
