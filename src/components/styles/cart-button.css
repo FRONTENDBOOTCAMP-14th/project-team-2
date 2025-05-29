@@ -3,17 +3,17 @@
 
 /* 버튼 컴포넌트 스타일링 */
 .section-btn {
-  padding-inline: 12px;
+  padding-inline: var(--m-gap);
 }
 
 .btn-login {
   inline-size: 100%;
-  block-size: 55px;
+  block-size: 3.4375rem;
   background: var(--primary-200);
   border: none;
-  border-radius: 9px;
+  border-radius: 0.625rem;
   padding: 0;
-  margin-block-start: 15px;
+  margin-block-start: var(--l-gap);
 
   font-size: var(--m-textSize);
   color: var(--white);
