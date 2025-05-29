@@ -1,0 +1,6 @@
+/* .pc-only {
+  display: none;
+} */
+.color-primary {
+  color: var(--primary-200);
+}
