@@ -36,6 +36,11 @@ body {
     margin-block-end: var(--xl-gap);
   }
   .footer-CS {
+    .footer-CS-info {
+      display: flex;
+      align-items: center;
+      gap: var(--s-gap);
+    }
     .CS-callnumber {
       font-weight: 500;
       font-size: var(--l-textSize);
@@ -47,8 +52,8 @@ body {
       margin-block-end: var(--m-gap);
       .footer-ask-list {
         display: grid;
-        grid-template-columns: repeat(2 1fr);
-        grid-template-rows: repeat(2 1fr);
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
         justify-content: start;
         column-gap: var(--m-gap);
 
@@ -56,7 +61,7 @@ body {
           --content-100: #858f99;
 
           grid-row: 1 / 3;
-          padding: var(--s-gap) var(--xxl-gap);
+          padding: var(--s-gap) var(--xl-gap);
           min-width: 140px;
           max-height: 40px;
           background: var(--white);
@@ -86,16 +91,7 @@ body {
     }
     a {
       display: inline-block;
-      padding-block: var(--s-gap);
-      padding-inline-end: var(--s-gap);
-      text-align: start;
-      line-height: 1;
-    }
-    em {
-      --content-300: #565f68;
-
-      font-weight: 700;
-      color: var(--content-300);
+      line-height: var(--l-textLineHeight);
     }
   }
   .footer-about {
@@ -151,6 +147,7 @@ body {
     text-align: center;
     display: grid;
     gap: var(--s-gap);
+    line-height: var(--l-textLineHeight);
   }
 }
 
@@ -173,12 +170,8 @@ body {
     }
     .footer-nav {
       ul {
-        gap: var(--m-gap) var(--s-gap);
+        gap: var(--m-gap);
         inline-size: 100%;
-      }
-      a {
-        padding-block: var(--m-gap);
-        padding-inline-end: var(--m-gap);
       }
     }
     .footer-about {
@@ -216,7 +209,7 @@ body {
 
       .toss-icon {
         div {
-          inline-size: 120px;
+          inline-size: 100px;
         }
       }
       .woori-icon {
@@ -228,11 +221,94 @@ body {
       background: var(--gray-50);
       p {
         margin-inline: auto;
-        max-inline-size: 680px;
+        max-inline-size: 690px;
       }
       span {
         display: block;
       }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    --xxs-textSize: 10px;
+
+    background: var(--white);
+    font-size: var(--xs-textSize);
+
+    .footer-width {
+      inline-size: clamp(375px, 100%, 1050px);
+      padding-inline: 0;
+    }
+
+    .footer-info {
+      --xxl-gap: 28px;
+
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4);
+      row-gap: var(--xxl-gap);
+      column-gap: 87px;
+      margin-block-end: var(--xxl-gap);
+    }
+    .footer-CS {
+      font-size: var(--m-textSize);
+      grid-column: 1 / 2;
+      grid-row: 1 / 5;
+      h4 {
+        font-size: var(--l-textSize);
+      }
+      .CS-callnumber {
+        font-weight: 700;
+        font-size: var(--xxl-textSize);
+        color: var(--black);
+      }
+      .footer-ask {
+        row-gap: var(--l-gap);
+        margin-block-end: var(--l-gap);
+        .footer-ask-list {
+          column-gap: var(--l-gap);
+        }
+      }
+      .footer-CS-nonmember {
+        font-size: var(--xs-textSize);
+      }
+    }
+    .footer-nav {
+      font-size: var(--m-textSize);
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .footer-about {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    .footer-sns {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      ul {
+        gap: 20px;
+      }
+      svg {
+        inline-size: 30px;
+      }
+    }
+    .footer-certification {
+      font-size: var(--xxs-textSize);
+      ul {
+        align-items: start;
+        gap: var(--xl-gap);
+      }
+      li {
+        inline-size: 23%;
+        display: flex;
+        gap: var(--s-gap);
+        margin-block-end: var(--l-gap);
+      }
+    }
+    .footer-copyright {
+      font-size: var(--xxs-textSize);
+      padding: 20px 0 35px;
     }
   }
 }
