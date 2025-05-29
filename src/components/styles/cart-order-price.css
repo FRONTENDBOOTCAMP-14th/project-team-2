@@ -10,13 +10,13 @@
   color: var(--content);
   font-size: var(--m-textSize);
 
-  padding-inline: 15px;
+  padding-inline: var(--l-gap);
 
   .section-price {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    column-gap: 225px;
+    column-gap: 14.0625rem;
     padding-block: var(--s-gap);
   }
 
@@ -28,8 +28,8 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      column-gap: 199px;
-      margin-block: 5px;
+      column-gap: 12.5rem;
+      margin-block: 0.375rem;
 
       .section-discount-group-2 {
         justify-items: center;
@@ -48,20 +48,20 @@
 .section-delivery {
   display: flex;
   justify-content: space-between;
-  padding-block: 14px;
-  column-gap: 247px;
+  padding-block: 0.875rem;
+  column-gap: 15.5rem;
 }
 
 .section-pay {
   display: flex;
   flex-flow: column nowrap;
-  padding-block: 17px;
+  padding-block: var(--l-gap);
 
   .section-pay-group {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    column-gap: 164px;
+    column-gap: 10.25rem;
 
     .section-pay-group-2 {
       font-size: var(--l-textSize);
