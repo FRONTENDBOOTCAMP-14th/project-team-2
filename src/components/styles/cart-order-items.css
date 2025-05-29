@@ -81,7 +81,7 @@ input {
       column-gap: var(--size-14);
       justify-content: space-between;
 
-      .input-itmes-name {
+      .input-items-name {
         display: flex;
         align-items: center;
         column-gap: var(--size-14);
