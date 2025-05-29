@@ -13,171 +13,59 @@
 </head>
 <body>
 
+  <h2>필터</h2>
+
   <!-- 모바일: 열기 버튼 -->
   <button class="filter-toggle-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterPanel">
     필터
+    <img src="../../assets/svg/filter.png" alt="필터 아이콘" />
   </button>
+
+  <hr />
 
   <!-- 공통: 필터 패널 -->
   <aside class="filter-panel" id="filterPanel" role="dialog" aria-modal="true" aria-label="필터 메뉴">
     <form class="filter-form">
-      <h2>필터</h2>
 
-      <div>
-        <ul>
-          <li><button type="button">카테고리<span class="icon">▾</span></button></li>
-          <li>
-            <input type="checkbox" id="category-1" name="vegetable">
-            <label for="category-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              채소
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="category-2" name="friute">
-            <label for="category-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              과일·견과·쌀
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="category-3" name="dairy-products">
-            <label for="category-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              유제품
-            </label>
-          </li>
-        </ul>
-        
+      <div class="category-filter">
+        <legend class="category-filter title">필터</legend>
+        <button class="reset-btn" type="button">초기화</button>
       </div>
 
-      <div>
-        <ul>
-          <li><button type="button">배송<span class="icon">▾</span></button></li>
-          <li>
-            <input type="checkbox" id="delivery-1" name="saesbyeol">
-            <label for="delivery-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              샛별배송
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="delivery-2" name="seller">
-            <label for="delivery-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              판매자배송
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="delivery-3" name="installation">
-            <label for="delivery-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              설치배송
-            </label>
-          </li>
-        </ul>
+
+      <div class="category food">
+      <button class="category-toggle" type="button">카테고리</button>
+            <div class="category-option bg-icon">
+              <input type="checkbox" id="category-1" name="vegetable" /><label class="icon" for="category-1">채소</label>
+              <input type="checkbox" id="category-2" name="fruit" /><label class="icon" for="category-2">과일·견과·쌀</label>
+              <input type="checkbox" id="category-3" name="dairy-products" /><label class="icon" for="category-3">유제품</label>
+            </div>
+
+      <div class="category delivery">
+          <button class="category-toggle" type="button">배송</button>
+            <div class="category-option bg-icon">
+              <input type="checkbox" id="delivery-1" name="saesbyeol" /><label class="icon" for="delivery-1">샛별배송</label>
+              <input type="checkbox" id="delivery-2" name="seller" /><label class="icon" for="delivery-2">판매자배송</label>
+              <input type="checkbox" id="delivery-3" name="installation" /><label class="icon" for="delivery-3">설치배송</label>
+            </div>
       </div>
 
-      <div>
-        <ul>
-          <li><button type="button">포장타입<span class="icon">▾</span></button></li>
-          <li>
-            <input type="checkbox" id="temperature-1" name="room">
-            <label for="temperature-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              상온
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="temperature-2" name="cold-storage">
-            <label for="temperature-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              냉장
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="temperature-3" name="freezing">
-            <label for="temperature-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              냉동
-            </label>
-          </li>
-        </ul>
+      <div class="category packaging">
+          <button class="category-toggle" type="button">포장타입</button>
+            <div class="category-option bg-icon">
+              <input type="checkbox" id="temperature-1" name="room" /><label class="icon" for="temperature-1">상온</label>
+              <input type="checkbox" id="temperature-2" name="cold-storage" /><label class="icon" for="temperature-2">냉장</label>
+              <input type="checkbox" id="temperature-3" name="freezing" /><label class="icon" for="temperature-3">냉동</label>
+            </div>
       </div>
 
-      <div>
-        <ul>
-          <li><button type="button">가격<span class="icon">▾</span></button></li>
-          <li>
-            <input type="checkbox" id="price-1" name="low">
-            <label for="price-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              6,600원 미만
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="price-2" name="mid">
-            <label for="price-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              6,600 ~ 9,990원
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="price-3" name="high">
-            <label for="price-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_42_1787)">
-              <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4"/>
-              <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs>
-              <clipPath id="clip0_42_1787"><rect width="24" height="24" fill="white"/></clipPath></defs>
-              </svg>
-              9,990원 ~ 14.500원
-            </label>
-          </li>
-        </ul>
+      <div class="category price">
+        <button class="category-toggle" type="button">가격</button>        
+          <div class="category-option bg-icon">
+              <input type="checkbox" id="price-1" name="low" /><label class="icon" for="price-1">6,600원 미만</label>
+              <input type="checkbox" id="price-2" name="mid" /><label class="icon" for="price-2">6,600 ~ 9,990원</label>
+              <input type="checkbox" id="price-3" name="high" /><label class="icon" for="price-3">9,990원 ~ 14.500원</label>
+            </div>
       </div>
 
     </form>
