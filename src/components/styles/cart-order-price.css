@@ -11,6 +11,8 @@
   font-size: var(--m-textSize);
 
   padding-inline: var(--l-gap);
+  padding-block-start: var(--l-gap);
+  padding-block-end: 0.625rem;
 
   .section-price {
     display: flex;
@@ -43,6 +45,12 @@
       justify-content: end;
     }
   }
+
+  .section-price-2,
+  .section-discount-group-2,
+  .section-delivery-2 {
+    font-weight: 700;
+  }
 }
 
 .section-delivery {
@@ -61,11 +69,13 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     column-gap: 10.25rem;
+    margin-block-end: 0.375rem;
 
     .section-pay-group-2 {
       font-size: var(--l-textSize);
-      font-weight: 700;
+      font-weight: 900;
     }
   }
 
