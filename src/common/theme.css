@@ -1,6 +1,7 @@
 :root {
   /* 폰트 사이즈 */
-  --s-textSize: 12px;
+  --xs-textSize: 12px;
+  --s-textSize: 14px;
   --m-textSize: 16px;
   --l-textSize: 22px;
   --xl-textSize: 28px;
@@ -21,7 +22,7 @@
   --primary-100: #710097;
   --primary-200: #5f0080;
   --primary-300: #400055;
-  --errOR:#F03F40
+  --error: #f03f40;
 
   /* 간격 */
   --xs-gap: 4px;
@@ -30,4 +31,16 @@
   --l-gap: 16px;
   --xl-gap: 20px;
   --xxl-gap: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
