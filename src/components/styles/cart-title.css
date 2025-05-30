@@ -13,4 +13,16 @@
   h2 {
     font-size: var(--m-textSize);
   }
+
+  @media (min-width: 1280px) {
+    svg {
+      display: none;
+    }
+
+    h2 {
+      font-size: var(--size-20);
+      font-weight: 600;
+      line-height: var(--m-textLineHeight);
+    }
+  }
 }
