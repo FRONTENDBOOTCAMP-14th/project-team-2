@@ -1,0 +1,13 @@
+/* 주문관련 안내문 컴포넌트 스타일링 */
+/* 랩탑(1280xp) 및 데스크탑(1920px) 활용 */
+.section-order-notice {
+  --gray-400: #898989;
+
+  display: flex;
+  flex-flow: column;
+  padding: var(--xl-gap);
+  white-space: normal;
+  font-size: var(--xs-textSize);
+  color: var(--gray-400);
+  line-height: var(--m-textLineHeight);
+}
