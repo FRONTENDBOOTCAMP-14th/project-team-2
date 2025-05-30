@@ -1,0 +1,50 @@
+.login-btn {
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+
+.login-btn-primary {
+    background-color: #5F0080;
+    color: #FFFFFF;
+}
+
+.login-btn-secondary {
+    background-color: transparent;
+    color: #5F0080;
+    border: 1px solid #5F0080;
+}
+
+.login-btn-small {
+    background-color: #5F0080;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    width: 143px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn-address {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: 1px solid #C4C4C4;
+    padding: 12px 20px;
+    width: 333px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+} 

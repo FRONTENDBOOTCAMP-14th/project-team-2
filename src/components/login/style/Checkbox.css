@@ -1,0 +1,49 @@
+.login-checkbox-component {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 실제 체크박스 input 숨기기 */
+.login-checkbox-input {
+    display: none;
+}
+
+/* 체크박스 스타일링 */
+.login-checkbox-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+}
+
+.login-checkbox-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.login-checkbox-input:checked + .login-checkbox-label::before {
+    background-color: #5F0080;
+    border-color: #5F0080;
+}
+
+.login-checkbox-input:checked + .login-checkbox-label::after {
+    content: '✓';
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+} 

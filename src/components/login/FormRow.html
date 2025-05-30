@@ -4,100 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Row Component</title>
+    <link rel="stylesheet" href="style/FormRow.css">
 </head>
 <body>
-    <div class="form-row-component">
-        <div class="form-row">
-            <div class="label">
-                <div class="label-text">
+    <div class="login-form-row-component">
+        <div class="login-form-row">
+            <div class="login-label">
+                <div class="login-label-text">
                     라벨
-                    <span class="label-required">*</span>
+                    <span class="login-label-required">*</span>
                 </div>
             </div>
-            <input type="text" class="input" placeholder="입력해주세요">
-            <button class="btn btn-small">버튼</button>
+            <input type="text" class="login-input" placeholder="입력해주세요">
+            <button class="login-btn login-btn-small">버튼</button>
         </div>
     </div>
-
-    <style>
-    .form-row {
-        padding: 20px 0;
-        border-bottom: 1px solid #C4C4C4;
-        display: flex;
-        align-items: flex-end;
-        gap: 8px;
-    }
-
-    .form-row:last-child {
-        border-bottom: none;
-    }
-
-    .label {
-        width: 139px;
-        padding: 4px;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .label-text {
-        font-size: 16px;
-        font-weight: 600;
-        color: #333333;
-        display: flex;
-        gap: 4px;
-        padding: 4px;
-    }
-
-    .label-required {
-        color: #F03F40;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    .input {
-        border: 1px solid #C4C4C4;
-        border-radius: 4px;
-        padding: 12px 20px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.6em;
-        color: #898989;
-        flex: 1;
-        outline: none;
-    }
-
-    .input:focus {
-        border-color: #5F0080;
-        color: #333333;
-    }
-
-    .btn {
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.5em;
-        text-align: center;
-        cursor: pointer;
-        border: none;
-        text-decoration: none;
-        display: block;
-    }
-
-    .btn-small {
-        background-color: #5F0080;
-        color: #FFFFFF;
-        padding: 12px 20px;
-        width: 143px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .btn:hover {
-        opacity: 0.9;
-    }
-    </style>
 </body>
 </html> 

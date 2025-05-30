@@ -4,66 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkbox Component</title>
+    <link rel="stylesheet" href="style/Checkbox.css">
 </head>
 <body>
-    <div class="checkbox-component">
-        <input type="checkbox" id="checkbox1" class="checkbox-input">
-        <label for="checkbox1" class="checkbox-label">체크박스 라벨</label>
+    <div class="login-checkbox-component">
+        <input type="checkbox" id="checkbox1" class="login-checkbox-input">
+        <label for="checkbox1" class="login-checkbox-label">체크박스 라벨</label>
     </div>
-
-    <!-- CSS 구간입니다 -->
-
-
-    <style>
-    .checkbox-component {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    /* 실제 체크박스 input 숨기기 */
-    .checkbox-input {
-        display: none;
-    }
-
-    /* 체크박스 스타일링 */
-    .checkbox-label {
-        font-size: 16px;
-        font-weight: 400;
-        color: #333333;
-        cursor: pointer;
-        position: relative;
-        padding-left: 32px;
-    }
-
-    .checkbox-label::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
-        border: 1px solid #C4C4C4;
-        border-radius: 4px;
-        background-color: white;
-    }
-
-    .checkbox-input:checked + .checkbox-label::before {
-        background-color: #5F0080;
-        border-color: #5F0080;
-    }
-
-    .checkbox-input:checked + .checkbox-label::after {
-        content: '✓';
-        position: absolute;
-        left: 6px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: white;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    </style>
 </body>
 </html> 

@@ -1,0 +1,56 @@
+.login-radio {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.login-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 실제 라디오 input 숨기기 */
+.login-radio-input {
+    display: none;
+}
+
+/* 라디오 버튼 스타일링 */
+.login-radio-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+}
+
+.login-radio-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.login-radio-input:checked + .login-radio-label::before {
+    border-color: #5F0080;
+}
+
+.login-radio-input:checked + .login-radio-label::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #5F0080;
+    border-radius: 50%;
+} 
