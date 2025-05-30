@@ -2,9 +2,16 @@
 @import url(../../common/modern-reset.css);
 
 /* 주문금액 컴포넌트 스타일링 */
-.section-order-price {
-  --orange: #fa622f;
+.section-wrapper {
+  padding: var(--xl-gap);
 
+  @media (min-width: 1280px) {
+    background: var(--gray-60);
+    border: 1px solid var(--gray-60);
+  }
+}
+
+.section-order-price {
   display: flex;
   flex-flow: column nowrap;
   color: var(--content);
@@ -63,6 +70,10 @@
   flex-flow: column nowrap;
   padding-block: var(--l-gap);
 
+  @media (min-width: 1280px) {
+    border-block-start: 1px dashed var(--gray-100);
+  }
+
   .section-pay-group {
     display: flex;
     flex-flow: row nowrap;
@@ -81,5 +92,30 @@
     font-size: var(--s-textSize);
     line-height: var(--l-textLineHeight);
     justify-content: end;
+  }
+
+  .section-earn-info {
+    --accent-orange: #fa622f;
+
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    justify-items: center;
+    justify-content: end;
+    font-size: var(--xs-textSize);
+    font-weight: 600;
+    margin-block-start: var(--m-gap);
+    visibility: hidden;
+
+    span {
+      background: var(--accent-orange);
+      padding-inline: var(--s-gap);
+      padding-block: 2px;
+      color: var(--white);
+    }
+
+    @media (min-width: 1280px) {
+      visibility: visible;
+    }
   }
 }
