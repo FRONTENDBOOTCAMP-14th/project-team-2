@@ -72,10 +72,10 @@
 
 ### 🛠️ 기술 스택
 ---
-- 기술스택:<img alt="HTML5" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/><img alt="CSS3" src ="https://img.shields.io/badge/CSS3-663399.svg?&style=for-the-badge&logo=css&logoColor=white"/>
-- 버전관리:<img alt="GIT" src ="https://img.shields.io/badge/GIT-F05032.svg?&style=for-the-badge&logo=GIT&logoColor=white"/><img alt="github" src ="https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+- 기술스택: <img alt="HTML5" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="CSS3" src ="https://img.shields.io/badge/CSS3-663399.svg?&style=for-the-badge&logo=css&logoColor=white"/>
+- 버전관리: <img alt="GIT" src ="https://img.shields.io/badge/GIT-F05032.svg?&style=for-the-badge&logo=GIT&logoColor=white"/> <img alt="github" src ="https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=github&logoColor=white"/>
 - 에디터: <img alt="vscode" src ="https://img.shields.io/badge/vscode-007ACC.svg?&style=for-the-badge&logo=code&logoColor=white"/>
-- 협업 툴:<img alt="notion" src ="https://img.shields.io/badge/notion-000000.svg?&style=for-the-badge&logo=notion&logoColor=white"/><img alt="discord" src ="https://img.shields.io/badge/discord-5865F2.svg?&style=for-the-badge&logo=discord&logoColor=white"/>
+- 협업 툴: <img alt="notion" src ="https://img.shields.io/badge/notion-000000.svg?&style=for-the-badge&logo=notion&logoColor=white"/> <img alt="discord" src ="https://img.shields.io/badge/discord-5865F2.svg?&style=for-the-badge&logo=discord&logoColor=white"/>
 - 배포환경: <img alt="netlify" src ="https://img.shields.io/badge/netlify-00C7B7.svg?&style=for-the-badge&logo=netlify&logoColor=white"/>
 
 ### ✅ 컨벤션
