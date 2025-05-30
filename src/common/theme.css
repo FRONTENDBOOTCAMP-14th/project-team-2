@@ -1,6 +1,7 @@
 :root {
   /* 폰트 사이즈 */
   --s-textSize: 12px;
+  --sm-textSize: 14px;
   --m-textSize: 16px;
   --l-textSize: 22px;
   --xl-textSize: 28px;
@@ -15,6 +16,9 @@
   --black: #000;
   --white: #fff;
   --gray-100: #E1E1E1;
+  --gray-200: #C4C4C4;
+  --gray-m-200: #6C6C6C;
+  --gray-300: #A6A6A6;
   --gray-400: #898989;
   --content: #333;
   --acent-yellow: #FA622F;
@@ -27,10 +31,10 @@
   --errOR:#F03F40
 
   /* 간격 */
-  --xs-gap: .25rem;
-  --s-gap: .5rem;
-  --m-gap: .75rem;
-  --l-gap: 1rem;
-  --xl-gap: 1.25rem;
-  --xxl-gap: 1.5rem;
+  --xs-gap: 4px;
+  --s-gap: 8px;
+  --m-gap: 12px;
+  --l-gap: 16px;
+  --xl-gap: 20px;
+  --xxl-gap: 24px;
 }
