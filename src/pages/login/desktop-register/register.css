@@ -129,20 +129,20 @@ body {
     color: #000000;
 }
 
-.form {
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-field {
+.login-form-field {
     width: 640px;
     border-bottom: 1px solid #333333;
     border-top: 2px solid #333333;
     padding: 0;
 }
 
-.form-row {
+.login-form-row {
     padding: 20px 0;
     border-bottom: 1px solid #C4C4C4;
     display: flex;
@@ -150,11 +150,11 @@ body {
     gap: 8px;
 }
 
-.form-row:last-child {
+.login-form-row:last-child {
     border-bottom: none;
 }
 
-.label {
+.login-label {
     width: 139px;
     padding: 4px;
     display: flex;
@@ -162,7 +162,7 @@ body {
     gap: 4px;
 }
 
-.label-text {
+.login-label-text {
     font-size: 16px;
     font-weight: 600;
     color: #333333;
@@ -171,13 +171,13 @@ body {
     padding: 4px;
 }
 
-.label-required {
+.login-label-required {
     color: #F03F40;
     font-size: 16px;
     font-weight: 600;
 }
 
-.input {
+.login-input {
     border: 1px solid #C4C4C4;
     border-radius: 4px;
     padding: 12px 20px;
@@ -189,17 +189,17 @@ body {
     outline: none;
 }
 
-.input:focus {
+.login-input:focus {
     border-color: #5F0080;
     color: #333333;
 }
 
-.input-birthdate {
+.login-input-birthdate {
     color: #C4C4C4;
     letter-spacing: 0.1em;
 }
 
-.btn {
+.login-btn {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 600;
@@ -211,7 +211,7 @@ body {
     display: block;
 }
 
-.btn-small {
+.login-btn-small {
     background-color: #5F0080;
     color: #FFFFFF;
     padding: 12px 20px;
@@ -222,7 +222,7 @@ body {
     justify-content: center;
 }
 
-.btn-address {
+.login-btn-address {
     background-color: #FFFFFF;
     color: #333333;
     border: 1px solid #C4C4C4;
@@ -234,7 +234,7 @@ body {
     justify-content: center;
 }
 
-.btn-submit {
+.login-btn-submit {
     background-color: #5F0080;
     color: #FFFFFF;
     padding: 16px;
@@ -245,7 +245,7 @@ body {
     justify-content: center;
 }
 
-.btn:hover {
+.login-btn:hover {
     opacity: 0.9;
 }
 
@@ -457,11 +457,11 @@ body {
         padding: 40px 20px;
     }
     
-    .form-field {
+    .login-form-field {
         width: 100%;
     }
     
-    .input, .btn-address, .input-birthdate {
+    .login-input, .login-btn-address, .login-input-birthdate {
         width: 100%;
     }
     

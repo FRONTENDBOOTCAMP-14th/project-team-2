@@ -4,82 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio Component</title>
+    <link rel="stylesheet" href="style/Radio.css">
 </head>
 <body>
-    <div class="radio-component">
-        <div class="radio">
-            <div class="radio-group">
-                <input type="radio" name="example" id="option1" class="radio-input" value="option1">
-                <label for="option1" class="radio-label">옵션 1</label>
+    <div class="login-radio-component">
+        <div class="login-radio login-radio-horizontal">
+            <div class="login-radio-group">
+                <input type="radio" name="gender" id="male" class="login-radio-input" value="male">
+                <label for="male" class="login-radio-label">남자</label>
             </div>
-            <div class="radio-group">
-                <input type="radio" name="example" id="option2" class="radio-input" value="option2">
-                <label for="option2" class="radio-label">옵션 2</label>
+            <div class="login-radio-group">
+                <input type="radio" name="gender" id="female" class="login-radio-input" value="female">
+                <label for="female" class="login-radio-label">여자</label>
             </div>
-            <div class="radio-group">
-                <input type="radio" name="example" id="option3" class="radio-input" value="option3" checked>
-                <label for="option3" class="radio-label">옵션 3</label>
+            <div class="login-radio-group">
+                <input type="radio" name="gender" id="none" class="login-radio-input" value="none" checked>
+                <label for="none" class="login-radio-label">선택안함</label>
             </div>
         </div>
     </div>
-
-    <style>
-    .radio {
-        flex: 1;
-        display: flex;
-        gap: 8px;
-        align-items: center;
-    }
-
-    .radio-group {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-
-    /* 실제 라디오 input 숨기기 */
-    .radio-input {
-        display: none;
-    }
-
-    /* 라디오 버튼 스타일링 */
-    .radio-label {
-        font-size: 16px;
-        font-weight: 400;
-        color: #333333;
-        cursor: pointer;
-        position: relative;
-        padding-left: 28px;
-    }
-
-    .radio-label::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
-        border: 1px solid #C4C4C4;
-        border-radius: 50%;
-        background-color: white;
-    }
-
-    .radio-input:checked + .radio-label::before {
-        border-color: #5F0080;
-    }
-
-    .radio-input:checked + .radio-label::after {
-        content: '';
-        position: absolute;
-        left: 6px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 12px;
-        height: 12px;
-        background-color: #5F0080;
-        border-radius: 50%;
-    }
-    </style>
 </body>
 </html> 

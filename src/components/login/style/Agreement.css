@@ -1,0 +1,144 @@
+.login-agreement {
+    width: 640px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-agreement-label {
+    padding: 4px;
+}
+
+.login-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+}
+
+.login-text-required {
+    color: #F03F40;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-agreement-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-agreement-all {
+    padding: 20px 0;
+    border-top: 2px solid #333333;
+}
+
+.login-row-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+}
+
+.login-text-all {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+}
+
+.login-note-all {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #898989;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+.login-agreement-item {
+    border-bottom: 1px solid #C4C4C4;
+    padding: 20px 0;
+}
+
+.login-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-text-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+}
+
+.login-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 실제 체크박스 input 숨기기 */
+.login-checkbox-input {
+    display: none;
+}
+
+/* 체크박스 스타일링 */
+.login-text-all::before,
+.login-text-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.login-checkbox-input:checked + .login-text-all::before,
+.login-checkbox-input:checked + .login-text-item::before {
+    background-color: #5F0080;
+    border-color: #5F0080;
+}
+
+.login-checkbox-input:checked + .login-text-all::after,
+.login-checkbox-input:checked + .login-text-item::after {
+    content: '✓';
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-arrow {
+    width: 6px;
+    height: 11px;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='11' viewBox='0 0 6 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L1 10' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+} 

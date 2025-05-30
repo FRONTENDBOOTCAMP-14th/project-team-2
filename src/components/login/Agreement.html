@@ -4,212 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agreement Component</title>
+    <link rel="stylesheet" href="style/Agreement.css">
 </head>
 <body>
-    <div class="agreement-component">
-        <div class="agreement">
-            <div class="agreement-label">
-                <div class="label-text">
+    <div class="login-agreement-component">
+        <div class="login-agreement">
+            <div class="login-agreement-label">
+                <div class="login-text">
                     이용약관동의
-                    <span class="label-required">*</span>
+                    <span class="login-text-required">*</span>
                 </div>
             </div>
-            <div class="agreement-content">
-                <div class="agreement-all">
-                    <div class="agreement-all-row">
-                        <input type="checkbox" id="all-agree" class="checkbox-input">
-                        <label for="all-agree" class="agreement-all-text">전체 동의합니다.</label>
+            <div class="login-agreement-content">
+                <div class="login-agreement-all">
+                    <div class="login-row-all">
+                        <input type="checkbox" id="all-agree" class="login-checkbox-input">
+                        <label for="all-agree" class="login-text-all">전체 동의합니다.</label>
                     </div>
-                    <div class="agreement-all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
+                    <div class="login-note-all">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
                 </div>
 
-                <div class="agreement-item">
-                    <div class="agreement-row">
-                        <div class="agreement-left">
-                            <input type="checkbox" id="terms" class="checkbox-input" required>
-                            <label for="terms" class="agreement-text">이용약관 동의 (필수)</label>
+                <div class="login-agreement-item">
+                    <div class="login-row">
+                        <div class="login-left">
+                            <input type="checkbox" id="terms" class="login-checkbox-input" required>
+                            <label for="terms" class="login-text-item">이용약관 동의 (필수)</label>
                         </div>
-                        <a href="#" class="agreement-link">
+                        <a href="#" class="login-link">
                             약관보기
-                            <div class="arrow"></div>
+                            <div class="login-arrow"></div>
                         </a>
                     </div>
                 </div>
 
-                <div class="agreement-item">
-                    <div class="agreement-row">
-                        <div class="agreement-left">
-                            <input type="checkbox" id="privacy" class="checkbox-input" required>
-                            <label for="privacy" class="agreement-text">개인정보 수집 · 이용 동의 (필수)</label>
+                <div class="login-agreement-item">
+                    <div class="login-row">
+                        <div class="login-left">
+                            <input type="checkbox" id="privacy" class="login-checkbox-input" required>
+                            <label for="privacy" class="login-text-item">개인정보 수집 · 이용 동의 (필수)</label>
                         </div>
-                        <a href="#" class="agreement-link">
+                        <a href="#" class="login-link">
                             약관보기
-                            <div class="arrow"></div>
+                            <div class="login-arrow"></div>
                         </a>
                     </div>
                 </div>
 
-                <div class="agreement-item">
-                    <div class="agreement-row">
-                        <div class="agreement-left">
-                            <input type="checkbox" id="marketing" class="checkbox-input">
-                            <label for="marketing" class="agreement-text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
+                <div class="login-agreement-item">
+                    <div class="login-row">
+                        <div class="login-left">
+                            <input type="checkbox" id="marketing" class="login-checkbox-input">
+                            <label for="marketing" class="login-text-item">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
                         </div>
-                        <a href="#" class="agreement-link">
+                        <a href="#" class="login-link">
                             약관보기
-                            <div class="arrow"></div>
+                            <div class="login-arrow"></div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <style>
-    .agreement {
-        width: 640px;
-        padding: 40px 0;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .agreement-label {
-        padding: 4px;
-    }
-
-    .label-text {
-        font-size: 16px;
-        font-weight: 600;
-        color: #333333;
-        display: flex;
-        gap: 4px;
-        padding: 4px;
-    }
-
-    .label-required {
-        color: #F03F40;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    .agreement-content {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .agreement-all {
-        padding: 20px 0;
-        border-top: 2px solid #333333;
-    }
-
-    .agreement-all-row {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 4px;
-    }
-
-    .agreement-all-text {
-        font-size: 16px;
-        font-weight: 600;
-        color: #333333;
-        cursor: pointer;
-        position: relative;
-        padding-left: 32px;
-    }
-
-    .agreement-all-note {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.6em;
-        color: #898989;
-        padding: 4px;
-        margin-top: 4px;
-    }
-
-    .agreement-item {
-        border-bottom: 1px solid #C4C4C4;
-        padding: 20px 0;
-    }
-
-    .agreement-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .agreement-left {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .agreement-text {
-        font-size: 16px;
-        font-weight: 400;
-        color: #333333;
-        cursor: pointer;
-        position: relative;
-        padding-left: 32px;
-    }
-
-    .agreement-link {
-        font-size: 16px;
-        font-weight: 400;
-        color: #333333;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-
-    /* 실제 체크박스 input 숨기기 */
-    .checkbox-input {
-        display: none;
-    }
-
-    /* 체크박스 스타일링 */
-    .agreement-all-text::before,
-    .agreement-text::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
-        border: 1px solid #C4C4C4;
-        border-radius: 4px;
-        background-color: white;
-    }
-
-    .checkbox-input:checked + .agreement-all-text::before,
-    .checkbox-input:checked + .agreement-text::before {
-        background-color: #5F0080;
-        border-color: #5F0080;
-    }
-
-    .checkbox-input:checked + .agreement-all-text::after,
-    .checkbox-input:checked + .agreement-text::after {
-        content: '✓';
-        position: absolute;
-        left: 6px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: white;
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-    .arrow {
-        width: 6px;
-        height: 11px;
-        background-image: url("data:image/svg+xml,%3Csvg width='6' height='11' viewBox='0 0 6 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L1 10' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    </style>
 </body>
 </html> 

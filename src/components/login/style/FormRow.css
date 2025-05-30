@@ -1,0 +1,62 @@
+.login-form-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.login-form-row:last-child {
+    border-bottom: none;
+}
+
+.login-form-row-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-form-row-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.login-form-row-label {
+    min-width: 139px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.login-form-row-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-form-row-compact {
+    padding: 12px 0;
+}
+
+.login-form-row-full {
+    width: 100%;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .login-form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .login-form-row-label {
+        min-width: auto;
+        width: 100%;
+    }
+} 
