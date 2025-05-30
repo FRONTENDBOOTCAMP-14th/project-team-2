@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button 컴포넌트</title>
+    <link rel="preload" as="font" href="/font/pretendardvariable.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="../../common/base.css" />
+    <link rel="stylesheet" href="../../common/modern-reset.css" />
+    <link rel="stylesheet" href="../../common/theme.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    
+  </head>
+  <body>
+    <h1>button 컴포넌트</h1>
+    <hr />
+    
+    <!-- 체크박스 (pc)-->
+    <h2>체크 박스</h2>
+    <div class="form-checkbox bg-icon"><input type="checkbox" id="checkbox-0" name="checkbox-name" /><label for="checkbox-0">레이블</label></div>
+    <hr />
+ 
+    <!-- 뒤로가기 (mobile)-->
+    <h2>뒤로가기</h2>
+    <button class="button back" type="button"><img src="../../assets/svg/back.svg" alt="뒤로가기" /></button>
+    <hr />
+
+    <!-- 홈 (mobile)-->
+    <h2>홈</h2>
+    <button class="button home" type="button"><img src="../../assets/svg/home.svg" alt="홈 이동" /></button>
+    <hr />
+
+    <!-- 장바구니(mobile) -->
+    <h2>장바구니</h2>
+    <button class="button cart" type="button"><img src="../../assets/svg/cart_dark.svg" alt="장바구니 이동" /></button>
+    <hr />
+
+    <!-- 상품 분류 버튼 -->
+     <h2>상품 분류 버튼</h2>
+    <input class="outline-button" type="button" value="버튼텍스트" />
+    <input class="outline-button basic" type="button" value="버튼텍스트" />
+
+
+    <div class="combo-form">
+      <label for="category-m" class="sr-only">카테고리</label>
+      <select class="combo-box" name="product" id="product">
+        <option value="main">카테고리</option>
+        <option value="product1">상품분류1</option>
+        <option value="product2">상품분류2</option>
+      </select>
+    </div>
+  
+
+    <!-- 장바구니 담기 -->
+    
+  </body>
+</html>
