@@ -249,14 +249,14 @@ body {
     opacity: 0.9;
 }
 
-.address {
+.login-address {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.address-note {
+.login-address-note {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.6em;
@@ -264,33 +264,35 @@ body {
     padding: 4px;
 }
 
-.radio {
+.login-radio {
     flex: 1;
     display: flex;
     gap: 8px;
     align-items: center;
 }
 
-.radio-group {
+.login-radio-group {
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.radio-input {
+.login-radio-input {
     width: 24px;
     height: 24px;
     border: 1px solid #C4C4C4;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+    appearance: none;
+    background-color: white;
 }
 
-.radio-input-selected {
+.login-radio-input:checked {
     border-color: #5F0080;
 }
 
-.radio-input-selected::after {
+.login-radio-input:checked::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -302,13 +304,13 @@ body {
     border-radius: 50%;
 }
 
-.radio-label {
+.login-radio-label {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
 }
 
-.note {
+.login-note {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.6em;
@@ -321,7 +323,7 @@ body {
     margin-top: 12px;
 }
 
-.agreement {
+.login-agreement {
     width: 640px;
     padding: 40px 0;
     display: flex;
@@ -329,35 +331,35 @@ body {
     gap: 8px;
 }
 
-.agreement-label {
+.login-agreement-label {
     padding: 4px;
 }
 
-.agreement-content {
+.login-agreement-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.agreement-all {
+.login-agreement-all {
     padding: 20px 0;
     border-top: 2px solid #333333;
 }
 
-.agreement-all-row {
+.login-agreement-all-row {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 4px;
 }
 
-.agreement-all-text {
+.login-agreement-all-text {
     font-size: 16px;
     font-weight: 600;
     color: #333333;
 }
 
-.agreement-all-note {
+.login-agreement-all-note {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.6em;
@@ -366,30 +368,30 @@ body {
     margin-top: 4px;
 }
 
-.agreement-item {
+.login-agreement-item {
     border-bottom: 1px solid #C4C4C4;
     padding: 20px 0;
 }
 
-.agreement-row {
+.login-agreement-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.agreement-left {
+.login-agreement-left {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.agreement-text {
+.login-agreement-text {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
 }
 
-.agreement-link {
+.login-agreement-link {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
@@ -399,7 +401,7 @@ body {
     gap: 4px;
 }
 
-.checkbox {
+.login-checkbox {
     width: 24px;
     height: 24px;
     border: 1px solid #C4C4C4;
@@ -408,12 +410,12 @@ body {
     position: relative;
 }
 
-.checkbox-checked {
+.login-checkbox-checked {
     background-color: #5F0080;
     border-color: #5F0080;
 }
 
-.checkbox-checked::after {
+.login-checkbox-checked::after {
     content: '✓';
     position: absolute;
     top: 50%;
@@ -424,7 +426,7 @@ body {
     font-weight: bold;
 }
 
-.arrow {
+.login-arrow {
     width: 6px;
     height: 11px;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='11' viewBox='0 0 6 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5.5L1 10' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -432,7 +434,7 @@ body {
     background-position: center;
 }
 
-.submit {
+.login-submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,12 +467,12 @@ body {
         width: 100%;
     }
     
-    .radio {
+    .login-radio {
         flex-direction: column;
         align-items: flex-start;
     }
     
-    .agreement {
+    .login-agreement {
         width: 100%;
     }
 } 

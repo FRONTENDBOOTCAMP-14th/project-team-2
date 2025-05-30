@@ -130,10 +130,23 @@ body {
     text-decoration: none;
 }
 
-.divider {
+.login-divider {
     width: 1px;
     height: 10px;
     background-color: #333333;
+}
+
+.login-forget {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .login-btn {
@@ -174,19 +187,6 @@ body {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
-}
-
-.forget {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    justify-content: flex-end;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
 @media (max-width: 768px) {
