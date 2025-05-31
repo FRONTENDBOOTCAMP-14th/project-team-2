@@ -17,7 +17,6 @@
 
   padding-inline: var(--l-gap);
   padding-block-start: var(--l-gap);
-  padding-block-end: 0.625rem;
 
   .section-price {
     display: flex;
@@ -46,6 +45,7 @@
       display: flex;
       font-size: var(--s-textSize);
       justify-content: end;
+      white-space: nowrap;
     }
   }
 
@@ -53,6 +53,20 @@
   .section-discount-group-2,
   .section-delivery-2 {
     font-weight: 700;
+  }
+
+  @media (min-width: 1280px) {
+    .section-discount {
+      p {
+        display: none;
+      }
+    }
+
+    .section-pay {
+      p {
+        display: none;
+      }
+    }
   }
 }
 
@@ -89,6 +103,7 @@
     font-size: var(--s-textSize);
     line-height: var(--l-textLineHeight);
     justify-content: end;
+    white-space: nowrap;
   }
 
   .section-earn-info {
