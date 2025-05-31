@@ -2,3 +2,15 @@
 /* @import: url(각자 컴포넌트.css 상대경로 ); */
 @import url(./common/theme.css);
 @import url(./common/modern-reset.css);
+
+/* 컴포넌트 url */
+@import url(./components/styles/header-components.css);
+@import url(./components/styles/cart-address-info.css);
+@import url(./components/styles/cart-button.css);
+@import url(./components/styles/cart-items-status.css);
+@import url(./components/styles/cart-order-items.css);
+@import url(./components/styles/cart-order-notice.css);
+@import url(./components/styles/cart-order-price.css);
+@import url(./components/styles/cart-select-items.css);
+@import url(./components/styles/cart-title.css);
+@import url(./components/styles/footer-component.css);
