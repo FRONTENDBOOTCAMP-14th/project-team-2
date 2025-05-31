@@ -5,7 +5,7 @@
 
   display: flex;
   flex-flow: column;
-  padding: var(--xl-gap);
+  padding: 0 var(--xl-gap) var(--xl-gap) var(--xl-gap);
   white-space: normal;
   font-size: var(--xs-textSize);
   color: var(--gray-400);
