@@ -1,13 +1,15 @@
 /* 버튼 컴포넌트 스타일링 */
 .section-btn {
   padding-inline: var(--m-gap);
+  margin-block-end: 1.25rem;
 
   :hover {
     background: var(--primary-100);
   }
 }
 
-.btn-login {
+.btn-login,
+.btn-order {
   inline-size: 100%;
   block-size: 3.4375rem;
   background: var(--primary-200);
@@ -19,18 +21,18 @@
   font-size: var(--m-textSize);
   color: var(--white);
   text-align: center;
+}
 
-  .order {
+.btn-order {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .btn-login {
     display: none;
+    font-weight: 600;
   }
-
-  @media (min-width: 1280px) {
-    .login {
-      display: none;
-      font-weight: 600;
-    }
-    .order {
-      display: block;
-    }
+  .btn-order {
+    display: block;
   }
 }
