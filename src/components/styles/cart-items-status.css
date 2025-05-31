@@ -1,0 +1,133 @@
+input {
+  margin: 0;
+  accent-color: var(--black);
+  inline-size: var(--xl-gap);
+  block-size: var(--xl-gap);
+}
+
+/* 상품상태(냉장/냉동/상온) 컴포넌트 스타일링 */
+.section-items-status {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: var(--m-textSize);
+  font-weight: 600;
+  line-height: var(--m-textLineHeight);
+}
+
+.status-refrigerated-group,
+.status-frozen-group,
+.status-room-temperature-group {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--l-gap);
+  border-block-end: 1px solid var(--black);
+}
+
+.status-refrigerated,
+.status-frozen,
+.status-room-temperature {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: var(--m-gap);
+}
+
+.status-refrigerated-group {
+  border-block-start: 1px solid var(--black);
+}
+
+.status-group {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.item-open {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  margin-inline: auto;
+}
+
+.status-group.open {
+  .content {
+    display: block;
+  }
+}
+
+.content {
+  display: none;
+  text-align: center;
+}
+
+.content-order-items {
+  display: flex;
+  padding-inline: var(--m-gap);
+  padding-block: var(--l-gap);
+
+  .section-background {
+    background: var(--white);
+    border-radius: 0.75rem;
+    padding-inline: var(--s-gap);
+
+    .input-name {
+      margin-block-end: 1.875rem;
+    }
+
+    figure {
+      display: flex;
+      margin-inline-start: 3.125rem;
+      column-gap: var(--l-gap);
+      position: relative;
+
+      img {
+        inline-size: 4rem;
+        block-size: 5.125rem;
+        border-radius: 0.375rem;
+      }
+
+      em {
+        font-weight: 700;
+        font-size: var(--m-textSize);
+      }
+
+      s {
+        font-size: var(--s-textSize);
+        color: var(--content);
+      }
+    }
+
+    .input-delivery {
+      display: flex;
+      padding-inline: var(--l-gap);
+      padding-block: var(--xxl-gap);
+      column-gap: var(--l-gap);
+
+      border-bottom: 1px solid var(--gray-50);
+    }
+
+    .section-order-items-status {
+      display: flex;
+      column-gap: var(--s-gap);
+      padding-inline-start: var(--l-gap);
+      padding-block-start: var(--s-textSize);
+      padding-block-end: var(--xl-gap);
+
+      align-items: center;
+    }
+
+    .input-name {
+      display: flex;
+      justify-content: space-between;
+
+      .input-items-name {
+        display: flex;
+        align-items: center;
+        column-gap: var(--s-textSize);
+      }
+    }
+  }
+}
