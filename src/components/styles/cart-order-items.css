@@ -21,6 +21,24 @@ input {
     padding-block-end: var(--xl-gap);
     position: relative;
 
+    .input-delivery,
+    .input-name {
+      input {
+        accent-color: var(--primary-200);
+        inline-size: var(--xl-gap);
+        block-size: var(--xl-gap);
+        cursor: pointer;
+      }
+    }
+
+    .input-delivery {
+      display: flex;
+      padding-inline: var(--l-gap);
+      padding-block: var(--xxl-gap);
+      column-gap: var(--l-gap);
+      border-bottom: 1px solid var(--gray-50);
+    }
+
     .input-name {
       margin-block-end: 1.875rem;
     }
@@ -45,15 +63,6 @@ input {
         font-size: var(--s-textSize);
         color: var(--content);
       }
-    }
-
-    .input-delivery {
-      display: flex;
-      padding-inline: var(--l-gap);
-      padding-block: var(--xxl-gap);
-      column-gap: var(--l-gap);
-
-      border-bottom: 1px solid var(--gray-50);
     }
 
     .section-order-items-status {
