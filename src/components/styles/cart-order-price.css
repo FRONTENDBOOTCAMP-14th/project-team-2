@@ -122,7 +122,7 @@
     span {
       background: var(--accent-orange);
       padding-inline: var(--s-gap);
-      padding-block: 2px;
+      padding-block: 0.125rem;
       color: var(--white);
     }
 
