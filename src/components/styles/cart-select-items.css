@@ -12,9 +12,10 @@
     align-items: center;
 
     input {
-      accent-color: var(--black);
+      accent-color: var(--primary-200);
       inline-size: var(--xl-gap);
       block-size: var(--xl-gap);
+      cursor: pointer;
     }
   }
 
