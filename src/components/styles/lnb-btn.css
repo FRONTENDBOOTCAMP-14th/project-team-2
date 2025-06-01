@@ -28,8 +28,10 @@
     }
   }
   @media (min-width: 1280px) {
+    --xxxl-gap: 26px;
+
     .lnb-btn {
-      padding-block: var(--xxl-gap);
+      padding-block: var(--xxxl-gap);
     }
   }
 }
