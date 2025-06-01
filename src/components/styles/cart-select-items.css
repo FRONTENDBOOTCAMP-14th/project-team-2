@@ -31,5 +31,18 @@
 
   @media (min-width: 1280px) {
     padding-inline: 0;
+    justify-content: flex-start;
+
+    .select-divider {
+      align-items: center;
+      width: 0.0625rem;
+      height: 1rem;
+      background: var(--black);
+    }
+
+    .btn-select {
+      border: 0;
+      font-size: var(--m-textSize);
+    }
   }
 }
