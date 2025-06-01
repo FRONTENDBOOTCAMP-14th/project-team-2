@@ -3,6 +3,7 @@
   --xs-textSize: 12px;
   --s-textSize: 14px;
   --m-textSize: 16px;
+  --size-20: 20px;
   --l-textSize: 22px;
   --xl-textSize: 28px;
   --xxl-textSize: 38px;
@@ -23,6 +24,11 @@
   --primary-200: #5f0080;
   --primary-300: #400055;
   --error: #f03f40;
+  --orange: #fa622f;
+  --gray-50: #ebeef3;
+  --gray-60: #f9f9f9;
+  --gray-100: #e1e1e1;
+  --gray-400: #898989;
 
   /* 간격 */
   --xs-gap: 4px;
