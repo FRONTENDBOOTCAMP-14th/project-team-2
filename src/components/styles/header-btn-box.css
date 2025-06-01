@@ -1,0 +1,33 @@
+.header {
+  .header-btn-wrapper {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    gap: var(--m-gap);
+
+    .header-like {
+      display: none;
+    }
+    svg {
+      width: 1.5rem;
+      path {
+        fill-rule: var(--white);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .header-btn-wrapper {
+      .header-like {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .header-btn-wrapper {
+      color: var(--content);
+      svg {
+        width: 2.25rem;
+      }
+    }
+  }
+}

@@ -2,3 +2,21 @@
 /* @import: url(각자 컴포넌트.css 상대경로 ); */
 @import url(./common/theme.css);
 @import url(./common/modern-reset.css);
+
+/* 공통ui */
+@import url(./components/styles/common-atom.css);
+@import url(./components/styles/header-logo.css);
+@import url(./components/styles/header-search-bar.css);
+@import url(./components/styles/header-beauty-link.css);
+@import url(./components/styles/header-login.css);
+@import url(./components/styles/header-btn-box.css);
+@import url(./components/styles/top-banner.css);
+@import url(./components/styles/gnb.css);
+@import url(./components/styles/lnb.css);
+@import url(./components/styles/lnb-btn.css);
+@import url(./components/styles/site-map.css);
+@import url(./components/styles/footer-sns.css);
+@import url(./components/styles/footer-certification.css);
+@import url(./components/styles/footer-CS.css);
+@import url(./components/styles/footer-about.css);
+@import url(./components/styles/footer-copyright.css);

@@ -1,0 +1,20 @@
+.footer {
+  .footer-sns {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    svg {
+      display: inline-block;
+      inline-size: 25px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .footer-sns {
+      gap: 20px;
+      svg {
+        inline-size: 30px;
+      }
+    }
+  }
+}

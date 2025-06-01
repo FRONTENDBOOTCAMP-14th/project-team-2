@@ -1,0 +1,52 @@
+.header {
+  .header-login {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    .header-login {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1200;
+      font-size: var(--xs-textSize);
+      color: var(--content);
+      display: flex;
+      > a,
+      div {
+        padding: var(--m-gap);
+      }
+
+      .header-CS {
+        position: relative;
+        padding: var(--m-gap);
+        &:hover {
+          .header-qna {
+            display: flex;
+          }
+        }
+      }
+
+      span {
+        width: 1px;
+        height: 13px;
+        background: var(--content-100);
+      }
+      .header-qna {
+        padding: var(--s-gap);
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--m-gap);
+        position: absolute;
+        top: calc(100%);
+        right: 0;
+        width: 100px;
+        background: var(--white);
+        border: 1px solid var(--content);
+        display: none;
+      }
+    }
+  }
+}
