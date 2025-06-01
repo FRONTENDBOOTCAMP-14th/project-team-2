@@ -1,13 +1,12 @@
-/* 공통적용 */
-input {
-  margin: 0;
-  accent-color: var(--black);
-  inline-size: var(--xl-gap);
-  block-size: var(--xl-gap);
-}
-
 /* 주문상품 컴포넌트 스타일링 */
 .section-order-items {
+  input {
+    margin: 0;
+    accent-color: var(--black);
+    inline-size: var(--xl-gap);
+    block-size: var(--xl-gap);
+  }
+
   background: var(--gray-50);
   display: flex;
   flex-flow: column nowrap;
