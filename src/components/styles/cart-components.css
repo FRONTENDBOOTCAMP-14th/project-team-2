@@ -1,322 +1,64 @@
-@import url(../../common/theme.css);
-@import url(../../common/modern-reset.css);
-
-:root {
-  /* 색상 */
-  --gray-50: #ebeef3;
-
-  /* 사이즈 */
-  --size-14: 0.875rem;
-}
-
-/* 공통적용 */
-input {
-  margin: 0;
-  accent-color: var(--black);
-  inline-size: var(--xl-gap);
-  block-size: var(--xl-gap);
-}
-
-/* 모바일(375px) 버전 */
+/* 조립초안 - 모바일(375px) 버전 및 PC(1280px) 반응형 버전 */
 .section-cart {
   display: flex;
   flex-flow: column;
+  justify-content: center;
   min-inline-size: 23.4375rem;
 
-  /* 장바구니 제목 컴포넌트 */
-  .title {
-    display: flex;
-    /* inline-size: 100%; */
-    align-items: center;
-    padding-inline: var(--xl-gap);
-    padding-block: var(--m-gap);
-    margin-block-start: 2.125rem;
-    column-gap: var(--xl-gap);
-
-    h2 {
-      font-size: var(--m-textSize);
-    }
-  }
-
-  /* 상품선택 컴포넌트 스타일링 */
-  .section-select-items {
-    display: flex;
-    flex-flow: row;
-    inline-size: 100%;
-    padding-inline: var(--l-gap);
-    padding-block: var(--l-gap);
-    column-gap: 9.375rem;
-    justify-content: space-between;
-
-    label {
-      white-space: nowrap;
-    }
-
-    .input-select {
+  @media (min-width: 1280px) {
+    .section-both {
       display: flex;
-      column-gap: var(--l-gap);
-      align-items: center;
+      flex-flow: row nowrap;
+      column-gap: 2.75rem;
+      justify-content: center;
 
-      input {
-        accent-color: var(--black);
-        inline-size: var(--xl-gap);
-        block-size: var(--xl-gap);
+      .section-left {
+        inline-size: 46.375rem;
+      }
+      .section-rigth {
+        inline-size: 17.75rem;
       }
     }
+  }
 
-    .btn-select {
-      --size-6: 0.375rem;
-      --size-14: 0.875rem;
+  .section-items-status {
+    display: none;
 
-      border: 1px solid #dbd6d3;
-      border-radius: var(--size-6);
-      padding-inline: var(--m-gap);
-      padding-block: var(--size-6);
-      font-size: var(--size-14);
-      white-space: nowrap;
+    @media (min-width: 1280px) {
+      display: block;
     }
   }
 
-  /* 주문상품 컴포넌트 스타일링 */
+  /* 주문상품 컴포넌트 PC반응형 스타일링 */
   .section-order-items {
-    background: var(--gray-50);
-    display: flex;
-    flex-flow: column nowrap;
-    padding-inline: var(--m-gap);
-    padding-block: var(--l-gap);
-
-    .section-background {
+    @media (min-width: 1280px) {
       background: var(--white);
-      border-radius: 0.75rem;
-      padding-inline: var(--s-gap);
-
-      .input-name {
-        margin-block-end: 1.875rem;
-      }
-
-      figure {
-        display: flex;
-        margin-inline-start: 3.125rem;
-        column-gap: var(--l-gap);
-        position: relative;
-
-        img {
-          inline-size: 4rem;
-          block-size: 5.125rem;
-          border-radius: 0.375rem;
-        }
-
-        em {
-          font-weight: 700;
-          font-size: var(--m-textSize);
-        }
-
-        s {
-          font-size: var(--size-14);
-          color: var(--content);
-        }
-      }
-
-      .input-delivery {
-        display: flex;
-        padding-inline: var(--l-gap);
-        padding-block: var(--xxl-gap);
-        column-gap: var(--l-gap);
-
-        border-bottom: 1px solid var(--gray-50);
-      }
-
-      .section-product-status {
-        display: flex;
-        column-gap: var(--s-gap);
-        padding-inline-start: var(--l-gap);
-        padding-block-start: var(--size-14);
-        padding-block-end: var(--xl-gap);
-
-        align-items: center;
-      }
-
-      .input-name {
-        display: flex;
-        flex-flow: row nowrap;
-        column-gap: var(--size-14);
-        justify-content: space-between;
-
-        .input-items-name {
-          display: flex;
-          align-items: center;
-          column-gap: var(--size-14);
-        }
-      }
-    }
-
-    .input-delivery,
-    .section-product-status,
-    .input-name {
-      padding-inline: var(--l-gap);
-    }
-
-    .section-price-total {
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: 0.125rem;
-      background: var(--gray-50);
-      margin: var(--xl-gap);
-      padding-inline: 4rem;
-      padding-block: var(--l-gap);
-      text-align: center;
-      align-items: center;
-      border-radius: var(--s-gap);
-
-      p {
-        color: gray;
-        font-size: var(--size-14);
-        font-weight: 700;
-        white-space: nowrap;
-      }
-
-      output {
-        color: var(--black);
-        font-weight: 700;
-      }
     }
   }
+}
 
-  .btn-quantity {
-    display: flex;
-    background: var(--gray-50);
-    border: none;
-    border-radius: 16px;
-    padding: 0.3125rem 0.625rem;
-    opacity: 1;
+/* 주문금액 컴포넌트 PC반응형 스타일링 */
+.section-address-info,
+.section-order-notice {
+  display: none;
 
-    position: absolute;
-    top: 22.5rem;
-    left: 10rem;
-    margin-top: var(--l-gap);
+  @media (min-width: 1280px) {
+    display: block;
+    border: 1px solid var(--gray-60);
 
-    output {
-      font-size: var(--size-14);
+    .section-address,
+    .section-address-2 {
+      margin-block-end: var(--xl-gap);
     }
 
-    .btn-increase,
-    .btn-decrease {
-      border: 0;
-      display: flex;
-      align-items: center;
+    .section-address-3 {
+      background-color: rgba(215, 172, 255, 0.6);
+      border-radius: 4px;
+      padding: 0.125rem 0.25rem;
     }
 
-    .btn-increase {
-      order: 1;
+    a {
+      margin-block-start: var(--xl-gap);
     }
-  }
-
-  /* 주문금액 컴포넌트 스타일링 */
-  .section-order-price {
-    --orange: #fa622f;
-
-    display: flex;
-    flex-flow: column nowrap;
-    color: var(--content);
-    font-size: var(--m-textSize);
-    white-space: nowrap;
-
-    padding-inline: var(--l-gap);
-    padding-block-start: var(--l-gap);
-    padding-block-end: 0.625rem;
-
-    .section-price {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      column-gap: 14.0625rem;
-      padding-block: var(--s-gap);
-    }
-
-    .section-discount {
-      display: flex;
-      flex-flow: column nowrap;
-
-      .section-discount-group {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        column-gap: 12.5rem;
-        margin-block: 0.375rem;
-
-        .section-discount-group-2 {
-          justify-items: center;
-          color: var(--orange);
-        }
-      }
-
-      p {
-        display: flex;
-        flex-flow: row nowrap;
-        font-size: var(--s-textSize);
-        justify-content: end;
-      }
-    }
-
-    .section-price-2,
-    .section-discount-group-2,
-    .section-delivery-2 {
-      font-weight: 700;
-    }
-  }
-
-  .section-delivery {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding-block: 0.875rem;
-    column-gap: 15.5rem;
-  }
-
-  .section-pay {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-block: var(--l-gap);
-
-    .section-pay-group {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center;
-      column-gap: 10.25rem;
-      margin-block-end: 0.375rem;
-
-      .section-pay-group-2 {
-        font-size: var(--l-textSize);
-        font-weight: 900;
-      }
-    }
-
-    p {
-      display: flex;
-      flex-flow: row nowrap;
-      font-size: var(--s-textSize);
-      line-height: var(--m-textLineHeight);
-      justify-content: end;
-    }
-  }
-
-  /* 버튼 컴포넌트 스타일링 */
-  .section-btn {
-    padding-inline: var(--m-gap);
-  }
-
-  .btn-login {
-    inline-size: 100%;
-    block-size: 3.4375rem;
-    background: var(--primary-200);
-    border: none;
-    border-radius: 0.625rem;
-    padding: 0;
-    margin-block-start: var(--l-gap);
-
-    font-size: var(--m-textSize);
-    color: var(--white);
-    text-align: center;
   }
 }
