@@ -10,12 +10,27 @@
     display: flex;
     column-gap: var(--l-gap);
     align-items: center;
+    position: relative;
+
+    label {
+      display: flex;
+      column-gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
 
     input {
+      position: absolute;
       accent-color: var(--primary-200);
       inline-size: var(--xl-gap);
       block-size: var(--xl-gap);
       cursor: pointer;
+    }
+
+    input:checked + label {
+      svg {
+        fill: var(--primary-200);
+      }
     }
   }
 
