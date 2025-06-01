@@ -1,0 +1,66 @@
+:root {
+  --banner-height: 30px;
+  --header-height: 90px;
+}
+@media (min-width: 1280px) {
+  :root {
+    --banner-height: 50px;
+    --header-heignt: 197px;
+  }
+}
+body.banner-closed {
+  .lnb {
+    height: calc(100dvh - var(--header-height));
+  }
+  @media (min-width: 1280px) {
+    .lnb {
+      height: calc(100dvh - (var(--header-height) + var(--banner-height) + 60px));
+    }
+  }
+}
+.header {
+  --gray-300: #ddd;
+  --gray-200: #f7f7f7;
+
+  .lnb {
+    border: 1px solid var(--gray-300);
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    width: clamp(250px, 100%, 20vw);
+    height: calc(100dvh - (var(--banner-height) + var(--header-height)));
+    background: var(--white);
+    overflow-y: scroll;
+  }
+  .lnb-list {
+    padding: var(--s-gap) var(--m-gap);
+    display: flex;
+    gap: var(--s-gap);
+    &:hover,
+    &:focus-within {
+      color: var(--primary-200);
+      background: var(--gray-200);
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: var(--s-gap);
+      &:focus {
+        outline: 0;
+      }
+      span {
+        display: block;
+        align-content: center;
+        line-height: 1;
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .lnb {
+      height: calc(90dvh - (var(--banner-height) + var(--header-height)));
+    }
+  }
+}
