@@ -130,7 +130,7 @@ input {
 
   .btn-increase,
   .btn-decrease {
-    inline-size: 16px;
+    inline-size: 1rem;
     border: 0;
     display: flex;
     align-items: center;
