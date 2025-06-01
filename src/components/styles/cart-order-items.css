@@ -1,14 +1,3 @@
-@import url(../../common/theme.css);
-@import url(../../common/modern-reset.css);
-
-:root {
-  /* 색상 */
-  --gray-50: #ebeef3;
-
-  /* 사이즈 */
-  --size-14: 0.875rem;
-}
-
 /* 공통적용 */
 input {
   margin: 0;
@@ -22,13 +11,15 @@ input {
   background: var(--gray-50);
   display: flex;
   flex-flow: column nowrap;
-  padding-inline: var(--xl-gap);
-  padding-block: var(--s-gap);
+  padding-inline: var(--m-gap);
+  padding-block: var(--l-gap);
 
   .section-background {
     background: var(--white);
     border-radius: 0.75rem;
     padding-inline: var(--s-gap);
+    padding-block-end: var(--xl-gap);
+    position: relative;
 
     .input-name {
       margin-block-end: 1.875rem;
@@ -38,7 +29,6 @@ input {
       display: flex;
       margin-inline-start: 3.125rem;
       column-gap: var(--l-gap);
-      position: relative;
 
       img {
         inline-size: 4rem;
@@ -52,7 +42,7 @@ input {
       }
 
       s {
-        font-size: var(--size-14);
+        font-size: var(--s-textSize);
         color: var(--content);
       }
     }
@@ -66,11 +56,11 @@ input {
       border-bottom: 1px solid var(--gray-50);
     }
 
-    .section-product-status {
+    .section-order-items-status {
       display: flex;
       column-gap: var(--s-gap);
       padding-inline-start: var(--l-gap);
-      padding-block-start: var(--size-14);
+      padding-block-start: var(--s-textSize);
       padding-block-end: var(--xl-gap);
 
       align-items: center;
@@ -78,19 +68,18 @@ input {
 
     .input-name {
       display: flex;
-      column-gap: var(--size-14);
       justify-content: space-between;
 
       .input-items-name {
         display: flex;
         align-items: center;
-        column-gap: var(--size-14);
+        column-gap: var(--s-textSize);
       }
     }
   }
 
   .input-delivery,
-  .section-product-status,
+  .section-items-status,
   .input-name {
     padding-inline: var(--l-gap);
   }
@@ -105,11 +94,12 @@ input {
     padding-block: var(--l-gap);
     text-align: center;
     align-items: center;
+    line-height: var(--m-textLineHeight);
     border-radius: var(--s-gap);
 
     p {
       color: gray;
-      font-size: var(--size-14);
+      font-size: var(--s-textSize);
       font-weight: 700;
       white-space: nowrap;
     }
@@ -130,16 +120,17 @@ input {
   opacity: 1;
 
   position: absolute;
-  top: 13.75rem;
-  left: 10rem;
+  top: 13.125rem;
+  left: 8.75rem;
   margin-top: var(--l-gap);
 
   output {
-    font-size: var(--size-14);
+    font-size: var(--s-textSize);
   }
 
   .btn-increase,
   .btn-decrease {
+    inline-size: 16px;
     border: 0;
     display: flex;
     align-items: center;
