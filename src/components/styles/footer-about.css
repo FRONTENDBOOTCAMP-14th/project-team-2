@@ -1,0 +1,9 @@
+.footer {
+  .footer-about {
+    word-break: keep-all;
+    .footer-about-adress {
+      font-style: normal;
+      margin-block-end: var(--xl-gap);
+    }
+  }
+}
