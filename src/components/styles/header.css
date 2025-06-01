@@ -42,15 +42,14 @@
     font-size: var(--s-textSize);
     position: relative;
 
+    .lnb-wrapper:hover {
+      .lnb {
+        display: block;
+      }
+    }
     .lnb {
       top: 100%;
       display: none;
-    }
-    .lnb-btn:hover {
-      .lnb,
-      .lnb:hover {
-        display: block;
-      }
     }
 
     .early-delivery {

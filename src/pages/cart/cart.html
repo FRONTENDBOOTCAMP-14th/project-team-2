@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../../pages/cart/styles/cart.css" />
-    <script type="module" src="../js/main-component.js"></script>
+    <script type="module" src="../../main.js"></script>
     <title>장바구니 페이지</title>
   </head>
   <body>
@@ -116,11 +116,13 @@
         </div>
       </div>
       <div class="header-bottom header-width">
-        <button type="button" class="lnb-btn" aria-label="카테고리 열기">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z" fill="#333333" style="fill: #333333; fill: color(display-p3 0.2 0.2 0.2); fill-opacity: 1" />
-          </svg>
-          <span class="lnb-btn-text">카테고리</span>
+        <div class="lnb-wrapper">
+          <button type="button" class="lnb-btn" aria-label="카테고리 열기">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z" fill="#333333" style="fill: #333333; fill: color(display-p3 0.2 0.2 0.2); fill-opacity: 1" />
+            </svg>
+            <span class="lnb-btn-text">카테고리</span>
+          </button>
           <ul class="lnb">
             <li class="lnb-list">
               <a href="#">
@@ -585,7 +587,7 @@
               </a>
             </li>
           </ul>
-        </button>
+        </div>
 
         <nav>
           <ul class="gnb">
