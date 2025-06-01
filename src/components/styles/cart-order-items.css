@@ -23,11 +23,27 @@ input {
 
     .input-delivery,
     .input-name {
+      position: relative;
+
+      label {
+        display: flex;
+        column-gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+      }
+
       input {
+        position: absolute;
         accent-color: var(--primary-200);
         inline-size: var(--xl-gap);
         block-size: var(--xl-gap);
         cursor: pointer;
+      }
+
+      input:checked + label {
+        svg {
+          fill: var(--primary-200);
+        }
       }
     }
 
@@ -74,49 +90,49 @@ input {
 
       align-items: center;
     }
-
-    .input-name {
-      display: flex;
-      justify-content: space-between;
-
-      .input-items-name {
-        display: flex;
-        align-items: center;
-        column-gap: var(--s-textSize);
-      }
-    }
   }
 
-  .input-delivery,
-  .section-items-status,
   .input-name {
-    padding-inline: var(--l-gap);
+    display: flex;
+    justify-content: space-between;
+
+    .input-items-name {
+      display: flex;
+      align-items: center;
+      column-gap: var(--s-textSize);
+    }
+  }
+}
+
+.input-delivery,
+.section-items-status,
+.input-name {
+  padding-inline: var(--l-gap);
+}
+
+.section-price-total {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 0.125rem;
+  background: var(--gray-50);
+  margin: var(--xl-gap);
+  padding-inline: 4rem;
+  padding-block: var(--l-gap);
+  text-align: center;
+  align-items: center;
+  line-height: var(--m-textLineHeight);
+  border-radius: var(--s-gap);
+
+  p {
+    color: gray;
+    font-size: var(--s-textSize);
+    font-weight: 700;
+    white-space: nowrap;
   }
 
-  .section-price-total {
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 0.125rem;
-    background: var(--gray-50);
-    margin: var(--xl-gap);
-    padding-inline: 4rem;
-    padding-block: var(--l-gap);
-    text-align: center;
-    align-items: center;
-    line-height: var(--m-textLineHeight);
-    border-radius: var(--s-gap);
-
-    p {
-      color: gray;
-      font-size: var(--s-textSize);
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    output {
-      color: var(--black);
-      font-weight: 700;
-    }
+  output {
+    color: var(--black);
+    font-weight: 700;
   }
 }
 
