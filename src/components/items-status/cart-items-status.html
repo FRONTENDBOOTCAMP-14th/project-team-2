@@ -10,8 +10,7 @@
     <title>상품상태 컴포넌트</title>
   </head>
   <body>
-    <section class="section-items-status">
-      <h2 class="sr-only">주문상품상태</h2>
+    <div class="section-items-status" role="region" aria-label="주문상품상태">
       <div class="status-refrigerated-group status-group">
         <div class="item-open">
           <div class="status-refrigerated">
@@ -104,7 +103,7 @@
           <p>해당 상품이 없습니다</p>
         </div>
       </div>
-    </section>
+    </div>
     <script type="module">
       let toggleBtns = document.querySelectorAll('.item-open');
 
