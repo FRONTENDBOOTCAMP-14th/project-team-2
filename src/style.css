@@ -21,6 +21,13 @@
 @import url(./components/styles/cart-order-price.css);
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
+@import url(./components/styles/footer.css);
+/* popup 컴포넌트 url */
+@import url(./components/styles/popup-components.css);
+@import url(./components/styles/popup-review-title.css);
+@import url(./components/styles/popup-review-product.css);
+@import url(./components/styles/popup-input-review.css);
+@import url(./components/styles/popup-button.css);
 
 /* 공통ui */
 @import url(./components/styles/header.css);
