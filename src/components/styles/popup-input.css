@@ -55,4 +55,32 @@
       line-height: var(--l-textLineHeight);
     }
   }
+
+  .checkbox-inquiry {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    bottom: 3.125rem;
+    left: 6.25rem;
+
+    input {
+      position: absolute;
+      inline-size: var(--xl-gap);
+      block-size: var(--xl-gap);
+      cursor: pointer;
+    }
+
+    label {
+      display: flex;
+      column-gap: 0.5rem;
+      font-weight: 400;
+    }
+
+    input:checked + label {
+      svg {
+        fill: var(--primary-200);
+      }
+    }
+  }
 }
