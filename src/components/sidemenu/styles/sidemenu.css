@@ -8,6 +8,19 @@ body{
   object-fit: cover;
 }
 
+
+/* details 간격 줄이기 */
+details,
+summary {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  list-style: none; 
+  display: block;   
+}
+
 /* 체크박스 - 기본 ui 안보이게 (키보드로 접근안됌 수정필요*/ 
 input[type="checkbox"] {
   position: absolute;
@@ -23,13 +36,14 @@ input[type="checkbox"] {
   font-size: var(--sm-textSize);
 }
 
-/* 체크 박스 - icon*/
+/* 체크 박스 - icon */
 .bg-icon {
   input:checked + label {
     background-image: url(../../../assets/svg/checked.svg);
   }
 
   .icon {
+    display: block;
     block-size: var(--xxl-gap);
     align-content: center;
     text-indent: calc(var(--xxl-gap) + 6px);
@@ -59,20 +73,21 @@ input[type="checkbox"] {
   
 }
 
+
 /* sidebar 카테고리 스타일링 */
 .category{
   display: flex;
   flex-flow: column nowrap;
-  gap: 8px;
   border-bottom: 1px solid #eee;
-  padding-bottom: .875rem;
+  padding-block: 14px;
+
 
   .category-toggle{
     font-size: var(--m-textSize);
     font-weight: 600;
     text-align: left;
     border: 0;
-    margin-block: 10px;  
+    margin-block: 14px;  
   }
 }
 
@@ -107,7 +122,6 @@ input[type="checkbox"] {
   width: 100%;
   max-height: 80%;
   background: white;
-  border-bottom: 1px solid var(--gray-100);
   padding: 16px;
   z-index: 1000;
   transition: bottom 0.3s ease;
