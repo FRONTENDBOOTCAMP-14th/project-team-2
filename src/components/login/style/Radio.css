@@ -1,0 +1,64 @@
+.login-radio {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.login-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.login-radio-input {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    background-color: white;
+}
+
+.login-radio-input:checked {
+    border-color: #5F0080;
+}
+
+.login-radio-input:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #5F0080;
+    border-radius: 50%;
+}
+
+.login-radio-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+}
+
+.login-radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-radio-horizontal {
+    flex-direction: row;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .login-radio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} 

@@ -1,0 +1,37 @@
+.header {
+  .lnb-btn {
+    padding: var(--l-gap) var(--s-gap);
+    display: flex;
+    align-items: center;
+    &:hover {
+      .lnb-btn-text {
+        color: var(--primary-200);
+      }
+      svg {
+        fill: var(--primary-200);
+      }
+    }
+    .lnb-btn-text {
+      display: none;
+    }
+    svg {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    .lnb-btn {
+      gap: var(--s-gap);
+      .lnb-btn-text {
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    --xxxl-gap: 26px;
+
+    .lnb-btn {
+      padding-block: var(--xxxl-gap);
+    }
+  }
+}

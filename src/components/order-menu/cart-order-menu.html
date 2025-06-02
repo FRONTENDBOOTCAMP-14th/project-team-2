@@ -1,0 +1,76 @@
+<!-- PC반응형 오더메뉴 컴포넌트 -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>오더메뉴 컴포넌트</title>
+  </head>
+  <body>
+    <div class="order-menu" role="region" aria-label="오더메뉴">
+      <div class="section-address-info" role="region" aria-label="배송지정보">
+        <div class="section-address">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_42_669)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0062 30C18.0062 30 8.7002 22.544 8.7002 15.306C8.7002 12.8379 9.68065 10.4709 11.4259 8.72566C13.1711 6.98045 15.5381 6 18.0062 6C20.4743 6 22.8413 6.98045 24.5865 8.72566C26.3317 10.4709 27.3122 12.8379 27.3122 15.306C27.3122 22.544 18.0062 30 18.0062 30Z" stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17.9124 17.907C19.45 17.907 20.6964 16.6606 20.6964 15.123C20.6964 13.5854 19.45 12.339 17.9124 12.339C16.3749 12.339 15.1284 13.5854 15.1284 15.123C15.1284 16.6606 16.3749 17.907 17.9124 17.907Z" stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_42_669">
+                <rect width="36" height="36" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="section-address-1">배송지</p>
+        </div>
+        <span class="section-address-2">서울 종로구 종로3길17, 광화물D타워 D1동 16층, 17층</span>
+        <span class="section-address-3">샛별배송</span>
+        <a href="/">배송지 변경</a>
+      </div>
+      <div class="section-wrapper" role="region" aria-label="주문금액">
+        <div class="section section-order-price" role="region" aria-label="상품금액">
+          <div class="section-price">
+            <span class="section-price-1">상품금액</span>
+            <span class="section-price-2">0원</span>
+          </div>
+          <div class="section-discount">
+            <div class="section-discount-group">
+              <span class="section-discount-group-1">상품할인금액</span>
+              <span class="section-discount-group-2">-0원</span>
+            </div>
+            <p>로그인 후 할인 금액 적용</p>
+          </div>
+          <div class="section-delivery">
+            <span class="section-delivery-1">배송비</span>
+            <span class="section-delivery-2">3,000원</span>
+          </div>
+          <div class="section-pay">
+            <div class="section-pay-group">
+              <span class="section-pay-group-1">결제예정금액</span>
+              <span class="section-pay-group-2">0원</span>
+            </div>
+            <p>쿠폰/적립금은 주문서에서 사용 가능합니다</p>
+            <div class="section-earn-info">
+              <span>적립</span>
+              <p>최대 8원 적립 일반 0.1%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-btn">
+        <button class="btn-login">로그인</button>
+        <button class="btn-order">주문하기</button>
+      </div>
+      <div class="section-order-notice">
+        <p>쿠폰/적립금은 주문서에서 사용 가능합니다.</p>
+        <p>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</p>
+        <p>[마이컬리 > 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</p>
+        <p>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다.</p>
+        <p>상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</p>
+      </div>
+    </div>
+  </body>
+</html>

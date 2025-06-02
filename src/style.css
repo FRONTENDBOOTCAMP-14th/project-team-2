@@ -4,10 +4,41 @@
 @import url(./common/modern-reset.css);
 
 
-/* 컴포넌트 연결 */
+/* product-list 컴포넌트*/
 @import url(./components/list-header/styles/list-header.css);
 @import url(./components/list-nav/styles/list-nav.css);
 @import url(./components/btn-navi/styles/btn-navi.css);
 @import url(./components/sidemenu/styles/sidemenu.css);
 @import url(./components/button/styles/button.css);
 @import url(./components/products/styles/product-card.css);
+
+/* cart컴포넌트 url */
+@import url(./components/styles/cart-address-info.css);
+@import url(./components/styles/cart-button.css);
+@import url(./components/styles/cart-items-status.css);
+@import url(./components/styles/cart-order-items.css);
+@import url(./components/styles/cart-order-notice.css);
+@import url(./components/styles/cart-order-price.css);
+@import url(./components/styles/cart-select-items.css);
+@import url(./components/styles/cart-title.css);
+
+/* 공통ui */
+@import url(./components/styles/header.css);
+@import url(./components/styles/footer.css);
+@import url(./components/styles/common-atom.css);
+@import url(./components/styles/header-logo.css);
+@import url(./components/styles/header-search-bar.css);
+@import url(./components/styles/header-beauty-link.css);
+@import url(./components/styles/header-login.css);
+@import url(./components/styles/header-btn-box.css);
+@import url(./components/styles/top-banner.css);
+@import url(./components/styles/gnb.css);
+@import url(./components/styles/lnb.css);
+@import url(./components/styles/lnb-btn.css);
+@import url(./components/styles/site-map.css);
+@import url(./components/styles/footer-sns.css);
+@import url(./components/styles/footer-certification.css);
+@import url(./components/styles/footer-CS.css);
+@import url(./components/styles/footer-about.css);
+@import url(./components/styles/footer-copyright.css);
+
