@@ -16,7 +16,7 @@
         border: none;
         background: var(--white);
       }
-      .header-search-label {
+      .header-search-btn {
         position: absolute;
         top: 50%;
         right: var(--m-gap);
@@ -40,7 +40,7 @@
       .header-search-input {
         padding: var(--l-gap) var(--l-gap);
       }
-      .header-search-label {
+      .header-search-btn {
         right: var(--m-gap);
       }
     }
