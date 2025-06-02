@@ -605,8 +605,91 @@
       </div>
     </header>
     <main>
+      <section class="main-banner-section">
+        <h2 class="sr-only">이벤트 배너</h2>
+        <div class="swiper mySwiper-banner">
+          <ul class="main-banner-list swiper-wrapper">
+            <li class="banner-cell swiper-slide">
+              <a href="#">
+                <figure>
+                  <picture aria-hidden="true">
+                    <source srcset="/src/assets/images/main-banner01.avif" />
+                    <img src="/src/assets/images/main-banner01.png" alt="" />
+                  </picture>
+                  <figcaption class="sr-only">컬리카드 챌린지 참여 시 최대 17만원 혜택 프로모션</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="banner-cell swiper-slide">
+              <a href="#">
+                <figure>
+                  <picture aria-hidden="true">
+                    <source srcset="/src/assets/images/main-banner02.avif" />
+                    <img src="/src/assets/images/main-banner02.png" alt="" />
+                  </picture>
+                  <figcaption class="sr-only">친구 초대하면 제한없이 서로 5천원 적립 프로모션</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="banner-cell swiper-slide">
+              <a href="#">
+                <figure>
+                  <picture aria-hidden="true">
+                    <source srcset="/src/assets/images/main-banner03.avif" />
+                    <img src="/src/assets/images/main-banner03.png" alt="" />
+                  </picture>
+                  <figcaption class="sr-only">이 주의 특가 한 눈에 보기</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="banner-cell swiper-slide">
+              <a href="#">
+                <figure>
+                  <picture aria-hidden="true">
+                    <source srcset="/src/assets/images/main-banner05.avif" />
+                    <img src="/src/assets/images/main-banner05.png" alt="" />
+                  </picture>
+                  <figcaption class="sr-only">이달의 카드 혜택 : 최대 10% 쿠폰 받기</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="banner-cell swiper-slide">
+              <a href="#">
+                <figure>
+                  <picture aria-hidden="true">
+                    <source srcset="/src/assets/images/main-banner06.avif" />
+                    <img src="/src/assets/images/main-banner06.png" alt="" />
+                  </picture>
+                  <figcaption class="sr-only">컬리 과일 가게 : 멜론 9,900원 프로모션</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-container">
+          <button class="swiper-button-next mySwiper-banner-next btn-next" aria-label="다음 제품 보기">
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.284858 17.699C0.455084 17.8731 0.682998 17.9791 0.925841 17.9972C1.16868 18.0152 1.40977 17.944 1.60386 17.797L1.69886 17.715L9.69886 9.89798C9.87104 9.72974 9.97676 9.50504 9.9966 9.26513C10.0164 9.02523 9.94907 8.78621 9.80686 8.59198L9.72686 8.49598L2.00386 0.313979C1.82933 0.128878 1.59081 0.0172553 1.33687 0.00183905C1.08294 -0.0135772 0.832669 0.0683727 0.637031 0.231001C0.441392 0.39363 0.315091 0.62471 0.283847 0.87719C0.252603 1.12967 0.318766 1.38457 0.46886 1.58998L0.548858 1.68598L7.59786 9.15498L0.300857 16.285C0.126726 16.4552 0.0206928 16.6831 0.00265026 16.926C-0.0153923 17.1688 0.0557947 17.4099 0.202857 17.604L0.284858 17.699Z"
+                fill="#333333"
+                style="fill: #333333; fill: color(display-p3 0.2 0.2 0.2); fill-opacity: 1"
+              />
+            </svg>
+          </button>
+          <button class="swiper-button-prev mySwiper-banner-prev btn-prev" aria-label="이전 제품 보기">
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.284858 17.699C0.455084 17.8731 0.682998 17.9791 0.925841 17.9972C1.16868 18.0152 1.40977 17.944 1.60386 17.797L1.69886 17.715L9.69886 9.89798C9.87104 9.72974 9.97676 9.50504 9.9966 9.26513C10.0164 9.02523 9.94907 8.78621 9.80686 8.59198L9.72686 8.49598L2.00386 0.313979C1.82933 0.128878 1.59081 0.0172553 1.33687 0.00183905C1.08294 -0.0135772 0.832669 0.0683727 0.637031 0.231001C0.441392 0.39363 0.315091 0.62471 0.283847 0.87719C0.252603 1.12967 0.318766 1.38457 0.46886 1.58998L0.548858 1.68598L7.59786 9.15498L0.300857 16.285C0.126726 16.4552 0.0206928 16.6831 0.00265026 16.926C-0.0153923 17.1688 0.0557947 17.4099 0.202857 17.604L0.284858 17.699Z"
+                fill="#333333"
+                style="fill: #333333; fill: color(display-p3 0.2 0.2 0.2); fill-opacity: 1"
+              />
+            </svg>
+          </button>
+          <div class="swiper-pagination banner-pagination"></div>
+        </div>
+      </section>
       <section class="main-card-section">
-        <h2 class="main-section-title">이 상품 어때요?</h2>
+        <a href="#" class="main-section-title"><h2>이 상품 어때요?</h2></a>
         <div class="main-card-carousel swiper mySwiper mySwiper1">
           <ul class="main-card-list swiper-wrapper">
             <li class="cell swiper-slide">
@@ -810,11 +893,20 @@
           </button>
         </div>
       </section>
-      <section class="">
-        <h2 class="sr-only">혜택 바로 보기</h2>
+      <section class="main-event-section">
+        <h2 class="sr-only">퍼플위크 이벤트 배너</h2>
+        <a href="#">
+          <figure>
+            <picture>
+              <source srcset="/src/assets/images/main-banner04.avif" />
+              <img src="/src/assets/images/main-banner04.png" alt="" />
+            </picture>
+            <figcaption class="sr-only">10월 퍼플위크 프로모션: 적립률 UP, 3종 쿠폰팩 제공</figcaption>
+          </figure>
+        </a>
       </section>
       <section class="main-card-section">
-        <h2 class="main-section-title">놓치면 후회할 가격</h2>
+        <a href="#" class="main-section-title"><h2>놓치면 후회할 가격</h2></a>
         <div class="main-card-carousel swiper mySwiper mySwiper2">
           <ul class="main-card-list swiper-wrapper">
             <li class="cell swiper-slide">
@@ -1430,6 +1522,22 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      let swiperBanner = new Swiper('.mySwiper-banner', {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+          nextEl: '.mySwiper-banner-next',
+          prevEl: '.mySwiper-banner-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
       let swiper1 = new Swiper('.mySwiper1', {
         slidesPerView: 2.5,
         spaceBetween: 20,
