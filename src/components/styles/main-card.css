@@ -1,0 +1,103 @@
+.main-card {
+  inline-size: 100%;
+  max-inline-size: 15.625rem;
+
+  .main-card-img {
+    margin-block-end: var(--m-gap);
+    position: relative;
+    source,
+    img {
+      inline-size: 100%;
+      display: block;
+    }
+  }
+  .main-card-btn {
+    --primary-50: rgb(42, 0, 56, 0.5);
+    --btn-size: 2.8125rem;
+
+    position: absolute;
+    bottom: 0.9375rem;
+    right: 1.0625rem;
+    background: var(--primary-50);
+    max-inline-size: var(--btn-size);
+    padding: var(--m-gap);
+    border-radius: 50px;
+
+    svg {
+      display: block;
+      translate: -2px 0;
+    }
+  }
+  .main-card-info {
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--xs-gap);
+    font-size: var(--xs-textSize);
+    line-height: var(--s-textLineHeight);
+    color: var(--gray-400);
+  }
+  .main-early-express {
+    font-weight: 500;
+  }
+  .main-card-title {
+    color: var(--content);
+    font-size: var(--m-textSize);
+    line-height: var(--m-textLineHeight);
+  }
+  .main-card-sale-price {
+    color: var(--secondary-200);
+    font-size: var(--m-textSize);
+    font-weight: 500;
+    .main-card-sale {
+      color: var(--orange);
+    }
+  }
+  .main-card-price {
+    line-height: var(--m-textLineHeight);
+    text-decoration: line-through;
+  }
+  .main-card-sub {
+    line-height: var(--m-textLineHeight);
+  }
+  .main-card-badge {
+    display: flex;
+    gap: var(--s-gap);
+  }
+  .main-badge {
+    font-weight: 500;
+    background: var(--gray-100);
+    border-radius: 4px;
+    padding: var(--xs-gap);
+  }
+  .badge-karly {
+    color: var(--primary-200);
+  }
+  .badge-limited {
+    color: var(--content);
+  }
+}
+@media (min-width: 1280px) {
+  .main-card {
+    .main-card-img {
+      margin-block-end: var(--l-gap);
+    }
+
+    .main-card-info {
+      gap: var(--s-gap);
+      line-height: var(--m-textLineHeight);
+    }
+    .main-card-title {
+      line-height: var(--l-textLineHeight);
+    }
+    .main-card-sale-price {
+      font-size: var(--l-textSize);
+    }
+    .main-card-price {
+      line-height: var(--l-textLineHeight);
+    }
+    .main-card-sub {
+      line-height: var(--l-textLineHeight);
+    }
+  }
+}
