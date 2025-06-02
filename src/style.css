@@ -4,7 +4,6 @@
 @import url(./common/modern-reset.css);
 
 /* cart컴포넌트 url */
-@import url(./components/styles/header.css);
 @import url(./components/styles/cart-address-info.css);
 @import url(./components/styles/cart-button.css);
 @import url(./components/styles/cart-items-status.css);
@@ -13,8 +12,10 @@
 @import url(./components/styles/cart-order-price.css);
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
-@import url(./components/styles/footer.css);
+
 /* 공통ui */
+@import url(./components/styles/header.css);
+@import url(./components/styles/footer.css);
 @import url(./components/styles/common-atom.css);
 @import url(./components/styles/header-logo.css);
 @import url(./components/styles/header-search-bar.css);
