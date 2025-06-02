@@ -1,0 +1,52 @@
+/* 후기작성 컨텐츠 컴포넌트 스타일링 */
+.form-input {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--l-gap) 0 3.625rem 0;
+  row-gap: var(--m-gap);
+  border-block-end: 1px solid var(--gray-100);
+
+  label {
+    font-size: var(--m-textSize);
+    font-weight: 600;
+    line-height: var(--m-textLineHeight);
+    white-space: nowrap;
+  }
+
+  .form-input-review {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 4rem;
+
+    input {
+      inline-size: 100%;
+      block-size: 2.75rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 4px;
+      padding-inline: var(--xl-gap);
+
+      font-size: var(--m-textSize);
+      font-weight: 400;
+      line-height: var(--l-textLineHeight);
+    }
+  }
+
+  .form-input-contents {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 4rem;
+
+    .input-contents {
+      inline-size: 100%;
+      block-size: 12.375rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 4px;
+      overflow-y: scroll;
+      padding: var(--l-gap);
+
+      font-size: var(--s-textSize);
+      font-weight: 400;
+      line-height: var(--l-textLineHeight);
+    }
+  }
+}
