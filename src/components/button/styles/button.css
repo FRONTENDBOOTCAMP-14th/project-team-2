@@ -47,22 +47,26 @@
   align-items: center;
 }
 
-.button{
+/* .button-component > button{
   border: 0;
-  width: 1rem;
-}
+  width: 24px;
+} */
 
-.outline-button {
-  border: 1px solid var(--gray-100);
-  border-radius: 20px;
-  background: none;
-  color: var(--secondary-300);
-  padding: 8px;
-
-}
-
-.basic{
-  color: var(--gray-m-200);
+.list-navbtn {
+  
+  .outline-button {
+    border: 1px solid var(--gray-100);
+    border-radius: 20px;
+    background: none;
+    color: var(--secondary-300);
+    padding: 8px;
+   
+  
+  }
+  
+  .basic{
+    color: var(--gray-m-200);
+  }
 }
 
 select {
@@ -79,7 +83,7 @@ select {
   color: var(--gray-m-200);
   border-radius: 20px;
 
-  padding-right: 1.5em; 
+  padding-right: 1.5em; /* 직접 여백 조정 */
   background: url('../../../assets/svg/arrow-under.svg') no-repeat right 0.5em center;
   background-size: 1em;
 }
