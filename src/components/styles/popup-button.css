@@ -1,4 +1,9 @@
 /* 후기작성 버튼 컴포넌트 스타일링 */
+:root {
+  --gray-200: #c4c4c4;
+  --gray-300: #a6a6a6;
+}
+
 .btn-group-popup {
   display: flex;
   flex-flow: row nowrap;
