@@ -1,0 +1,22 @@
+/* 후기작성상품 컴포넌트 스타일링 */
+.review-product {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: var(--xxl-gap);
+  padding: var(--l-gap) 0;
+  border-block-start: 1px solid var(--gray-100);
+  border-block-end: 1px solid var(--gray-100);
+  margin-block-start: var(--xl-gap);
+
+  img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  p {
+    font-size: var(--m-textSize);
+    font-weight: 600;
+    line-height: var(--m-textLineHeight);
+  }
+}
