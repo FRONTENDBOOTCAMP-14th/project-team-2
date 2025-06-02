@@ -3,51 +3,28 @@ body{
 }
 
 /* 버튼 스타일링 */
-.button{
+.list-header > button{
   border: none;
-  width: 1rem;
+  width: 24px;
   padding: 0;
-  margin: 0;
+  margin: 0;  
 }
-
-.back{
-  width: 12px;
-}
-
-.cart{
-  width: 1.125rem;
-}
-
 
 /* 헤더 스타일링 */
-.header {
-  inline-size: 100%;
-  text-align: center;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 12px;
-
-  .title{
-    flex-grow: 3;
-  }
-
-}
-
-@media (width > 768px) {
-  .button {
-    opacity: 0;
-  }
-
-  .title{
-    margin-top: 50px;
-    font-weight: 500;
-    font-size: 28px;
-    color: var(--content);
-    line-height: 35px;
-    letter-spacing: -1px;
+.list{
+  .list-header {
+    inline-size: 100%;
     text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6px;
+  
+    .title{
+      flex-grow: 3;
+    }
   }
 
 }
+
