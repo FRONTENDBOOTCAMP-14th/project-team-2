@@ -13,6 +13,9 @@
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
 
+/* 메인페이지 컴포넌트 */
+@import url(./components/styles/main-card.css);
+
 /* 공통ui */
 @import url(./components/styles/header.css);
 @import url(./components/styles/footer.css);
