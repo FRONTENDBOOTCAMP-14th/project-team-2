@@ -13,17 +13,22 @@
   border-width: 0;
 }
 
+/* 기존 <a> 스타일 제거 */
+.product-main > a {
+  text-decoration: none;
+  color: var(--black);
+}
 
 
 /* product 컴포넌트 */
 .product-card{
-  border: 1px solid red;
   min-width: 3.75rem;
   font-family: pretendard;
 
   display: flex;
   flex-flow: column nowrap;
   gap: var(--s-gap);
+
 }
 
 /* 상품 image & 장바구니 icon */
