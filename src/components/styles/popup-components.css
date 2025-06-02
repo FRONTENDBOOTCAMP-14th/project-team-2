@@ -1,0 +1,5 @@
+/* 후기작성&상품문의 페이지(컴포넌트 조립) 스타일링 */
+.review-wrapper,
+.inquiry-wrapper {
+  padding: 2rem;
+}
