@@ -1,0 +1,132 @@
+body{
+  font-family: pretendard;
+}
+
+.filter-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+
+/* details 간격 줄이기 */
+details,
+summary {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  list-style: none; 
+  display: block;   
+}
+
+/* 체크박스 - 기본 ui 안보이게 (키보드로 접근안됌 수정필요*/ 
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* 체크박스 */
+.checkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-indent: 6px;
+  font-size: var(--sm-textSize);
+}
+
+/* 체크 박스 - icon */
+.bg-icon {
+  input:checked + label {
+    background-image: url(../../../assets/svg/checked.svg);
+  }
+
+  .icon {
+    display: block;
+    block-size: var(--xxl-gap);
+    align-content: center;
+    text-indent: calc(var(--xxl-gap) + 6px);
+    background: url(../../../assets/svg/unchecked.svg) no-repeat;
+    background-size: var(--size);
+  }
+}
+
+.category-option {
+  position: relative;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  
+}
+
+/* 모바일: 필터 버튼 */
+.filter-toggle-btn{
+  display: flex;
+  align-items: center;
+  border: 0;
+  gap: 4px;
+  
+  position: relative;
+  right: 5px; 
+  
+}
+
+
+/* sidebar 카테고리 스타일링 */
+.category{
+  display: flex;
+  flex-flow: column nowrap;
+  border-bottom: 1px solid #eee;
+  padding-block: 14px;
+
+
+  .category-toggle{
+    font-size: var(--m-textSize);
+    font-weight: 600;
+    text-align: left;
+    border: 0;
+    margin-block: 14px;  
+  }
+}
+
+
+/* 필터 - 초기화 영역 */
+.category-filter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-100);
+
+  .title{
+    font-size: var(--m-textSize);
+    font-weight: 600;
+    text-align: left;
+    margin-block: 10px; 
+    border: 0;
+  }
+
+  .reset-btn{
+    border: 0;
+    font-size: var(--sm-textSize);
+    color: var(--gray-300);
+  }
+}
+
+/* 모바일: 필터 버튼 토글시 나올 화면 - 자바스크립트 사용했을 시(ai) */
+.filter-panel {
+  position: fixed;
+  bottom: -100%;
+  /* left: 0; 
+  width: 100%;
+  max-height: 80%;
+  background: white;
+  padding: 16px;
+  z-index: 1000;
+  transition: bottom 0.3s ease;
+  overflow-y: auto; */
+
+}
+
+

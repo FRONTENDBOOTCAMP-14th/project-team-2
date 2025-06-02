@@ -1,0 +1,98 @@
+/* 리스트 화면 스타일링 */
+body{
+  margin: 50px;
+}
+
+.filter{
+  display: flex;
+}
+
+.list-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+}
+
+
+
+.sub-grid{
+  inline-size: 100%;
+  min-inline-size: 320px;
+  block-size: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(80px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* 데스크탑(pc) - 반응형 */
+@media (width > 1024px) {
+   .sub-grid{
+    inline-size: 100%;
+    min-inline-size: 320px;
+    block-size: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .button {
+    opacity: 0;
+  }
+
+  .title{
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--content);
+    line-height: 35px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  .recommend-toggle-btn,
+  .filter-toggle-btn,
+  .button-navi{
+    display: none;
+  }
+  
+  
+  .recommend-menu{
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+
+    color: var(--gray-200);
+    font-size: var(--m-textSize);
+    font-weight: 600;
+    
+  }
+
+  .main{
+    display: flex;
+    gap: 4px;
+    flex-flow: row nowrap;
+    color: var(--black);
+  }
+
+  .filter-panel {
+    position: relative;
+    bottom: auto;
+    width: 17.5rem;
+    height: 100vh;
+    overflow-y: auto;
+
+  }
+
+  .main-grid{
+  inline-size: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 12px;
+}
+
+  
+}

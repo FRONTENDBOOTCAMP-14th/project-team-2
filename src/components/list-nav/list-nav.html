@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>list-네비 컴포넌트</title>
+  <link rel="preload" as="font" href="/public/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="./styles/list-nav.css" />
+</head>
+<body>
+
+   <hr />
+   <!-- 네비 컴포넌트  -->
+        <div class="list">
+          <div class="list-nav">
+            <div class="entire"><p>총 건</p></div>
+      
+            <!-- 모바일: 추천순 버튼 -->
+           <div class="control">
+             <button class="recommend-toggle-btn">
+               추천순
+               <img src="../../assets/svg/arrow-under.svg" alt="하단열기 아이콘" />
+             </button>
+           
+             <!-- 데스크탑 : 추천순 메뉴 -->
+             <ul class="recommend-menu">
+               <li class="menu main">추천순<span class="question-icon"><img src="../../assets/svg/question.svg" alt="" /></span></li>
+               <li class="menu">신상품순</li>
+               <li class="menu">판매량순</li>
+               <li class="menu">혜택순</li>
+               <li class="menu">낮은 가격순</li>
+               <li class="menu">높은 가격순</li>
+             </ul>
+              
+             <!-- 필터 모바일: 열기 버튼 -->
+             <button class="filter-toggle-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterPanel">
+               필터
+               <span class="filter-icon"><img src="../../assets/svg/filter.webp" alt="필터 아이콘" /></span>
+             </button>
+           </div>
+          </div>
+
+          
+</body>
+</html>
