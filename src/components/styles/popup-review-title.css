@@ -1,0 +1,16 @@
+.review-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: var(--xl-textSize);
+    font-weight: 700;
+  }
+
+  svg {
+    inline-size: var(--xl-gap);
+    block-size: var(--xl-gap);
+  }
+}
