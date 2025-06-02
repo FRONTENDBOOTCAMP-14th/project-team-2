@@ -51,12 +51,10 @@ input[type="checkbox"] {
 .filter-toggle-btn{
   display: flex;
   align-items: center;
-  padding: 6px;
   border: 0;
   gap: 4px;
   
   position: relative;
-  top: 5px;
   right: 5px; 
   
 }
@@ -117,19 +115,4 @@ input[type="checkbox"] {
 
 }
 
-/* pc: 사이드바 메뉴로 변환 */
-@media (min-width: 768px) {
-  .filter-toggle-btn {
-    display: none;
-  }
-
-  .filter-panel {
-    position: relative;
-    bottom: auto;
-    width: 17.5rem;
-    height: 100vh;
-    overflow-y: auto;
-
-  }
-}
 
