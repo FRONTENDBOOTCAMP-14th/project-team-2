@@ -28,6 +28,56 @@
     
     
         <div class="main-grid">
+          <!-- 사이드바 (pc) -->
+           <!-- 사이드바 (pc) -->
+             <aside class="filter-panel" id="filterPanel" role="dialog" aria-modal="true" aria-label="필터 메뉴">
+               <form class="filter-form">
+           
+                 <div class="category-filter">
+                   <legend class="category-filter title">필터</legend>
+                   <button class="reset-btn" type="button">초기화</button>
+                 </div>
+           
+           
+                 <div class="category food">
+                 <button class="category-toggle" type="button">카테고리</button>
+                       <div class="category-option bg-icon">
+                         <input type="checkbox" id="category-1" name="vegetable" /><label class="icon" for="category-1">채소</label>
+                         <input type="checkbox" id="category-2" name="fruit" /><label class="icon" for="category-2">과일·견과·쌀</label>
+                         <input type="checkbox" id="category-3" name="dairy-products" /><label class="icon" for="category-3">유제품</label>
+                       </div>
+           
+                 <div class="category delivery">
+                     <button class="category-toggle" type="button">배송</button>
+                       <div class="category-option bg-icon">
+                         <input type="checkbox" id="delivery-1" name="saesbyeol" /><label class="icon" for="delivery-1">샛별배송</label>
+                         <input type="checkbox" id="delivery-2" name="seller" /><label class="icon" for="delivery-2">판매자배송</label>
+                         <input type="checkbox" id="delivery-3" name="installation" /><label class="icon" for="delivery-3">설치배송</label>
+                       </div>
+                 </div>
+           
+                 <div class="category packaging">
+                     <button class="category-toggle" type="button">포장타입</button>
+                       <div class="category-option bg-icon">
+                         <input type="checkbox" id="temperature-1" name="room" /><label class="icon" for="temperature-1">상온</label>
+                         <input type="checkbox" id="temperature-2" name="cold-storage" /><label class="icon" for="temperature-2">냉장</label>
+                         <input type="checkbox" id="temperature-3" name="freezing" /><label class="icon" for="temperature-3">냉동</label>
+                       </div>
+                 </div>
+           
+                 <div class="category price">
+                   <button class="category-toggle" type="button">가격</button>        
+                     <div class="category-option bg-icon">
+                         <input type="checkbox" id="price-1" name="low" /><label class="icon" for="price-1">6,600원 미만</label>
+                         <input type="checkbox" id="price-2" name="mid" /><label class="icon" for="price-2">6,600 ~ 9,990원</label>
+                         <input type="checkbox" id="price-3" name="high" /><label class="icon" for="price-3">9,990원 ~ 14.500원</label>
+                       </div>
+                 </div>
+           
+               </form>
+            </aside>
+
+
           <!-- 네비 컴포넌트  -->
           <div class="list">
             <div class="list-nav">
