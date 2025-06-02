@@ -1,5 +1,8 @@
 .footer {
   .footer-CS {
+    .footer-CS-title {
+      font-weight: 700;
+    }
     .footer-CS-info {
       display: flex;
       align-items: center;
@@ -48,7 +51,7 @@
   }
   @media (min-width: 768px) {
     .footer-CS {
-      h4 {
+      .footer-CS-title {
         font-size: var(--m-textSize);
       }
       .footer-ask {
@@ -59,7 +62,7 @@
   @media (min-width: 1280px) {
     .footer-CS {
       font-size: var(--m-textSize);
-      h4 {
+      footer-CS-title {
         font-size: var(--l-textSize);
       }
       .CS-callnumber {
