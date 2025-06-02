@@ -24,9 +24,9 @@
 @import url(./components/styles/footer.css);
 /* popup 컴포넌트 url */
 @import url(./components/styles/popup-components.css);
-@import url(./components/styles/popup-review-title.css);
-@import url(./components/styles/popup-review-product.css);
-@import url(./components/styles/popup-input-review.css);
+@import url(./components/styles/popup-title.css);
+@import url(./components/styles/popup-product.css);
+@import url(./components/styles/popup-input.css);
 @import url(./components/styles/popup-button.css);
 
 /* 공통ui */

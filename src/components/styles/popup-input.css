@@ -1,4 +1,4 @@
-/* 후기작성 컨텐츠 컴포넌트 스타일링 */
+/* 후기작성&상품문의 컨텐츠 컴포넌트 스타일링 */
 :root {
   --gray-200: #c4c4c4;
   --gray-300: #a6a6a6;
@@ -7,9 +7,8 @@
 .form-input {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--l-gap) 0 3.625rem 0;
+  padding: var(--l-gap) 0 0 0;
   row-gap: var(--m-gap);
-  border-block-end: 1px solid var(--gray-100);
 
   label {
     font-size: var(--m-textSize);
@@ -18,7 +17,8 @@
     white-space: nowrap;
   }
 
-  .form-input-review {
+  .form-input-review,
+  .form-input-inquiry {
     display: flex;
     flex-flow: row nowrap;
     column-gap: 4rem;
@@ -40,6 +40,7 @@
     display: flex;
     flex-flow: row nowrap;
     column-gap: 4rem;
+    margin-block-end: 3.625rem;
 
     .input-contents {
       inline-size: 100%;
