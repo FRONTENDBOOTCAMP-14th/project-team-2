@@ -10,6 +10,7 @@
   padding-block-start: var(--xl-gap);
   column-gap: var(--m-gap);
   justify-content: center;
+  border-block-start: 1px solid var(--gray-100);
 
   .btn-cancel,
   .btn-submit {
