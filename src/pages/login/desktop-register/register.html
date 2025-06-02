@@ -611,10 +611,11 @@
             <div class="login-label">
               <div class="login-label-text">
                 아이디
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
-            <input type="text" class="login-input" placeholder="아이디를 입력해주세요" required />
+            <label for="login-id" class="sr-only">아이디를 입력해주세요</label>
+            <input type="text" id="login-id" name="login-id" class="login-input" placeholder="아이디를 입력해주세요" required />
             <button type="button" class="login-btn login-btn-small">중복확인</button>
           </div>
 
@@ -622,37 +623,40 @@
             <div class="login-label">
               <div class="login-label-text">
                 비밀번호
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
-            <input type="password" class="login-input" placeholder="비밀번호를 입력해주세요" required />
+            <label for="login-password" class="sr-only">비밀번호를 입력해주세요</label>
+            <input type="password" id="login-password" name="login-password" class="login-input" placeholder="비밀번호를 입력해주세요" required />
           </div>
 
           <div class="login-form-row">
             <div class="login-label">
               <div class="login-label-text">
                 비밀번호 확인
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
-            <input type="password" class="login-input" placeholder="비밀번호를 한번 더 입력해주세요" required />
+            <label for="login-password-required" class="sr-only">비밀번호를 한번 더 입력해주세요</label>
+            <input type="password" id="login-password-required" name="login-password-required" class="login-input" placeholder="비밀번호를 한번 더 입력해주세요" required />
           </div>
 
           <div class="login-form-row">
             <div class="login-label">
               <div class="login-label-text">
                 이름
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
-            <input type="text" class="login-input" placeholder="이름을 입력해주세요" required />
+            <label for="login-name" class="sr-only">이름을 입력해주세요</label>
+            <input type="text" id="login-name" name="login-name" class="login-input" placeholder="이름을 입력해주세요" required />
           </div>
 
           <div class="login-form-row">
             <div class="login-label">
               <div class="login-label-text">
                 이메일
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
             <input type="email" class="login-input" placeholder="예) marketkarly@karly.com" required />
@@ -663,10 +667,11 @@
             <div class="login-label">
               <div class="login-label-text">
                 휴대폰
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
-            <input type="tel" class="login-input" placeholder="숫자만 입력해주세요." required />
+            <label for="login-authentication-number" class="sr-only">인증번호를 입력해주세요</label>
+            <input type="tel" id="login-authentication-number" name="login-authentication-number" class="login-input" placeholder="숫자만 입력해주세요." required />
             <button type="button" class="login-btn login-btn-small">인증번호 받기</button>
           </div>
 
@@ -674,7 +679,7 @@
             <div class="login-label">
               <div class="login-label-text">
                 주소
-                <span class="login-label-required">*</span>
+                <span class="login-label-required" aria-hidden="true">*</span>
               </div>
             </div>
             <div class="login-address">
@@ -707,7 +712,8 @@
             <div class="login-label">
               <div class="login-label-text">생년월일</div>
             </div>
-            <input type="text" class="login-input login-input-birthdate" placeholder="YYYY   /   MM   /   DD" />
+            <label for="login-birthdate" class="sr-only">생년월일을 입력해주세요</label>
+            <input type="text" id="login-birthdate" name="login-birthdate" class="login-input login-input-birthdate" placeholder="YYYY/MM/DD" />
           </div>
 
           <div class="login-form-row">
@@ -728,13 +734,13 @@
 
           <div class="login-note">
             필수입력사항
-            <span class="login-label-required">*</span>
+            <span class="login-label-required" aria-hidden="true">*</span>
           </div>
         </div>
 
         <div class="login-agreement">
           <div class="login-agreement-label">
-            <div class="login-label-text">
+            <div class="login-label-text" id="agreement-description">
               이용약관동의
               <span class="login-label-required">*</span>
             </div>
@@ -742,7 +748,7 @@
           <div class="login-agreement-content">
             <div class="login-agreement-all">
               <div class="login-agreement-all-row">
-                <input type="checkbox" id="all-agree" class="login-checkbox-input" />
+                <input type="checkbox" id="all-agree" class="login-checkbox-input" aria-describedby="agreement-description" />
                 <label for="all-agree" class="login-agreement-all-text">전체 동의합니다.</label>
               </div>
               <div class="login-agreement-all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
@@ -751,10 +757,10 @@
             <div class="login-agreement-item">
               <div class="login-agreement-row">
                 <div class="login-agreement-left">
-                  <input type="checkbox" id="terms" class="login-checkbox-input" required />
+                  <input type="checkbox" id="terms" class="login-checkbox-input" required aria-describedby="view-terms" />
                   <label for="terms" class="login-agreement-text">이용약관 동의 (필수)</label>
                 </div>
-                <a href="#" class="login-agreement-link">
+                <a href="#" class="login-agreement-link" id="view-terms">
                   약관보기
                   <div class="login-arrow"></div>
                 </a>
@@ -764,10 +770,10 @@
             <div class="login-agreement-item">
               <div class="login-agreement-row">
                 <div class="login-agreement-left">
-                  <input type="checkbox" id="privacy" class="login-checkbox-input" required />
+                  <input type="checkbox" id="privacy" class="login-checkbox-input" required aria-describedby="view-privacy" />
                   <label for="privacy" class="login-agreement-text">개인정보 수집 · 이용 동의 (필수)</label>
                 </div>
-                <a href="#" class="login-agreement-link">
+                <a href="#" class="login-agreement-link" id="view-privacy">
                   약관보기
                   <div class="login-arrow"></div>
                 </a>
@@ -777,10 +783,10 @@
             <div class="login-agreement-item">
               <div class="login-agreement-row">
                 <div class="login-agreement-left">
-                  <input type="checkbox" id="marketing" class="login-checkbox-input" />
+                  <input type="checkbox" id="marketing" class="login-checkbox-input" aria-describedby="view-marketing" />
                   <label for="marketing" class="login-agreement-text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
                 </div>
-                <a href="#" class="login-agreement-link">
+                <a href="#" class="login-agreement-link" id="view-marketing">
                   약관보기
                   <div class="login-arrow"></div>
                 </a>
@@ -790,10 +796,10 @@
             <div class="login-agreement-item">
               <div class="login-agreement-row">
                 <div class="login-agreement-left">
-                  <input type="checkbox" id="age" class="login-checkbox-input" required />
+                  <input type="checkbox" id="age" class="login-checkbox-input" required aria-describedby="view-age" />
                   <label for="age" class="login-agreement-text">본인은 만 14세 이상입니다. (필수)</label>
                 </div>
-                <a href="#" class="login-agreement-link">
+                <a href="#" class="login-agreement-link" id="view-age">
                   약관보기
                   <div class="login-arrow"></div>
                 </a>
