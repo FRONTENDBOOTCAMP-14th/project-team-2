@@ -5,10 +5,16 @@
   .main-card-img {
     margin-block-end: var(--m-gap);
     position: relative;
+    border-radius: 6px;
+    overflow: hidden;
     source,
     img {
+      transition: all 0.3s ease-in;
       inline-size: 100%;
       display: block;
+      &:hover {
+        scale: 1.05;
+      }
     }
   }
   .main-card-btn {
@@ -16,8 +22,8 @@
     --btn-size: 2.8125rem;
 
     position: absolute;
-    bottom: 0.9375rem;
-    right: 1.0625rem;
+    bottom: 0.625rem;
+    right: 0.75rem;
     background: var(--primary-50);
     max-inline-size: var(--btn-size);
     padding: var(--m-gap);
@@ -40,22 +46,28 @@
   .main-early-express {
     font-weight: 500;
   }
+
   .main-card-title {
     color: var(--content);
-    font-size: var(--m-textSize);
+    font-size: var(--s-textSize);
     line-height: var(--m-textLineHeight);
+    word-break: keep-all;
   }
   .main-card-sale-price {
-    color: var(--secondary-200);
+    color: var(--content);
     font-size: var(--m-textSize);
     font-weight: 500;
+
     .main-card-sale {
       color: var(--orange);
+      margin-inline-end: var(--xs-gap);
     }
   }
   .main-card-price {
+    color: var(--content);
     line-height: var(--m-textLineHeight);
-    text-decoration: line-through;
+    font-size: var(--m-textSize);
+    font-weight: 500;
   }
   .main-card-sub {
     line-height: var(--m-textLineHeight);
@@ -76,13 +88,25 @@
   .badge-limited {
     color: var(--content);
   }
+  .text-primary {
+    color: var(--secondary-200);
+  }
+  .text-through {
+    color: var(--gray-400);
+    text-decoration: line-through;
+    font-size: var(--s-textSize);
+    font-weight: 400;
+  }
 }
 @media (min-width: 1280px) {
   .main-card {
     .main-card-img {
       margin-block-end: var(--l-gap);
     }
-
+    .main-card-btn {
+      bottom: 0.9375rem;
+      right: 1.0625rem;
+    }
     .main-card-info {
       gap: var(--s-gap);
       line-height: var(--m-textLineHeight);
@@ -94,10 +118,14 @@
       font-size: var(--l-textSize);
     }
     .main-card-price {
+      font-size: var(--l-textSize);
       line-height: var(--l-textLineHeight);
     }
     .main-card-sub {
       line-height: var(--l-textLineHeight);
+    }
+    .text-through {
+      font-size: var(--s-textSize);
     }
   }
 }
