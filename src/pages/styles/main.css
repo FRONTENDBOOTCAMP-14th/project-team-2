@@ -1,0 +1,150 @@
+main {
+  margin-block-start: 120px;
+
+  @media (min-width: 1280px) {
+    margin-block-start: 247px;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .main-banner-section {
+    position: relative;
+    source,
+    img {
+      aspect-ratio: 2.5 / 1;
+      object-fit: cover;
+    }
+    .banner-cell {
+      a {
+        display: block;
+      }
+    }
+    .swiper-button-container {
+      position: relative;
+      margin-inline: auto;
+      max-inline-size: 1220px;
+    }
+    .mySwiper-banner-next,
+    .mySwiper-banner-prev {
+      display: none;
+    }
+    .banner-pagination {
+      position: absolute;
+    }
+  }
+  .main-event-section {
+    padding-block: var(--xl-gap);
+    source,
+    img {
+      display: block;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+    }
+  }
+  .main-card-section {
+    --15-gap: 15px;
+    --30-gap: 30px;
+    inline-size: clamp(375px, 100%, 1050px);
+    padding-inline-start: var(--15-gap);
+    padding-block-end: 20px;
+    margin-inline: auto;
+    position: relative;
+
+    .main-section-title {
+      font-size: var(--m-textSize);
+      padding-block: var(--30-gap);
+    }
+    .main-card-list {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+    .cell {
+      max-inline-size: 250px;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-next,
+    .btn-prev {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    .main-event-section {
+      padding-block: var(--xxl-gap);
+      souce,
+      img {
+        aspect-ratio: 3.5 / 1;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .main-banner-section {
+      source,
+      img {
+        aspect-ratio: auto;
+        object-fit: cover;
+      }
+    }
+    .main-event-section {
+      --40-gap: 40px;
+
+      max-inline-size: 1050px;
+      padding-block: var(--40-gap);
+      margin-inline: auto;
+      source,
+      img {
+        aspect-ratio: auto;
+      }
+    }
+    .main-card-section {
+      padding-inline-start: 0;
+
+      .main-section-title {
+        --52-gap: 52px;
+        --40-gap: 40px;
+
+        padding-block: var(--52-gap) var(--40-gap);
+        width: 100%;
+        margin-inline: auto;
+        h2 {
+          font-size: 28px;
+        }
+      }
+
+      .btn-next,
+      .btn-prev {
+        display: block;
+        position: absolute;
+        top: 280px;
+        z-index: 500;
+
+        color: var(--content);
+        padding: 10px;
+        background: var(--white);
+        border-radius: 50px;
+        inline-size: 50px;
+        block-size: 50px;
+        box-shadow: 0 1px 2px 4px rgb(200, 200, 200, 0.1);
+        svg {
+          scale: 0.6;
+        }
+      }
+      .btn-next {
+        translate: 50% 0;
+        right: 0;
+      }
+      .btn-prev {
+        translate: -50% 0;
+        left: 0;
+        svg {
+          rotate: 180deg;
+        }
+      }
+    }
+  }
+}
