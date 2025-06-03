@@ -8,10 +8,31 @@ main {
   .swiper-button-prev:after {
     display: none;
   }
+  .btn-next,
+  .btn-prev {
+    z-index: 500;
+
+    padding: 10px;
+    border-radius: 50px;
+    inline-size: 50px;
+    block-size: 50px;
+    box-shadow: 0 1px 2px 4px rgb(200, 200, 200, 0.1);
+
+    svg {
+      scale: 0.6;
+    }
+  }
+  .btn-prev {
+    svg {
+      rotate: 180deg;
+    }
+  }
+
   .main-banner-section {
     position: relative;
-    source,
+
     img {
+      display: block;
       aspect-ratio: 2.5 / 1;
       object-fit: cover;
     }
@@ -21,7 +42,8 @@ main {
       }
     }
     .swiper-button-container {
-      position: relative;
+      position: absolute;
+      inset: 50% 0 50% 0;
       margin-inline: auto;
       max-inline-size: 1220px;
     }
@@ -29,13 +51,31 @@ main {
     .mySwiper-banner-prev {
       display: none;
     }
+    .btn-next,
+    .btn-prev {
+      display: none;
+    }
+
+    .banner-pagination-container {
+      position: relative;
+      margin-inline: var(--l-gap);
+      max-inline-size: 1050px;
+    }
     .banner-pagination {
+      background: rgb(40, 40, 40, 0.3);
+      color: var(--white);
+      border-radius: 50px;
+      display: inline;
+      inline-size: 57px;
+      padding: var(--xs-gap) var(--s-gap);
       position: absolute;
+      left: 100%;
+      translate: -100% 0;
     }
   }
   .main-event-section {
     padding-block: var(--xl-gap);
-    source,
+
     img {
       display: block;
       aspect-ratio: 2 / 1;
@@ -74,6 +114,11 @@ main {
     }
   }
   @media (min-width: 768px) {
+    .main-banner-section {
+      img {
+        aspect-ratio: 4 / 1;
+      }
+    }
     .main-event-section {
       padding-block: var(--xxl-gap);
       souce,
@@ -88,6 +133,35 @@ main {
       img {
         aspect-ratio: auto;
         object-fit: cover;
+      }
+      .swiper-button-container {
+        position: absolute;
+        inset: 50% 0 50% 0;
+        margin-inline: auto;
+        max-inline-size: 1220px;
+      }
+
+      .btn-next,
+      .btn-prev {
+        display: block;
+        position: absolute;
+        top: 50%;
+        color: var(--white);
+        background: rgb(0, 0, 0, 0.1);
+        &:hover {
+          background: rgb(0, 0, 0, 0.5);
+        }
+      }
+      .btn-next {
+        right: 0;
+        translate: 50% 0;
+      }
+      .btn-prev {
+        left: 0;
+        translate: -50% 0;
+      }
+      .banner-pagination-container {
+        margin-inline: auto;
       }
     }
     .main-event-section {
@@ -121,17 +195,11 @@ main {
         display: block;
         position: absolute;
         top: 280px;
-        z-index: 500;
-
         color: var(--content);
-        padding: 10px;
         background: var(--white);
-        border-radius: 50px;
-        inline-size: 50px;
-        block-size: 50px;
-        box-shadow: 0 1px 2px 4px rgb(200, 200, 200, 0.1);
-        svg {
-          scale: 0.6;
+
+        &:hover {
+          background: var(--gray-60);
         }
       }
       .btn-next {
