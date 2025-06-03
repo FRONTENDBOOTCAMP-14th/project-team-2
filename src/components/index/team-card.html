@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>팀원 카드</title>
-    <link rel="stylesheet" href="./styles/team-card.css" />
-    <link rel="stylesheet" href="./styles/" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../styles/team-card.css" />
   </head>
   <body>
     <div class="team-card-wrapper">
@@ -13,39 +13,14 @@
         <figure>
           <img src="../../assets/images/index/card-image-01.png" alt="팀원사진" />
           <figcaption>
-            <div class="teammate-info">
-            <p class="teammate-name">이름</p>
-            <p class="teammate-role">역할</p>
-          </div>
-            <p class="teammate-work">맡은 분야</p>
-            <a class="teammate-github" href="#">GitHub 바로가기</a>
+            <ul>
+              <li class="team-border-bottom"><span class="name-bold">이름</span>역할</li>
+              <li>맡은 분야</li>
+              <li class="team-border-top team-github"><a href="#">GitHub 바로가기</a></li>
+            </ul>
           </figcaption>
         </figure>
       </div>
     </div>
-    <hr />
-
-
-
-    <div class="team-card-wrapper">
-      <div class="team-card">
-        <figure>
-          <img src="../../assets/images/index/card-image-01.png" alt="팀원사진" />
-          <figcaption>
-            <div class="teammate-info">
-            <p class="teammate-name">정우진</p>
-            <p class="teammate-role">PL / 스크럼 마스터</p>
-          </div>
-            <div class="teammate-work">
-              <p>메인 페이지, 공통 UI</p>
-              <p>index 페이지 디자인</p>
-              <p>문서화</p>
-            </div>
-            <a class="teammate-github" href="#">GitHub 바로가기</a>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    
   </body>
 </html>
