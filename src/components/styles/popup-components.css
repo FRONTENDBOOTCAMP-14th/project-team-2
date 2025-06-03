@@ -1,5 +1,28 @@
 /* 후기작성&상품문의 페이지(컴포넌트 조립) 스타일링 */
 .review-wrapper,
 .inquiry-wrapper {
+  background: var(--white);
   padding: 2rem;
+  inline-size: 49.5625rem;
+  overflow-x: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialog-popup {
+  inline-size: 300px;
+  block-size: 3.4375rem;
+  background: var(--primary-200);
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: var(--m-textSize);
+  color: var(--white);
+  text-align: center;
 }
