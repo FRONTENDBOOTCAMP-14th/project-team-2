@@ -29,10 +29,17 @@
     position: absolute;
     right: 22px;
     top: 20px;
+    height: 20px;
+}
+
+.index-header-nav-list {
     display: flex;
     align-items: center;
     gap: 30px;
     height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .index-header-nav-item {
