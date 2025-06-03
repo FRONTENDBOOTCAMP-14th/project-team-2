@@ -81,7 +81,8 @@ details summary::-webkit-details-marker {
     &:hover {
       .accordion-summary-sub-1,
       .accordion-summary-sub-2 {
-        padding-inline-start: 2.125rem;
+        translate: 34px 0;
+        transition: all 0.3s ease-in-out;
       }
     }
 
