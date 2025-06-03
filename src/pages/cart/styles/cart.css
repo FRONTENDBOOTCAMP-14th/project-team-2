@@ -53,12 +53,6 @@
       margin-block-end: var(--xl-gap);
     }
 
-    .section-address-3 {
-      background-color: rgba(215, 172, 255, 0.6);
-      border-radius: 4px;
-      padding: 0.125rem 0.25rem;
-    }
-
     a {
       margin-block-start: var(--xl-gap);
     }
