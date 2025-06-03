@@ -3,21 +3,18 @@
   max-inline-size: 340px;
   border-radius: 10px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   box-shadow: 0 2px 6px 4px rgb(0, 0, 0, 0.1);
 
   &:hover,
   :focus {
-    scale: 1.01;
+    scale: 1.02;
   }
+  display: flex;
+  flex-flow: row nowrap;
 
-  figure {
-    display: flex;
-    flex-flow: row nowrap;
-
-    img {
-      object-fit: cover;
-    }
+  img {
+    object-fit: cover;
   }
   figcaption {
     flex: 1;
@@ -25,14 +22,18 @@
     font-size: 14px;
   }
   li {
-    padding-block: 4px;
+    padding-block: 6px;
   }
   .name-bold {
     font-size: 16px;
     font-weight: 700;
-    margin-right: 6px;
+    padding-inline-end: 6px;
   }
-
+  .team-github {
+    color: var(--gray-m-200);
+    font-weight: 700;
+    font-size: 16px;
+  }
   .team-border-bottom {
     border-bottom: 1px solid var(--secondary-100);
   }
@@ -40,14 +41,13 @@
     border-top: 1px solid var(--secondary-100);
   }
 }
+
 @media (min-width: 768px) {
-  .team-card-wrapper {
+  .team-card {
     max-inline-size: 190px;
     max-block-size: 330px;
+    flex-direction: column;
 
-    figure {
-      flex-direction: column;
-    }
     li {
       padding-block: 10px;
     }

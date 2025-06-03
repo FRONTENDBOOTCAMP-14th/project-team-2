@@ -1,18 +1,22 @@
 .index-header {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 0;
   right: 0;
+  z-index: 1000;
   padding-inline: 15px;
 }
 .index-header-width {
+  --gray-250: #555;
+
   inline-size: clamp(345px, 100%, 1050px);
   margin-inline: auto;
   background: rgba(245, 234, 255, 0.5);
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   border-radius: 20px;
   height: 60px;
+  color: var(--gray-250);
 }
 .index-header-logo {
   position: absolute;
@@ -48,7 +52,6 @@
 .index-header-nav-link {
   font-weight: 700;
   font-size: 14px;
-  color: #555555;
   transition: all 0.3s ease;
 }
 
