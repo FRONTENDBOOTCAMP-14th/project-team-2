@@ -1,4 +1,5 @@
 main {
+  position: relative;
   margin-block-start: 120px;
 
   @media (min-width: 1280px) {
@@ -112,6 +113,9 @@ main {
     .btn-prev {
       display: none;
     }
+    .main-sidebar {
+      display: none;
+    }
   }
   @media (min-width: 768px) {
     .main-banner-section {
@@ -213,6 +217,14 @@ main {
           rotate: 180deg;
         }
       }
+    }
+    .main-sidebar {
+      display: flex;
+      position: fixed;
+      z-index: 2000;
+      top: 50%;
+      right: 40px;
+      translate: 0 -50%;
     }
   }
 }
