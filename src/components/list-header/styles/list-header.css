@@ -11,7 +11,7 @@ body{
 }
 
 /* 헤더 스타일링 */
-.list{
+
   .list-header {
     inline-size: 100%;
     text-align: center;
@@ -23,8 +23,24 @@ body{
   
     .title{
       flex-grow: 3;
-    }
+    }    
+
+}
+
+@media (min-width: 1280px)  {
+
+  .list-header > .title{
+    margin-block: 48px;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--content);
+    line-height: 35px;
+    letter-spacing: -1px;
+    text-align: center;
   }
 
+  .icon-button {
+    opacity: 0;
+  }
 }
 

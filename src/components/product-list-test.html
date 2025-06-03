@@ -17,69 +17,69 @@
 
       <div class="list-wrapper">
         <!-- 헤더 컴포넌트 -->
-        <div class="list">
+        <div class="list-head">
           <div class="list-header">
-            <button class="button back" type="button"><img src="../assets/svg/back.svg" alt="뒤로가기" /></button>
+            <button class="icon-button back" type="button"><img src="../assets/svg/back.svg" alt="뒤로가기" /></button>
             <p class="title">타이틀</p>
-            <button class="button home" type="button"><img src="../assets/svg/home.svg" alt="홈 이동" /></button>
-            <button class="button cart" type="button"><img src="../assets/svg/cart_dark.svg" alt="장바구니 이동" /></button>
+            <button class="icon-button home" type="button"><img src="../assets/svg/home.svg" alt="홈 이동" /></button>
+            <button class="icon-button cart" type="button"><img src="../assets/svg/cart_dark.svg" alt="장바구니 이동" /></button>
           </div>
         </div>
     
     
         <div class="main-grid">
           <!-- 사이드바 (pc) -->
-           <!-- 사이드바 (pc) -->
-             <aside class="filter-panel" id="filterPanel" role="dialog" aria-modal="true" aria-label="필터 메뉴">
+             <aside class="filter-panel" id="filterPanel" aria-label="필터 메뉴">
                <form class="filter-form">
            
                  <div class="category-filter">
-                   <legend class="category-filter title">필터</legend>
+                   <p class="category-filter title">필터</p>
                    <button class="reset-btn" type="button">초기화</button>
                  </div>
            
            
-                 <div class="category food">
-                 <button class="category-toggle" type="button">카테고리</button>
-                       <div class="category-option bg-icon">
-                         <input type="checkbox" id="category-1" name="vegetable" /><label class="icon" for="category-1">채소</label>
-                         <input type="checkbox" id="category-2" name="fruit" /><label class="icon" for="category-2">과일·견과·쌀</label>
-                         <input type="checkbox" id="category-3" name="dairy-products" /><label class="icon" for="category-3">유제품</label>
-                       </div>
+                 <details class="category food">
+                   <summary class ="category-toggle">카테고리</summary>
+                         <ul class="category-option bg-icon">
+                           <li><input type="checkbox" id="category-1" name="vegetable" /><label class="icon" for="category-1">채소</label></li>
+                           <li><input type="checkbox" id="category-2" name="fruit" /><label class="icon" for="category-2">과일·견과·쌀</label></li>
+                           <li><input type="checkbox" id="category-3" name="dairy-products" /><label class="icon" for="category-3">유제품</label></li>
+                         </ul>
+                 </details>     
            
-                 <div class="category delivery">
-                     <button class="category-toggle" type="button">배송</button>
-                       <div class="category-option bg-icon">
-                         <input type="checkbox" id="delivery-1" name="saesbyeol" /><label class="icon" for="delivery-1">샛별배송</label>
-                         <input type="checkbox" id="delivery-2" name="seller" /><label class="icon" for="delivery-2">판매자배송</label>
-                         <input type="checkbox" id="delivery-3" name="installation" /><label class="icon" for="delivery-3">설치배송</label>
-                       </div>
-                 </div>
+                 <details class="category delivery">
+                     <summary class="category-toggle">배송</summary>
+                       <ul class="category-option bg-icon">
+                         <li><input type="checkbox" id="delivery-1" name="saesbyeol" /><label class="icon" for="delivery-1">샛별배송</label></li>
+                         <li><input type="checkbox" id="delivery-2" name="seller" /><label class="icon" for="delivery-2">판매자배송</label></li>
+                         <li><input type="checkbox" id="delivery-3" name="installation" /><label class="icon" for="delivery-3">설치배송</label></li>
+                       </ul>
+                 </details>
            
-                 <div class="category packaging">
-                     <button class="category-toggle" type="button">포장타입</button>
-                       <div class="category-option bg-icon">
-                         <input type="checkbox" id="temperature-1" name="room" /><label class="icon" for="temperature-1">상온</label>
-                         <input type="checkbox" id="temperature-2" name="cold-storage" /><label class="icon" for="temperature-2">냉장</label>
-                         <input type="checkbox" id="temperature-3" name="freezing" /><label class="icon" for="temperature-3">냉동</label>
-                       </div>
-                 </div>
+                 <details class="category packaging">
+                     <summary class="category-toggle">포장타입</summary>
+                       <ul class="category-option bg-icon">
+                         <li><input type="checkbox" id="temperature-1" name="room" /><label class="icon" for="temperature-1">상온</label></li>
+                         <li><input type="checkbox" id="temperature-2" name="cold-storage" /><label class="icon" for="temperature-2">냉장</label></li>
+                         <li><input type="checkbox" id="temperature-3" name="freezing" /><label class="icon" for="temperature-3">냉동</label></li>
+                       </ul>
+                 </details>
            
-                 <div class="category price">
-                   <button class="category-toggle" type="button">가격</button>        
-                     <div class="category-option bg-icon">
-                         <input type="checkbox" id="price-1" name="low" /><label class="icon" for="price-1">6,600원 미만</label>
-                         <input type="checkbox" id="price-2" name="mid" /><label class="icon" for="price-2">6,600 ~ 9,990원</label>
-                         <input type="checkbox" id="price-3" name="high" /><label class="icon" for="price-3">9,990원 ~ 14.500원</label>
-                       </div>
-                 </div>
+                 <details class="category price">
+                   <summary class="category-toggle">가격</summary>        
+                     <ul class="category-option bg-icon">
+                         <li><input type="checkbox" id="price-1" name="low" /><label class="icon" for="price-1">6,600원 미만</label></li>
+                         <li><input type="checkbox" id="price-2" name="mid" /><label class="icon" for="price-2">6,600 ~ 9,990원</label></li>
+                         <li><input type="checkbox" id="price-3" name="high" /><label class="icon" for="price-3">9,990원 ~ 14.500원</label></li>
+                       </ul>
+                 </details>
            
                </form>
             </aside>
 
 
           <!-- 네비 컴포넌트  -->
-          <div class="list">
+          <div class="list-navi">
             <div class="list-nav">
               <div class="entire"><p>총 건</p></div>
         
@@ -113,13 +113,13 @@
                <button class="outline-button">새로나온</button>
                <button class="outline-button">Kurly only</button>
                <button class="outline-button">벌스워크</button>
-               <button class="outline-button">벌스워크</button>
+  
       
             </div>
   
             <div class="combo-form">
             <label for="category-m" class="sr-only">카테고리</label>
-            <select class="combo-box" name="product" id="product">
+            <select class="combo-box" name="product-category" id="category-m">
               <option value="main">카테고리</option>
               <option value="product1">상품분류1</option>
               <option value="product2">상품분류2</option>
@@ -128,10 +128,7 @@
             
           </div>
       
-          <!-- 버튼 (모바일만 보임) -->
-          <!-- 상품 분류 버튼 -->
-          
-    
+      
          
           <!-- 그리드 설정- 2 -->
            <div class="sub-grid">
@@ -139,7 +136,7 @@
              <div class="product-card">
               <div class="product-image">
                   <picture>
-                  <source srcset="../assets/images/product-1.jpg" alt="탱탱쫄면" />
+                  <source srcset="../assets/images/product-1.jpg"/>
                   <img class="product img" src="../assets/images/product-1.jpg" alt="탱탱쫄면" />
                   </picture>
                   <button class="product cart" type="button" aria-label="장바구니">
@@ -173,7 +170,7 @@
              <div class="product-card">
               <div class="product-image">
                   <picture>
-                  <source srcset="../assets/images/product-1.jpg" alt="탱탱쫄면" />
+                  <source srcset="../assets/images/product-1.jpg"/>
                   <img class="product img" src="../assets/images/product-1.jpg" alt="탱탱쫄면" />
                   </picture>
                   <button class="product cart" type="button" aria-label="장바구니">
@@ -207,7 +204,7 @@
              <div class="product-card">
               <div class="product-image">
                   <picture>
-                  <source srcset="../assets/images/product-1.jpg" alt="탱탱쫄면" />
+                  <source srcset="../assets/images/product-1.jpg"/>
                   <img class="product img" src="../assets/images/product-1.jpg" alt="탱탱쫄면" />
                   </picture>
                   <button class="product cart" type="button" aria-label="장바구니">
@@ -241,7 +238,7 @@
              <div class="product-card">
               <div class="product-image">
                   <picture>
-                  <source srcset="../assets/images/product-1.jpg" alt="탱탱쫄면" />
+                  <source srcset="../assets/images/product-1.jpg"/>
                   <img class="product img" src="../assets/images/product-1.jpg" alt="탱탱쫄면" />
                   </picture>
                   <button class="product cart" type="button" aria-label="장바구니">
@@ -275,7 +272,7 @@
              <div class="product-card">
               <div class="product-image">
                   <picture>
-                  <source srcset="../assets/images/product-1.jpg" alt="탱탱쫄면" />
+                  <source srcset="../assets/images/product-1.jpg"/>
                   <img class="product img" src="../assets/images/product-1.jpg" alt="탱탱쫄면" />
                   </picture>
                   <button class="product cart" type="button" aria-label="장바구니">
@@ -309,7 +306,7 @@
              <div class="product-card">
               <div class="product-image">
                   <picture>
-                  <source srcset="../assets/images/product-1.jpg" alt="탱탱쫄면" />
+                  <source srcset="../assets/images/product-1.jpg"/>
                   <img class="product img" src="../assets/images/product-1.jpg" alt="탱탱쫄면" />
                   </picture>
                   <button class="product cart" type="button" aria-label="장바구니">
@@ -342,7 +339,7 @@
            </div>
         </div>
       </div>
-  
+      </div>
 
 
 
