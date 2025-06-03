@@ -8,6 +8,7 @@
 .list-wrapper{
   padding-block-start: 150px;
   padding-block-end: 1500px;
+  padding-inline: 16px;
   display: flex;
   flex-flow: column nowrap;
   gap: 12px;
