@@ -53,5 +53,18 @@
 @import url(./components/styles/footer-copyright.css);
 @import url(./components/styles/main-sidebar.css);
 
-/* 컴포넌트 url */
+
+/* 인덱스 컴포넌트 */
+@import url(./components/styles/index-header.css);
+@import url(./components/styles/index-footer.css);
+@import url(./components/styles/page-navigation-button.css);
+@import url(./components/styles/team-card.css);
 @import url(./components/styles/accordion-components.css);
+
+
+html {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+
+

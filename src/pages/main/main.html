@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="stylesheet" href="../styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/main.js"></script>
     <!-- 해당 스타일 넣는 곳 -->
     <title>메인 페이지</title>
@@ -604,7 +605,7 @@
         <a href="#" class="early-delivery"><span>샛별&middot;낮 </span>배송안내</a>
       </div>
     </header>
-    <main>
+    <main class="main-page">
       <section class="main-banner-section">
         <h2 class="sr-only">이벤트 배너</h2>
         <div class="swiper mySwiper-banner">
@@ -1559,63 +1560,5 @@
         <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      let swiperBanner = new Swiper('.mySwiper-banner', {
-        slidesPerView: 1,
-        loop: true,
-        navigation: {
-          nextEl: '.mySwiper-banner-next',
-          prevEl: '.mySwiper-banner-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-      });
-      let swiper1 = new Swiper('.mySwiper1', {
-        slidesPerView: 2.5,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-          nextEl: '.mySwiper1-next',
-          prevEl: '.mySwiper1-prev',
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 18,
-          },
-        },
-      });
-
-      let swiper2 = new Swiper('.mySwiper2', {
-        slidesPerView: 2.5,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-          nextEl: '.mySwiper2-next',
-          prevEl: '.mySwiper2-prev',
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 18,
-          },
-        },
-      });
-    </script>
   </body>
 </html>
