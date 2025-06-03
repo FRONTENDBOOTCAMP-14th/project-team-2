@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button 컴포넌트</title>
+    <link rel="preload" as="font" href="/font/pretendardvariable.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    
+  </head>
+  <body>
+    
+    <hr />
+    
+    <div class="button-component">
+      <!-- 체크박스 (pc)-->
+  
+      <div class="form-checkbox bg-icon"><input type="checkbox" id="checkbox-0" name="checkbox-name" /><label for="checkbox-0">레이블</label></div>
+      <hr />
+   
+      <!-- 뒤로가기 (mobile)-->
+  
+      <button class="button back" type="button"><img src="../../assets/svg/back.svg" alt="뒤로가기" /></button>
+      <hr />
+  
+      <!-- 홈 (mobile)-->
+     
+      <button class="button home" type="button"><img src="../../assets/svg/home.svg" alt="홈 이동" /></button>
+      <hr />
+  
+      <!-- 장바구니(mobile) -->
+  
+      <button class="button cart" type="button"><img src="../../assets/svg/cart_dark.svg" alt="장바구니 이동" /></button>
+      <hr />
+  
+      <!-- 상품 분류 버튼 -->
+      <div class="list-navbtn">
+   
+        <button class="outline-button">버튼텍스트</button>
+        <button class="outline-button basic">버튼텍스트</button>
+      </div>
+  
+      <div class="combo-form">
+        <label for="category-m" class="sr-only">카테고리</label>
+        <select class="combo-box" name="category-product" id="category-m">
+          <option value="main">카테고리</option>
+          <option value="product1">상품분류1</option>
+          <option value="product2">상품분류2</option>
+        </select>
+      </div>
+    
+  
+      <!-- 장바구니 담기 -->
+    </div>
+
+    
+  </body>
+</html>
