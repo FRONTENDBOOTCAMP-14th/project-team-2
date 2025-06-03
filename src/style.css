@@ -3,7 +3,6 @@
 @import url(./common/theme.css);
 @import url(./common/modern-reset.css);
 
-
 /* product-list 컴포넌트*/
 @import url(./components/list-header/styles/list-header.css);
 @import url(./components/list-nav/styles/list-nav.css);
@@ -22,6 +21,7 @@
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
 @import url(./components/styles/footer.css);
+
 /* popup 컴포넌트 url */
 @import url(./components/styles/popup-components.css);
 @import url(./components/styles/popup-title.css);
@@ -51,4 +51,4 @@
 @import url(./components/styles/footer-CS.css);
 @import url(./components/styles/footer-about.css);
 @import url(./components/styles/footer-copyright.css);
-
+@import url(./components/styles/main-sidebar.css);
