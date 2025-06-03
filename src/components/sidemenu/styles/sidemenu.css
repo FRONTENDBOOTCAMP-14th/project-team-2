@@ -21,6 +21,21 @@ summary {
   display: block;   
 }
 
+summary {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 14px;
+  background-image: url('../../../assets/svg/arrow-under.svg'); 
+}
+
+details[open] > summary {
+  background-image: url('../../../assets/svg/arrow-up.svg'); 
+}
+
 /* 체크박스 - 기본 ui 안보이게 (키보드로 접근안됌 수정필요*/ 
 input[type="checkbox"] {
   position: absolute;
@@ -48,7 +63,9 @@ input[type="checkbox"] {
     align-content: center;
     text-indent: calc(var(--xxl-gap) + 6px);
     background: url(../../../assets/svg/unchecked.svg) no-repeat;
-    background-size: var(--size);
+    background-size: 18px;
+
+    font-size: var(--s-textSize);
   }
 }
 
@@ -87,7 +104,7 @@ input[type="checkbox"] {
     font-weight: 600;
     text-align: left;
     border: 0;
-    margin-block: 14px;  
+    margin-block: 8px;  
   }
 }
 
@@ -101,6 +118,7 @@ input[type="checkbox"] {
 
   .title{
     font-size: var(--m-textSize);
+    color: var(--content);
     font-weight: 600;
     text-align: left;
     margin-block: 10px; 
@@ -118,15 +136,23 @@ input[type="checkbox"] {
 .filter-panel {
   position: fixed;
   bottom: -100%;
-  /* left: 0; 
-  width: 100%;
-  max-height: 80%;
-  background: white;
-  padding: 16px;
-  z-index: 1000;
-  transition: bottom 0.3s ease;
-  overflow-y: auto; */
+  left: 0; 
 
+}
+
+@media (min-width : 1280px) {
+   .filter-toggle-btn
+  {
+    display: none;
+  }
+  
+  .filter-panel {
+    position: relative;
+    bottom: auto;
+    width: 220px;
+    height: 100vh;
+    overflow-y: auto;
+  }
 }
 
 
