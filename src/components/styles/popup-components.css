@@ -2,4 +2,6 @@
 .review-wrapper,
 .inquiry-wrapper {
   padding: 2rem;
+  inline-size: 49.5625rem;
+  overflow-x: hidden;
 }
