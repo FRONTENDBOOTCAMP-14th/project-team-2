@@ -3,8 +3,15 @@
 @import url(./common/theme.css);
 @import url(./common/modern-reset.css);
 
+/* product-list 컴포넌트*/
+@import url(./components/list-header/styles/list-header.css);
+@import url(./components/list-nav/styles/list-nav.css);
+@import url(./components/btn-navi/styles/btn-navi.css);
+@import url(./components/sidemenu/styles/sidemenu.css);
+@import url(./components/button/styles/button.css);
+@import url(./components/products/styles/product-card.css);
+
 /* cart컴포넌트 url */
-@import url(./components/styles/header.css);
 @import url(./components/styles/cart-address-info.css);
 @import url(./components/styles/cart-button.css);
 @import url(./components/styles/cart-items-status.css);
@@ -14,7 +21,20 @@
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
 @import url(./components/styles/footer.css);
+
+/* popup 컴포넌트 url */
+@import url(./components/styles/popup-components.css);
+@import url(./components/styles/popup-title.css);
+@import url(./components/styles/popup-product.css);
+@import url(./components/styles/popup-input.css);
+@import url(./components/styles/popup-button.css);
+
+/* 메인페이지 컴포넌트 */
+@import url(./components/styles/main-card.css);
+
 /* 공통ui */
+@import url(./components/styles/header.css);
+@import url(./components/styles/footer.css);
 @import url(./components/styles/common-atom.css);
 @import url(./components/styles/header-logo.css);
 @import url(./components/styles/header-search-bar.css);
@@ -31,3 +51,4 @@
 @import url(./components/styles/footer-CS.css);
 @import url(./components/styles/footer-about.css);
 @import url(./components/styles/footer-copyright.css);
+@import url(./components/styles/main-sidebar.css);
