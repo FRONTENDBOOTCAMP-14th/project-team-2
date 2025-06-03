@@ -2,4 +2,10 @@
 .review-wrapper,
 .inquiry-wrapper {
   padding: 2rem;
+  inline-size: 49.5625rem;
+  overflow-x: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
