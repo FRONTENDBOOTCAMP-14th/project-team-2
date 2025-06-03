@@ -113,9 +113,9 @@ main {
     .btn-prev {
       display: none;
     }
-    .main-sidebar {
-      display: none;
-    }
+  }
+  .main-sidebar {
+    display: none;
   }
   @media (min-width: 768px) {
     .main-banner-section {
