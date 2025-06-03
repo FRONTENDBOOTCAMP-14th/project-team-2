@@ -1,60 +1,7 @@
 .section-cart {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  padding: 6.25rem 0 0.625rem 0;
-  min-inline-size: 23.4375rem;
+  padding: 100px 0 0.625rem 0;
 
   @media (min-width: 1280px) {
-    padding: 17.5rem 0 5rem 0;
-
-    .section-both {
-      display: flex;
-      flex-flow: row nowrap;
-      column-gap: 2.75rem;
-      justify-content: center;
-
-      .section-left {
-        inline-size: 46.375rem;
-      }
-      .section-right {
-        inline-size: 17.75rem;
-      }
-    }
-  }
-
-  .section-items-status {
-    display: none;
-
-    @media (min-width: 1280px) {
-      display: block;
-    }
-  }
-
-  /* 주문상품 컴포넌트 PC반응형 스타일링 */
-  .section-order-items {
-    @media (min-width: 1280px) {
-      background: var(--white);
-    }
-  }
-}
-
-/* 주문금액 컴포넌트 PC반응형 스타일링 */
-.section-address-info,
-.section-order-notice {
-  display: none;
-
-  @media (min-width: 1280px) {
-    display: block;
-    border: 1px solid var(--gray-60);
-
-    .section-address,
-    .section-address-2 {
-      margin-block-end: var(--xl-gap);
-    }
-
-    a {
-      margin-block-start: var(--xl-gap);
-    }
+    padding: 240px 0 0.625rem 0;
   }
 }
