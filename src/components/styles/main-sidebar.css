@@ -1,0 +1,20 @@
+.main-sidebar {
+  width: 4.625rem;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-block: var(--s-gap);
+  gap: var(--s-gap);
+  font-size: var(--xs-textSize);
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+
+  .sidebar-product-list {
+    padding-inline: var(--l-gap);
+    max-block-size: 130px;
+    overflow: hidden;
+  }
+  .sidebar-btn-prev {
+    order: -1;
+  }
+}
