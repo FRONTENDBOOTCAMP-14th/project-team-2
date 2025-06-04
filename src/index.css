@@ -1,7 +1,7 @@
 .main {
   --15-gap: 15px;
 
-  margin-block-start: 90px;
+  /* margin-block-start: 90px; */
   inline-size: clamp(345px, 100%, 1050px);
   margin-inline: auto;
   padding-inline: var(--15-gap);
@@ -47,6 +47,7 @@
     translate: -50%;
     z-index: -1;
     scale: 5;
+    transition: scale 0.3s ease;
   }
 }
 .index-section {
@@ -63,6 +64,11 @@
     gap: var(--xl-gap);
   }
 }
+.accordion-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5625rem;
+}
 
 @media (min-width: 768px) {
   .index-team {
@@ -77,12 +83,23 @@
   }
 }
 @media (min-width: 1280px) {
+  .main {
+    padding-inline: 0;
+  }
+  .index-visual {
+    .visual-bg {
+      scale: 7;
+    }
+  }
   .index-team {
     .index-team-list {
       justify-content: space-around;
+      flex-flow: row nowrap;
       row-gap: var(--xxl-gap);
-      > li {
-        width: 30%;
+
+      > li:nth-of-type(even) {
+        /* translate: 0 10%; */
+        margin-block-start: 15%;
       }
     }
   }
