@@ -11,7 +11,7 @@ details summary::-webkit-details-marker {
 }
 
 /* 페이지이동 */
-.accordion{
+.accordion {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -22,14 +22,14 @@ details summary::-webkit-details-marker {
   border-radius: 10px;
   padding-inline: 0.9375rem;
   box-shadow: 0 2px 6px 4px rgb(0, 0, 0, 0.1);
-  transition: all .3s ease-in ;
+  transition: all 0.3s ease-in;
 
   &:hover {
     background: #d7acff;
     color: var(--white);
 
-    .accordion-number{
-      color: var(--white)
+    .accordion-number {
+      color: var(--white);
     }
   }
 
@@ -42,7 +42,7 @@ details summary::-webkit-details-marker {
     font-weight: 400;
 
     .accordion-number {
-      transition: color .3s ease-in ;
+      transition: color 0.3s ease-in;
     }
   }
 }
@@ -71,7 +71,7 @@ details summary::-webkit-details-marker {
     border-radius: 10px;
     transition: background 0.3s ease-in;
 
-    padding: var(--l-gap) var(--l-gap) 0.625rem;
+    padding: var(--l-gap) var(--l-gap);
 
     &:hover {
       background: #edf;

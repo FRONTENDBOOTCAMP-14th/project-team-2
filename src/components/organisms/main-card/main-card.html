@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <!-- <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="../styles/main-card.css" /> -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- 해당 스타일 넣는 곳 -->
+    <title>메인 페이지 카드 컴포넌트</title>
+  </head>
+  <body>
+    <figure class="main-card">
+      <div class="main-card-img">
+        <picture>
+          <source srcset="/src/assets/images/main-product01.avif" />
+          <img src="/src/assets/images/main-product01.png" alt="탱탱 쫄면(4개입)" />
+        </picture>
+        <button type="button" class="main-card-btn" aria-label="장바구니 담기">
+          <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4902 4.29001L19.3202 13.52H6.90023L4.74023 4.29001H21.4902Z" stroke="white" style="stroke: white; stroke-opacity: 1" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round" />
+            <path d="M17.3807 19.94C18.3195 19.94 19.0807 19.1789 19.0807 18.24C19.0807 17.3011 18.3195 16.54 17.3807 16.54C16.4418 16.54 15.6807 17.3011 15.6807 18.24C15.6807 19.1789 16.4418 19.94 17.3807 19.94Z" stroke="white" style="stroke: white; stroke-opacity: 1" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+            <path d="M8.85039 19.94C9.78927 19.94 10.5504 19.1789 10.5504 18.24C10.5504 17.3011 9.78927 16.54 8.85039 16.54C7.91151 16.54 7.15039 17.3011 7.15039 18.24C7.15039 19.1789 7.91151 19.94 8.85039 19.94Z" stroke="white" style="stroke: white; stroke-opacity: 1" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+            <path d="M1.03027 1.38H4.05027L5.46027 7.36" stroke="white" style="stroke: white; stroke-opacity: 1" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <figcaption>
+        <a href="#">
+          <ul class="main-card-info">
+            <li class="main-early-express">샛별배송</li>
+            <li class="main-card-title">[온더바디] 죠르디 시카 자석 선쿠션</li>
+            <li class="main-card-sale-price">
+              <span class="main-card-sale">24%</span>
+              <span aria-label="할인된 가격 32,500원">32,500 원</span>
+            </li>
+            <li class="main-card-price" aria-label="정가 24,900원">24,900원</li>
+            <li class="main-card-sub">CJ즉석밥 고소한 맛의 발아 현미밥</li>
+            <li class="main-card-badge">
+              <span class="main-badge badge-karly">Karly Only</span>
+              <span class="main-badge badge-limited">한정수량</span>
+            </li>
+          </ul>
+        </a>
+      </figcaption>
+    </figure>
+  </body>
+</html>

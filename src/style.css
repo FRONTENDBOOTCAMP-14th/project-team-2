@@ -6,10 +6,11 @@
 /* product-list 컴포넌트*/
 @import url(./components/styles/list-header.css);
 @import url(./components/styles/list-nav.css);
-@import url(./components/btn-navi/styles/btn-navi.css);
-@import url(./components/sidemenu/styles/sidemenu.css);
-@import url(./components/button/styles/button.css);
-@import url(./components/products/styles/product-card.css);
+@import url(./components/styles/btn-navi.css);
+@import url(./components/styles/sidemenu.css);
+@import url(./components/styles/button-product.css);
+@import url(./components/styles/product-card.css);
+@import url(./components/styles/sidemenu.css);
 
 /* cart컴포넌트 url */
 @import url(./components/styles/cart-address-info.css);
@@ -21,6 +22,12 @@
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
 @import url(./components/styles/footer.css);
+
+/* login, register */
+@import url(./components/styles/form-row.css);
+@import url(./components/styles/login-input.css);
+@import url(./components/styles/radio.css);
+@import url(./components/styles/recommend.css);
 
 /* popup 컴포넌트 url */
 @import url(./components/styles/popup-components.css);
@@ -61,5 +68,20 @@
 @import url(./components/styles/accordion-components.css);
 
 html {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
 }
