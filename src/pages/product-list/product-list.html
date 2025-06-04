@@ -668,30 +668,28 @@
                 <div class="entire"><p>총 건</p></div>
 
                 <!-- 모바일: 추천순 버튼 -->
-                <div class="control">
-                  <button class="recommend-toggle-btn" aria-label="하단열기">
-                    추천순
-                    <img src="../../assets/svg/arrow-under.svg" />
-                  </button>
-
-                  <!-- 데스크탑 : 추천순 메뉴 -->
-                  <ul class="recommend-menu">
-                    <li class="menu main">
-                      추천순<span class="question-icon"><img src="../../assets/svg/question.svg" alt="" /></span>
-                    </li>
-                    <li class="menu">신상품순</li>
-                    <li class="menu">판매량순</li>
-                    <li class="menu">혜택순</li>
-                    <li class="menu">낮은 가격순</li>
-                    <li class="menu">높은 가격순</li>
-                  </ul>
-
-                  <!-- 필터 모바일: 열기 버튼 -->
-                  <button class="filter-toggle-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterPanel">
-                    필터
-                    <span class="filter-icon" aria-label="필터"><img src="../../assets/svg/filter.webp" /></span>
-                  </button>
-                </div>
+               <div class="control">
+                 <button class="recommend-toggle-btn" aria-label="하단열기">
+                   추천순
+                   <img src="../../assets/svg/arrow-under.svg"/>
+                 </button>
+               
+                 <!-- 데스크탑 : 추천순 메뉴 -->
+                 <ul class="recommend-menu">
+                   <li class="menu main"><a href="#">추천순</a><span class="question-icon"><img src="../../assets/svg/question.svg" alt="" /></span></li>
+                   <li class="menu"><a href="#">신상품순</a></li>
+                   <li class="menu"><a href="#">판매량순</a></li>
+                   <li class="menu"><a href="#">혜택순</a></li>
+                   <li class="menu"><a href="#">낮은 가격순</a></li>
+                   <li class="menu"><a href="#">높은 가격순</a></li>
+                 </ul>
+                  
+                 <!-- 필터 모바일: 열기 버튼 -->
+                 <button class="filter-toggle-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterPanel">
+                   필터
+                   <span class="filter-icon" aria-label="필터"><img src="../../assets/svg/filter.webp"/></span>
+                 </button>
+               </div>
               </div>
 
               <div class="button-navi">
@@ -1086,7 +1084,306 @@
                   </div>
                 </div>
               </div>
+    
+              <div class="combo-form">
+              <label for="category-m" class="sr-only">카테고리</label>
+              <select class="combo-box" name="product-category" id="category-m">
+                <option value="main">카테고리</option>
+                <option value="product1">상품분류1</option>
+                <option value="product2">상품분류2</option>
+              </select>
+             </div>
+              
             </div>
+        
+        
+           
+            <!-- 그리드 설정- 2 -->
+             <div class="sub-grid">
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product01.avif"/>
+                    <img class="product img" src="../../assets/images/main-product01.jpg" alt="탱탱쫄면" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[풀무원] 탱탱쫄면 (4개입)</a>
+                </div>
+                <div class="product-price">
+                  <span class="product price">4,980 원</span>
+                </div>
+                
+                <p class="product comment">튀기지 않아 부담없는 매콤함</p>
+          
+                <div class="product-badge">
+                  <span class="badge karly">karly only</span>
+                  <span class="badge amount">한정수량</span>
+                </div>
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product02.avif"/>
+                    <img class="product img" src="../../assets/images/main-product02.png" alt="죠르디 선쿠션" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                </div>
+                <div class="product-price">
+                  <span class="product price">32,500 원</span>
+                </div>
+                
+                <p class="product comment">끈적임 없이 보송한 무기자차 선쿠션</p>
+        
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product03.avif"/>
+                    <img class="product img" src="../../assets/images/main-product03.png" alt="베이비세탁세" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[프로쉬] 베이비 세탁세</a>
+                </div>
+                <div class="product-price">
+                  <em class="product pecent" aria-label="할인율 24%">24%</em>
+                  <span class="product price">18,900 원</span>
+                  <p class="product ordinal" aria-label="원가격">24,900원</p>
+                </div>
+                
+                <p class="product comment">성분을 꼼꼼히 따져 골라 더욱 편안한</p>
+          
+                <div class="product-badge">
+                  <span class="badge karly">karly only</span>
+                  <span class="badge amount">한정수량</span>
+                </div>
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product01.avif"/>
+                    <img class="product img" src="../../assets/images/main-product01.jpg" alt="탱탱쫄면" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[풀무원] 탱탱쫄면 (4개입)</a>
+                </div>
+                <div class="product-price">
+                  <span class="product price">4,980 원</span>
+                </div>
+                
+                <p class="product comment">튀기지 않아 부담없는 매콤함</p>
+          
+                <div class="product-badge">
+                  <span class="badge karly">karly only</span>
+                  <span class="badge amount">한정수량</span>
+                </div>
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product02.avif"/>
+                    <img class="product img" src="../../assets/images/main-product02.png" alt="죠르디 선쿠션" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                </div>
+                <div class="product-price">
+                  <span class="product price">32,500 원</span>
+                </div>
+                
+                <p class="product comment">끈적임 없이 보송한 무기자차 선쿠션</p>
+        
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product03.avif"/>
+                    <img class="product img" src="../../assets/images/main-product03.png" alt="베이비세탁세" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[프로쉬] 베이비 세탁세</a>
+                </div>
+                <div class="product-price">
+                  <em class="product pecent" aria-label="할인율 24%">24%</em>
+                  <span class="product price">18,900 원</span>
+                  <p class="product ordinal" aria-label="원가격">24,900원</p>
+                </div>
+                
+                <p class="product comment">성분을 꼼꼼히 따져 골라 더욱 편안한</p>
+          
+                <div class="product-badge">
+                  <span class="badge karly">karly only</span>
+                  <span class="badge amount">한정수량</span>
+                </div>
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product01.avif"/>
+                    <img class="product img" src="../../assets/images/main-product01.jpg" alt="탱탱쫄면" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[풀무원] 탱탱쫄면 (4개입)</a>
+                </div>
+                <div class="product-price">
+                  <span class="product price">4,980 원</span>
+                </div>
+                
+                <p class="product comment">튀기지 않아 부담없는 매콤함</p>
+          
+                <div class="product-badge">
+                  <span class="badge karly">karly only</span>
+                  <span class="badge amount">한정수량</span>
+                </div>
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product02.avif"/>
+                    <img class="product img" src="../../assets/images/main-product02.png" alt="죠르디 선쿠션" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[온더바디] 죠르디 시카 자석 선쿠션</a>
+                </div>
+                <div class="product-price">
+                  <span class="product price">32,500 원</span>
+                </div>
+                
+                <p class="product comment">끈적임 없이 보송한 무기자차 선쿠션</p>
+        
+              </div>
+              <!-- 상품 목록 -->
+               <div class="product-card">
+                <div class="product-image">
+                    <picture>
+                    <source srcset="../../assets/images/main-product03.avif"/>
+                    <img class="product img" src="../../assets/images/main-product03.png" alt="베이비세탁세" />
+                    </picture>
+                    <button class="product cart" type="button" aria-label="장바구니">
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.5" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="#2A0038"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4902 17.2898L29.3202 26.5198H16.9002L14.7402 17.2898H31.4902Z" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.3797 32.9398C28.3186 32.9398 29.0797 32.1787 29.0797 31.2398C29.0797 30.3009 28.3186 29.5398 27.3797 29.5398C26.4408 29.5398 25.6797 30.3009 25.6797 31.2398C25.6797 32.1787 26.4408 32.9398 27.3797 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M18.8484 32.9398C19.7873 32.9398 20.5484 32.1787 20.5484 31.2398C20.5484 30.3009 19.7873 29.5398 18.8484 29.5398C17.9096 29.5398 17.1484 30.3009 17.1484 31.2398C17.1484 32.1787 17.9096 32.9398 18.8484 32.9398Z" stroke="white" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M11.0293 14.3799H14.0493L15.4593 20.3599" stroke="white" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                </div>
+                <div class="product-main">
+                  <p class="product delivery">샛별배송</p>
+                  <a href="/" class="product title">[프로쉬] 베이비 세탁세</a>
+                </div>
+                <div class="product-price">
+                  <em class="product pecent" aria-label="할인율 24%">24%</em>
+                  <span class="product price">18,900 원</span>
+                  <p class="product ordinal" aria-label="원가격">24,900원</p>
+                </div>
+                
+                <p class="product comment">성분을 꼼꼼히 따져 골라 더욱 편안한</p>
+          
+                <div class="product-badge">
+                  <span class="badge karly">karly only</span>
+                  <span class="badge amount">한정수량</span>
+                </div>
+              </div>
+          
+             </div>
           </div>
         </div>
       </section>
