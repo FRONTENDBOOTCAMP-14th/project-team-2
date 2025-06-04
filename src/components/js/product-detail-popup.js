@@ -10,8 +10,4 @@ document.querySelectorAll('.more').forEach((button, index) => {
   closeBtn.addEventListener('click', () => {
     dialog.close();
   });
-
 });
-
-});
-
