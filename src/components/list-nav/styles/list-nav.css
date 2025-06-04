@@ -42,6 +42,7 @@ body{
   
 }
 
+/* 반응형 */
 @media (min-width: 1280px)  {
   .recommend-toggle-btn,
   .filter-toggle-btn,
