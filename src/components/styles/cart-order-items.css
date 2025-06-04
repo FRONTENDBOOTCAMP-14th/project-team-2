@@ -1,17 +1,16 @@
 /* 주문상품 컴포넌트 스타일링 */
 .section-order-items {
+  background: var(--gray-50);
+  display: flex;
+  flex-flow: column nowrap;
+  padding-inline: var(--m-gap);
+  padding-block: var(--l-gap);
   input {
     margin: 0;
     accent-color: var(--black);
     inline-size: var(--xl-gap);
     block-size: var(--xl-gap);
   }
-
-  background: var(--gray-50);
-  display: flex;
-  flex-flow: column nowrap;
-  padding-inline: var(--m-gap);
-  padding-block: var(--l-gap);
 
   .section-background {
     background: var(--white);

@@ -3,10 +3,9 @@
 @import url(./common/theme.css);
 @import url(./common/modern-reset.css);
 
-
 /* product-list 컴포넌트*/
 @import url(./components/list-header/styles/list-header.css);
-@import url(./components/list-nav/styles/list-nav.css);
+@import url(./components/styles/list-nav.css);
 @import url(./components/btn-navi/styles/btn-navi.css);
 @import url(./components/sidemenu/styles/sidemenu.css);
 @import url(./components/button/styles/button.css);
@@ -21,6 +20,17 @@
 @import url(./components/styles/cart-order-price.css);
 @import url(./components/styles/cart-select-items.css);
 @import url(./components/styles/cart-title.css);
+@import url(./components/styles/footer.css);
+
+/* popup 컴포넌트 url */
+@import url(./components/styles/popup-components.css);
+@import url(./components/styles/popup-title.css);
+@import url(./components/styles/popup-product.css);
+@import url(./components/styles/popup-input.css);
+@import url(./components/styles/popup-button.css);
+
+/* 메인페이지 컴포넌트 */
+@import url(./components/styles/main-card.css);
 
 /* 공통ui */
 @import url(./components/styles/header.css);
@@ -41,4 +51,15 @@
 @import url(./components/styles/footer-CS.css);
 @import url(./components/styles/footer-about.css);
 @import url(./components/styles/footer-copyright.css);
+@import url(./components/styles/main-sidebar.css);
 
+/* 인덱스 컴포넌트 */
+@import url(./components/styles/index-header.css);
+@import url(./components/styles/index-footer.css);
+@import url(./components/styles/page-navigation-button.css);
+@import url(./components/styles/team-card.css);
+@import url(./components/styles/accordion-components.css);
+
+html {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
