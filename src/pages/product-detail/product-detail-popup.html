@@ -850,44 +850,6 @@
           <p>· 작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</p>
         </div>
         <button class="more">후기작성</button>
-        <dialog class="show-dialog">
-          <div class="review-wrapper">
-            <h2 class="sr-only">후기작성 페이지</h2>
-            <section class="review-title">
-              <h3>후기 작성</h3>
-              <button type="button" class="btn-close" aria-label="닫기">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z" fill="#CCCCCC" />
-                </svg>
-              </button>
-            </section>
-            <section class="review-product">
-              <h3 class="sr-only">후기작성 상품내용</h3>
-              <img src="../../assets/images/product-1.webp" alt="탱탱쫄면(4개입)" />
-              <p>[풀무원] 탱탱쫄면 (4개입)</p>
-            </section>
-            <form action="/" name="review" method="POST" class="form-input">
-              <h3 class="sr-only">후기작성 입력란</h3>
-              <div class="form-input-review">
-                <label for="input-title">제목</label>
-                <input type="text" id="input-title" placeholder="제목을 입력해 주세요" />
-              </div>
-              <div class="form-input-contents">
-                <label for="input-contents">내용</label>
-                <textarea
-                  class="input-contents"
-                  id="input-contents"
-                  placeholder="컬리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다.식품등의 표시광고에 대한 법률을 준수하고자 다음과 같은 부당한 상품평에 대해서는 별도 고지 없이 임시 대처, 비공개 전환, 삭제, 적립금 회수 등의 필요한 조치가 취해 질 수 있습니다.&#10;[후기 작성 시 유의사항]&#10;-개인의 주관적인 의견으로 인해 상품의 기능 및 효과에 대하여 오해의 소지가 있는 내용&#10;-식품/건강기능식품과 관련하여 질병의 예방 및 치료, 체중감량(다이어트)에 효능효과가 있다는 내용&#10;-일반 화장품을 기능성화장품의 효능효과가 있다는 내용을 통한 오인 표현&#10;-의약외품을 의약품으로 오만하게 하는 표현&#10;-생활화확제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용&#10;-욕설, 폭력성, 음란성, 상업성 등의 게시물 또는 구매 상품과 무관하거나 반복되는 동일 단어나 문장을 사용하여 판매자나 다른 이용자의 후기 이용을 방해한다고 판단되는 경우"
-                ></textarea>
-              </div>
-              <div class="btn-group-popup">
-                <h4 class="sr-only">후기작성 등록/취소버튼</h4>
-                <button type="button" class="btn-cancel" aria-label="등록취소">취소</button>
-                <button type="submit" class="btn-submit" aria-label="내용등록">등록</button>
-              </div>
-            </form>
-          </div>
-        </dialog>
       </div>
 
       <div class="review-menu">
@@ -970,61 +932,6 @@
           <p>· 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</p>
         </div>
         <button class="more">문의하기</button>
-        <dialog class="show-dialog">
-          <div class="inquiry-wrapper">
-            <h2 class="sr-only">상품문의 페이지</h2>
-            <section class="inquiry-title">
-              <h3>상품 문의하기</h3>
-              <button type="button" class="btn-close" aria-label="닫기">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z" fill="#CCCCCC" />
-                </svg>
-              </button>
-            </section>
-            <section class="inquiry-product">
-              <h3 class="sr-only">문의상품</h3>
-              <img src="../../assets/images/product-1.webp" alt="탱탱쫄면(4개입)" />
-              <p>[풀무원] 탱탱쫄면 (4개입)</p>
-            </section>
-            <form action="/" name="inquiry" method="POST" class="form-input">
-              <h3 class="sr-only">문의내용 입력란</h3>
-              <div class="form-input-inquiry">
-                <label for="input-title">제목</label>
-                <input type="text" id="input-title" placeholder="제목을 입력해 주세요" />
-              </div>
-              <div class="form-input-contents">
-                <label for="input-contents">내용</label>
-                <textarea
-                  class="input-contents"
-                  id="input-contents"
-                  placeholder="상품문의 작성 전 확인해 주세요&#10;-답변은 영업일 기준 2-3일 소요됩니다.&#10;-해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.&#10;-배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이칼리 내 1:1 문의에 남겨주세요.&#10;[제품]&#10;-입고일 : 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다. (종 모양을 클릭하여, 재입고 알림 설정 가능)&#10;-제품 상세정보 : 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세이미지 또는 상세정보에서 확인 가능합니다.&#10;[배송]&#10;-배송일 및 배송시간 지정은 불가능합니다. (예약배송 포함)&#10;-주문 이후 주소지, 결제수단 변경 등 정보수정은 불가능합니다."
-                ></textarea>
-              </div>
-              <div class="checkbox-inquiry">
-                <input type="checkbox" id="check-inquiry-type" name="checkbox-name" />
-                <label for="check-inquiry-type">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_84_3007)">
-                      <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4" />
-                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_84_3007">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  비밀글로 문의하기
-                </label>
-              </div>
-              <div class="btn-group-popup">
-                <h4 class="sr-only">상품문의 등록/취소버튼</h4>
-                <button type="button" class="btn-cancel" aria-label="등록취소">취소</button>
-                <button type="submit" class="btn-submit" aria-label="내용등록">등록</button>
-              </div>
-            </form>
-          </div>
-        </dialog>
     </div>
 
       <table>
@@ -1063,7 +970,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.2002C5 8.5432 5.184 8.8322 5.448 9.0122V10.3422H6.551V9.0122C6.68673 8.92408 6.79868 8.80392 6.87698 8.66231C6.95529 8.5207 6.99754 8.36199 7 8.2002C7 7.93498 6.89464 7.68063 6.70711 7.49309C6.51957 7.30555 6.26522 7.2002 6 7.2002C5.73478 7.2002 5.48043 7.30555 5.29289 7.49309C5.10536 7.68063 5 7.93498 5 8.2002Z" fill="#B5B5B5" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_7491_2597">
+                    <clipPath id="clip0_7491_2597-1">
                       <rect width="12" height="14" fill="white" />
                     </clipPath>
                   </defs>
@@ -1089,7 +996,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.2002C5 8.5432 5.184 8.8322 5.448 9.0122V10.3422H6.551V9.0122C6.68673 8.92408 6.79868 8.80392 6.87698 8.66231C6.95529 8.5207 6.99754 8.36199 7 8.2002C7 7.93498 6.89464 7.68063 6.70711 7.49309C6.51957 7.30555 6.26522 7.2002 6 7.2002C5.73478 7.2002 5.48043 7.30555 5.29289 7.49309C5.10536 7.68063 5 7.93498 5 8.2002Z" fill="#B5B5B5" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_7491_2597">
+                    <clipPath id="clip0_7491_2597-2">
                       <rect width="12" height="14" fill="white" />
                     </clipPath>
                   </defs>
@@ -1114,7 +1021,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.2002C5 8.5432 5.184 8.8322 5.448 9.0122V10.3422H6.551V9.0122C6.68673 8.92408 6.79868 8.80392 6.87698 8.66231C6.95529 8.5207 6.99754 8.36199 7 8.2002C7 7.93498 6.89464 7.68063 6.70711 7.49309C6.51957 7.30555 6.26522 7.2002 6 7.2002C5.73478 7.2002 5.48043 7.30555 5.29289 7.49309C5.10536 7.68063 5 7.93498 5 8.2002Z" fill="#B5B5B5" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_7491_2597">
+                    <clipPath id="clip0_7491_2597-3">
                       <rect width="12" height="14" fill="white" />
                     </clipPath>
                   </defs>
@@ -1139,7 +1046,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.2002C5 8.5432 5.184 8.8322 5.448 9.0122V10.3422H6.551V9.0122C6.68673 8.92408 6.79868 8.80392 6.87698 8.66231C6.95529 8.5207 6.99754 8.36199 7 8.2002C7 7.93498 6.89464 7.68063 6.70711 7.49309C6.51957 7.30555 6.26522 7.2002 6 7.2002C5.73478 7.2002 5.48043 7.30555 5.29289 7.49309C5.10536 7.68063 5 7.93498 5 8.2002Z" fill="#B5B5B5" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_7491_2597">
+                    <clipPath id="clip0_7491_2597-4">
                       <rect width="12" height="14" fill="white" />
                     </clipPath>
                   </defs>
@@ -1164,7 +1071,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.2002C5 8.5432 5.184 8.8322 5.448 9.0122V10.3422H6.551V9.0122C6.68673 8.92408 6.79868 8.80392 6.87698 8.66231C6.95529 8.5207 6.99754 8.36199 7 8.2002C7 7.93498 6.89464 7.68063 6.70711 7.49309C6.51957 7.30555 6.26522 7.2002 6 7.2002C5.73478 7.2002 5.48043 7.30555 5.29289 7.49309C5.10536 7.68063 5 7.93498 5 8.2002Z" fill="#B5B5B5" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_7491_2597">
+                    <clipPath id="clip0_7491_2597-5">
                       <rect width="12" height="14" fill="white" />
                     </clipPath>
                   </defs>
@@ -1609,5 +1516,98 @@
         <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
+    <dialog class="show-dialog">
+      <div class="review-wrapper">
+        <h2 class="sr-only">후기작성 페이지</h2>
+        <section class="review-title">
+          <h3>후기 작성</h3>
+          <button type="button" class="btn-close" aria-label="닫기">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z" fill="#CCCCCC" />
+            </svg>
+          </button>
+        </section>
+        <section class="review-product">
+          <h3 class="sr-only">후기작성 상품내용</h3>
+          <img src="../../assets/images/product-1.webp" alt="탱탱쫄면(4개입)" />
+          <p>[풀무원] 탱탱쫄면 (4개입)</p>
+        </section>
+        <form action="/" name="review" method="POST" class="form-input">
+          <h3 class="sr-only">후기작성 입력란</h3>
+          <div class="form-input-review">
+            <label for="input-title">제목</label>
+            <input type="text" id="input-title" placeholder="제목을 입력해 주세요" />
+          </div>
+          <div class="form-input-contents">
+            <label for="input-contents">내용</label>
+            <textarea
+              class="input-contents"
+              id="input-contents"
+              placeholder="컬리는 믿을 수 있는 후기문화를 함께 만들어가고자 합니다.식품등의 표시광고에 대한 법률을 준수하고자 다음과 같은 부당한 상품평에 대해서는 별도 고지 없이 임시 대처, 비공개 전환, 삭제, 적립금 회수 등의 필요한 조치가 취해 질 수 있습니다.&#10;[후기 작성 시 유의사항]&#10;-개인의 주관적인 의견으로 인해 상품의 기능 및 효과에 대하여 오해의 소지가 있는 내용&#10;-식품/건강기능식품과 관련하여 질병의 예방 및 치료, 체중감량(다이어트)에 효능효과가 있다는 내용&#10;-일반 화장품을 기능성화장품의 효능효과가 있다는 내용을 통한 오인 표현&#10;-의약외품을 의약품으로 오만하게 하는 표현&#10;-생활화확제품을 본래 용도와 다르게 사용하는 내용 및 효능효과를 과장하는 내용&#10;-욕설, 폭력성, 음란성, 상업성 등의 게시물 또는 구매 상품과 무관하거나 반복되는 동일 단어나 문장을 사용하여 판매자나 다른 이용자의 후기 이용을 방해한다고 판단되는 경우"
+            ></textarea>
+          </div>
+          <div class="btn-group-popup">
+            <h4 class="sr-only">후기작성 등록/취소버튼</h4>
+            <button type="button" class="btn-cancel" aria-label="등록취소">취소</button>
+            <button type="submit" class="btn-submit" aria-label="내용등록">등록</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+    <dialog class="show-dialog">
+      <div class="inquiry-wrapper">
+        <h2 class="sr-only">상품문의 페이지</h2>
+        <section class="inquiry-title">
+          <h3>상품 문의하기</h3>
+          <button type="button" class="btn-close" aria-label="닫기">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z" fill="#CCCCCC" />
+            </svg>
+          </button>
+        </section>
+        <section class="inquiry-product">
+          <h3 class="sr-only">문의상품</h3>
+          <img src="../../assets/images/product-1.webp" alt="탱탱쫄면(4개입)" />
+          <p>[풀무원] 탱탱쫄면 (4개입)</p>
+        </section>
+        <form action="/" name="inquiry" method="POST" class="form-input">
+          <h3 class="sr-only">문의내용 입력란</h3>
+          <div class="form-input-inquiry">
+            <label for="input-title">제목</label>
+            <input type="text" id="input-title" placeholder="제목을 입력해 주세요" />
+          </div>
+          <div class="form-input-contents">
+            <label for="input-contents">내용</label>
+            <textarea
+              class="input-contents"
+              id="input-contents"
+              placeholder="상품문의 작성 전 확인해 주세요&#10;-답변은 영업일 기준 2-3일 소요됩니다.&#10;-해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.&#10;-배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이칼리 내 1:1 문의에 남겨주세요.&#10;[제품]&#10;-입고일 : 품절 상품 입고 일이 확정된 경우, 섬네일에 기재되어 있습니다. (종 모양을 클릭하여, 재입고 알림 설정 가능)&#10;-제품 상세정보 : 영양성분 및 함량, 용량, 보관 및 취급 방법 등 제품 정보는 상세이미지 또는 상세정보에서 확인 가능합니다.&#10;[배송]&#10;-배송일 및 배송시간 지정은 불가능합니다. (예약배송 포함)&#10;-주문 이후 주소지, 결제수단 변경 등 정보수정은 불가능합니다."
+            ></textarea>
+          </div>
+          <div class="checkbox-inquiry">
+            <input type="checkbox" id="check-inquiry-type" name="checkbox-name" />
+            <label for="check-inquiry-type">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_84_3007)">
+                  <path d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z" stroke="#C4C4C4" />
+                  <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_84_3007">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              비밀글로 문의하기
+            </label>
+          </div>
+          <div class="btn-group-popup">
+            <h4 class="sr-only">상품문의 등록/취소버튼</h4>
+            <button type="button" class="btn-cancel" aria-label="등록취소">취소</button>
+            <button type="submit" class="btn-submit" aria-label="내용등록">등록</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
   </body>
 </html>
