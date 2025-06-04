@@ -178,15 +178,15 @@
       border-radius: 5px;
     }
     summary {
-      list-style: none;
-      list-style-type: none;
+      /* list-style: none;
+      list-style-type: none; */
       padding: 20px 0 20px 15px;
       margin-inline-end: 15px;
       font-weight: 700;
     }
-    summary::-webkit-details-marker {
+    /* summary::-webkit-details-marker {
       display: none;
-    }
+    } */
     .review {
       background: #fafafa;
       display: block;
