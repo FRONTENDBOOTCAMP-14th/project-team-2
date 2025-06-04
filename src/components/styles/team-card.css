@@ -14,7 +14,7 @@
   }
 
   img {
-    max-width: 210px;
+    max-width: 200px;
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
@@ -78,13 +78,16 @@
   .team-card {
     display: inline-flex;
     flex-flow: column nowrap;
-    inline-size: clamp(250px, 100%, 300px);
+    justify-content: stretch;
+    inline-size: clamp(180px, 100%, 200px);
+    /* height: clamp(400px, 100%, 150px); */
     img {
       max-width: none;
     }
 
     figcaption {
       font-size: 16px;
+      min-block-size: 225px;
     }
     .name-bold {
       display: block;

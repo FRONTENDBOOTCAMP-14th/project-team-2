@@ -11,21 +11,26 @@ details summary::-webkit-details-marker {
 }
 
 /* 페이지이동 */
-.accordion-1 {
+.accordion{
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  inline-size: 28.125rem;
+  inline-size: 100%;
   block-size: 3.125rem;
-  background: #fafafa;
+  background: #fff;
   border-radius: 10px;
   padding-inline: 0.9375rem;
-
-  margin-bottom: 1.875rem;
+  box-shadow: 0 2px 6px 4px rgb(0, 0, 0, 0.1);
+  transition: all .3s ease-in ;
 
   &:hover {
-    background: #edf;
+    background: #d7acff;
+    color: var(--white);
+
+    .accordion-number{
+      color: var(--white)
+    }
   }
 
   .accordion-summary-pages {
@@ -37,39 +42,43 @@ details summary::-webkit-details-marker {
     font-weight: 400;
 
     .accordion-number {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--primary-200);
+      transition: color .3s ease-in ;
     }
   }
 }
 
 /* 아코디언 펼치기 */
 .accordion-details {
-  inline-size: 28.125rem;
-  block-size: 2.75rem;
-  background: #fafafa;
+  inline-size: 100%;
+  background: #fff;
   border-radius: 10px;
+  box-shadow: 0 2px 6px 4px rgb(0, 0, 0, 0.1);
 
+  &:hover {
+    .accordion-icon {
+      rotate: 45deg;
+    }
+  }
+  .accordion-icon {
+    transition: rotate 0.3s ease;
+  }
   .accordion-summary {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    background: #fafafa;
+    background: #fff;
     border-radius: 10px;
+    transition: background 0.3s ease-in;
 
-    padding-inline: var(--l-gap);
-    padding-block-start: var(--l-gap);
-    padding-block-end: 0.625rem;
+    padding: var(--l-gap) var(--l-gap) 0.625rem;
 
     &:hover {
       background: #edf;
     }
   }
 
-  .accordion-sub-1,
-  .accordion-sub-2 {
+  .accordion-sub {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -77,21 +86,22 @@ details summary::-webkit-details-marker {
     background: #fafafa;
     padding-block-start: 14px;
     padding-inline: var(--l-gap);
+    border-block-start: 1px solid #eee;
+    border-radius: 0 0 10px 10px;
 
     &:hover {
-      .accordion-summary-sub-1,
-      .accordion-summary-sub-2 {
+      .accordion-summary-sub {
         translate: 34px 0;
         transition: all 0.3s ease-in-out;
       }
     }
 
-    .accordion-summary-sub-1,
-    .accordion-summary-sub-2 {
+    .accordion-summary-sub {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       column-gap: 0.625rem;
+      padding-block-end: var(--l-gap);
 
       .accordion-number-sub {
         font-size: 18px;
@@ -99,18 +109,6 @@ details summary::-webkit-details-marker {
         color: var(--secondary-200);
       }
     }
-  }
-
-  .accordion-sub-1 {
-    border-block-start: 1px solid #eee;
-  }
-
-  .accordion-sub-2 {
-    border-radius: 0 0 10px 10px;
-  }
-
-  .accordion-summary-sub-2 {
-    padding-block-end: var(--l-gap);
   }
 
   .summary-header,
