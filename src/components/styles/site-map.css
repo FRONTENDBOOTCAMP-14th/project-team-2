@@ -1,0 +1,27 @@
+.footer {
+  .footer-nav {
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      gap: var(--s-gap) var(--m-gap);
+      inline-size: 90%;
+    }
+    a {
+      display: inline-block;
+      line-height: var(--l-textLineHeight);
+    }
+  }
+  @media (min-width: 768px) {
+    .footer-nav {
+      ul {
+        gap: var(--m-gap);
+        inline-size: 100%;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .footer-nav {
+      font-size: var(--m-textSize);
+    }
+  }
+}

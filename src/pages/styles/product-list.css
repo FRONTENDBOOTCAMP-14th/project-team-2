@@ -1,0 +1,71 @@
+/* 리스트 화면 스타일링 */
+
+.section-product-list{
+  padding: 10rem 0 .625rem 0;
+}
+
+.list-wrapper{
+  padding-inline: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+}
+
+.sub-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* 데스크탑(pc) - 반응형 */
+@media (min-width : 768px) {
+ 
+  .list-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    
+  }
+
+  .sub-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+
+  }
+  
+
+}
+
+
+
+@media (min-width: 1280px)  {
+  .section-product-list{
+  padding: 17.5rem 0 5rem 0;
+  }
+  
+
+  .list-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    
+  }
+
+  .main-grid{
+     inline-size: inherit;
+     display: grid;
+     max-width: 1050px;
+     margin: 0 auto;
+     grid-template-columns: 260px 1fr;
+     gap: 12px;
+  }
+
+   .sub-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+}

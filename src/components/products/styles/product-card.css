@@ -1,0 +1,133 @@
+
+/* 접근성 관련 CSS */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 기존 <a> 스타일 제거 */
+.product-main > a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+/* product 컴포넌트 */
+.product-card{
+  min-width: 3.75rem;
+  font-family: pretendard;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--s-gap);
+  margin-block-start: 20px;
+
+}
+
+/* 상품 image & 장바구니 icon */
+.product-image{
+  position: relative;
+  width: 100%; 
+
+  .img{
+    width: 100%;
+  }
+
+  .cart{
+    border: 0;
+    position: absolute;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+
+/* 상품 title */
+.product-main{
+  --title: var(--m-textSize);
+  --description : var(--s-textSize);
+  
+  color: var(--content);
+
+
+  .delivery{
+    margin-block: 16px 8px;
+    font-size: var(--description);
+    color: var(--gray-400);
+    line-height: 150%;
+  }
+  
+  .title{
+    font-size: var(--title); 
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
+
+/* 상품 설명 */
+.comment{
+  --description : var(--s-textSize);
+
+  font-size: var(--description);
+  color: var(--gray-400);
+}
+
+/* 할인율 & 가격 */
+.product-price{
+  --price: var(--l-textSize);
+
+  font-weight: 600;
+  font-size: var(--price);
+  line-height: 150%;
+
+  .pecent{
+    font-style: normal;
+    color: var(--acent-yellow);
+  }
+
+  /* 상품 원래 가격 */
+  .ordinal{
+    color: var(--gray-400);
+    font-size: var(--s-textSize);
+    font-weight: 400;
+    text-decoration: line-through;
+
+  }
+}
+
+/* badge 스타일링 */
+.product-badge {
+  --badge: var(--s-textSize);
+  --point-color: var(--primary-200);
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--s-gap); 
+}
+
+.badge{
+  max-width: 100%;
+  background: var(--gray-100);
+  border-radius: 4px; 
+  padding: 4px; 
+  margin-block-end: var(--xxl-gap);
+  font-size: var(--badge);
+  font-weight: 500;
+  line-height: 150%;
+
+}
+
+.karly{
+  color: var(--point-color);  
+}
+
+.amount{
+  color: var(--content);
+}
