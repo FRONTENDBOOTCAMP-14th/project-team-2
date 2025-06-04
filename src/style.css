@@ -4,7 +4,7 @@
 @import url(./common/modern-reset.css);
 
 /* product-list 컴포넌트*/
-@import url(./components/list-header/styles/list-header.css);
+@import url(./components/styles/list-header.css);
 @import url(./components/styles/list-nav.css);
 @import url(./components/btn-navi/styles/btn-navi.css);
 @import url(./components/sidemenu/styles/sidemenu.css);
