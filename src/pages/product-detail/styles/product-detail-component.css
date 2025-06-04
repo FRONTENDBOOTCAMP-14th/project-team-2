@@ -30,7 +30,7 @@
 }
 
 .product-page {
-  width: 65.625rem;
+  width: 65rem;
   margin: 0rem auto;
 }
 
@@ -42,7 +42,7 @@
 
 .product-image-01 {
   width: 25rem;
-  height: 32.125rem;
+  height: 32rem;
   flex-shrink: 0;
 }
 
@@ -62,7 +62,7 @@
   color: #6b6b6b;
   font-size: var(--l-gap);
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -70,7 +70,7 @@
   color: var(--black);
   font-size: var(--xl-textSize);
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -79,7 +79,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -87,7 +87,7 @@
   color: var(--black);
   font-size: var(--xl-textSize);
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -95,7 +95,7 @@
   color: var(--black);
   font-size: var(--m-textSize);
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -103,15 +103,15 @@
   color: var(--primary-200);
   font-size: var(--m-textSize);
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
   margin: 0;
 }
 
 .grid-table {
   display: grid;
   grid-template-columns: 8rem 1fr;
-  border-top: 0.0625rem solid #e1e1e1;
-  border-bottom: 0.0625rem solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
   color: #6b6b6b;
 }
 
@@ -127,42 +127,43 @@
   padding-bottom: 1rem;
 }
 .grid-table dd {
-  font-size: 12.003px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
   padding: 16px 0;
 }
 
 .product-option {
   border: 0.0625rem solid #e1e1e1;
-  align-items: flex-start;
   position: relative;
+  padding-left: 16px;
+  padding-bottom: 12px;
 }
 
 .product-name {
   font-size: var(--s-textSize);
   font-weight: 600;
-  line-height: 150%;
-  padding: 0.75rem 1rem;
+  line-height: 1.5;
+  padding: 0.75rem 0;
 }
 
 .quantity-box {
-  font-size: 12.003px;
+  width: 84px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 150%;
-  padding: 0.75rem 1rem;
+  line-height: 1.5;
   display: flex;
   align-items: center;
   gap: var(--s-gap);
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
 }
 
 .quantity-box button {
-  background-color: transparent;
   border: none;
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 1.875rem;
   height: 1.875rem;
-  cursor: pointer;
   color: #333;
   display: flex;
   align-items: center;
@@ -173,9 +174,9 @@
   position: absolute;
   right: 0.75rem;
   bottom: 0.75rem;
-  font-size: 12.003px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
 }
 .total-price {
   display: flex;
@@ -185,7 +186,7 @@
   gap: var(--l-gap);
   font-size: var(--m-textSize);
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .accumulation {
@@ -194,7 +195,7 @@
   color: var(--white);
   font-size: var(--s-textSize);
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
   padding: 8px;
 }
 
@@ -213,7 +214,7 @@
 
 .add-to-cart {
   border-radius: 0.25rem;
-  width: 25.75rem;
+  width: 25rem;
   text-align: center;
   font-size: var(--m-textSize);
   font-weight: 600;
@@ -228,13 +229,13 @@
 .unit-1 {
   font-size: var(--xl-textSize);
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
   margin-left: 17px;
 }
 
 .tab-menu {
   display: flex;
-  height: 3.375rem;
+  height: 3rem;
   margin-top: 3rem;
   justify-content: center;
   align-items: center;
@@ -247,7 +248,7 @@
   padding: 14px 0;
   font-size: 16px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
   text-decoration: none;
   color: #333;
   background: #f9f9f9;
@@ -255,6 +256,14 @@
   border-top: 1px solid #a6a6a6;
   border-bottom: 1px solid #a6a6a6;
   font-weight: 500;
+}
+
+.tab-menu .active {
+  background: white;
+  color: #800080;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-bottom: none;
 }
 
 .product-intro {
@@ -267,9 +276,9 @@
 .check-point {
   margin-top: 96px;
   margin-bottom: 68px;
-  font-size: 50.517px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,31 +295,32 @@
 
 .why-karly {
   text-align: center;
-  font-size: 28.43px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
   padding: 72px 0px 84px 0px;
 }
 .container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.6;
   margin-bottom: 84px;
 }
 
 .container-unit {
-  flex: 33.3333%;
   display: flex;
+  width: 33%;
   flex-direction: column;
   align-items: center;
   padding: 24px 0;
   box-sizing: border-box;
+  gap: 24px;
 }
 
 .container p {
-  width: 250px;
   text-align: center;
   padding: 0 12x 0 12px;
 }
@@ -324,11 +334,19 @@
 }
 
 .review-head {
-  font-size: 28.43px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
+  margin-bottom: 24px;
 }
 
+.review p {
+  color: #6b6b6b;
+  font-size: 12.003px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
 .more {
   background-color: #6a1b9a;
   width: 155px;
@@ -341,14 +359,20 @@
   text-decoration: none;
   font-size: var(--m-textSize);
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
 }
 .review-menu {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
 }
-
+.recommend {
+  color: var(--black);
+}
+.lately,
+.divider {
+  color: #a6a6a6;
+}
 .review-list {
   font-size: var(--m-textSize);
   color: #333;
@@ -363,8 +387,9 @@
   border-bottom: 1px solid #e1e1e1;
 }
 
-.rreview-content {
-  background: yellowgreen;
+.review-content {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -374,7 +399,7 @@
   font-weight: 500;
   font-size: 16px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .notify-1 {
@@ -382,9 +407,9 @@
   padding: 2px 6px;
   margin-right: 6px;
   border-radius: 2px;
-  font-size: 12.003px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 .best {
@@ -416,18 +441,19 @@
 
 .review-time {
   margin-top: 8px;
-  font-size: 12px;
+  font-size: var(--s-textSize);
   color: #999;
 }
 
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: var(--l-gap);
   margin-bottom: 72px;
   background-color: transparent;
-  border: none;
-  cursor: pointer;
+  button {
+    border: 1px solid #e1e1e1;
+  }
 }
 
 .question-section {
@@ -438,9 +464,15 @@
 }
 
 .question-head {
-  font-size: 28.43px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.question p {
+  color: #6b6b6b;
+  font-size: 12px;
 }
 
 .question-table {
@@ -450,55 +482,71 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  border-top: 2px solid #333; 
-  margin-bottom: 20px; 
+  border-top: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+.question-menu {
+  height: 50px;
+  padding: 4px;
+  font-size: 16px;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 thead.question-head tr.tab-menu-1 {
-  background-color: #f8f8f8; 
-  border-bottom: 1px solid #ddd; 
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
 }
 
 thead.question-head tr.tab-menu-1 th {
-  padding: 12px 15px; 
+  padding: 12px 15px;
   font-weight: bold;
   color: #333;
-  text-align: left; 
+  text-align: center;
+}
+
+thead.question-head tr.tab-menu-1 th:first-child,
+.question-body td:first-child {
+  text-align: left;
+  padding-left: 15px;
 }
 
 thead.question-head tr.tab-menu-1 div {
-  display: flex; /
-  justify-content: flex-end; 
+  display: flex;
+  justify-content: flex-end;
 }
 
 thead.question-head tr.tab-menu-1 div th {
   padding: 12px 15px;
   font-weight: bold;
   color: #333;
-  text-align: center; 
+  text-align: center;
 }
 
 tbody tr.question-body {
-  border-bottom: 1px solid #eee; 
+  border-bottom: 1px solid #eee;
 }
 
-tbody tr.question-body td {
-  padding: 10px 15px; 
+.question-body td {
+  padding: 10px 15px;
   color: #555;
+  text-align: center;
 }
 
 tbody tr.question-body td:first-child {
-  padding-left: 15px; 
+  padding-left: 15px;
 }
 
 tbody tr.question-body td:last-child {
-  text-align: center; 
-  padding-right: 15px;}
+  text-align: center;
+  padding-right: 15px;
+}
 
-.notify {
+.question-notify-2 {
   display: inline-block;
-  background-color: #f0f0f0; 
-  color: #777; 
+  background-color: #f0f0f0;
+  color: #777;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: 0.8em;
