@@ -28,5 +28,9 @@
     border-radius: 4px;
     background: var(--gray-100);
     color: var(--white);
+
+    &:hover {
+      background: var(--primary-200);
+    }
   }
 }
