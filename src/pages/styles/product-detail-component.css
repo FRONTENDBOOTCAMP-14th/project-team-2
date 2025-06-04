@@ -1,37 +1,13 @@
-:root {
-  /* 폰트 사이즈 */
-  --s-textSize: 0.75rem;
-  --m-textSize: 1rem;
-  --l-textSize: 1.375rem;
-  --xl-textSize: 1.75rem;
-  --xxl-textSize: 2.375rem;
 
-  /* 행간 */
-  --s-textLineHeight: 1.2;
-  --m-textLineHeight: 1.5;
-  --l-textLineHeight: 1.6;
-
-  /* 색상 */
-  --black: #000;
-  --white: #fff;
-  --content: #333;
-  --secondary-100: #d7acff;
-  --secondary-200: #bd76ff;
-  --secondary-300: #a544ff;
-  --primary-100: #710097;
-  --primary-200: #5f0080;
-  --primary-300: #400055;
-  --errOR: #f03f40 /* 간격 */ --xs-gap: 0.25rem;
-  --s-gap: 0.5rem;
-  --m-gap: 0.75rem;
-  --l-gap: 1rem;
-  --xl-gap: 1.25rem;
-  --xxl-gap: 1.5rem;
-}
 
 .product-page {
   width: 65rem;
   margin: 0rem auto;
+  margin-block-start: 120px;
+
+  @media (min-width: 1280px) {
+    margin-block-start: 247px;
+  }
 }
 
 .product {
