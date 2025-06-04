@@ -37,6 +37,10 @@
 
   .visual-overview {
     margin-block-end: 90px;
+    .index-line-block{
+      display: block;
+      margin-block-end: var(--m-gap);
+    }
   }
   /* 페이지 내 섹션 완성 후 위치 결정 */
   /* .page-navigation-btn {
