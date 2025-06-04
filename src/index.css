@@ -1,4 +1,8 @@
-.main {
+
+.index-main{
+  background: radial-gradient(circle at bottom, rgb(245, 234, 255, 0.5), #ffffff 50%);
+}
+.main-width {
   --15-gap: 15px;
 
   /* margin-block-start: 90px; */
@@ -51,6 +55,7 @@
   }
 }
 .index-section {
+  inline-size: 100%;
   padding-block: 1.875rem 3.125rem;
   .index-title {
     text-align: center;
@@ -68,6 +73,13 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 1.5625rem;
+}
+.index-content{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.index-goal{
+  .index-goal-container{}
 }
 
 @media (min-width: 768px) {
@@ -103,4 +115,9 @@
       }
     }
   }
+  .index-content{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 20%;
+}
 }
