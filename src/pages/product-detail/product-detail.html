@@ -21,8 +21,7 @@
             <p class="price">4,980 <span class="unit">원</span></p>
             <p class="benefit">로그인 후, 적립 혜택이 제공됩니다.</p>
           </div>
-          <!--그리드테이블 시작-->
-          <div class="grid-table">
+          <dl class="grid-table">
             <dt>베송</dt>
             <dd>
               <p>샛별배송</p>
@@ -52,20 +51,20 @@
               <div class="product-option">
                 <div class="product-name">[풀무원] 탱탱쫄면 (4개입)</div>
                 <div class="quantity-box">
-                  <button class="minus">−</button>
+                  <button class="minus" type="button" aria-label="수량 빼기">−</button>
                   <span class="quantity">1</span>
-                  <button class="plus">+</button>
+                  <button class="plus" type="button" aria-label="수량 더하기">+</button>
                 </div>
                 <div class="product-price">4,980원</div>
               </div>
             </dd>
-          </div>
+          </dl>
           <div class="total-price">
             <p>총 상품금액:<span class="unit-1">4,980</span>원</p>
             <p><span class="accumulation">적립</span> 로그인 후, 적입 혜택 제공</p>
           </div>
           <div class="product-actions">
-            <button class="heart-image">
+            <button class="heart-image" type="button" aria-label="찜하기">
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="55" height="55" rx="3.5" stroke="#E1E1E1" />
                 <path
@@ -78,7 +77,7 @@
                 />
               </svg>
             </button>
-            <button class="bell-image">
+            <button class="bell-image" type="button" aria-label="알림설정">
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="55" height="55" rx="3.5" stroke="#E1E1E1" />
                 <path d="M24.25 35.875C24.25 36.8695 24.645 37.8232 25.3482 38.5264C26.0514 39.2296 27.0052 39.6246 27.9996 39.6246C28.9941 39.6246 29.9478 39.2296 30.651 38.5264C31.3542 37.8232 31.7493 36.8695 31.7493 35.875" stroke="#E1E1E1" stroke-width="1.6" />
@@ -91,15 +90,17 @@
       </div>
 
       <div class="tab-menu">
-        <a href="/" class="tab-active">상품설명</a>
+        <a href="/" class="tab-active active">상품설명</a>
         <a href="/" class="tab-info">상세정보</a>
         <a href="/" class="tab-reviw">후기 <span class="count">(1000)</span></a>
         <a href="/" class="tab-question">문의</a>
       </div>
-      <img class="product-intro" src="../../assets/images/goods_intro.png" alt="제품인트로" />
-      <p class="check-point">Karly's Check Point</p>
-      <img class="product-intro-2" src="../../assets/images/goods_intro_02.png" alt="제품인트로" />
-      <img class="product-intro-3" src="../../assets/images/goods_intro_03.png" alt="제품인트로" />
+      <div>
+        <img class="product-intro" src="../../assets/images/goods_intro.png" alt="탱탱쫄면" />
+        <p class="check-point">Karly's Check Point</p>
+        <img class="product-intro-2" src="../../assets/images/goods_intro_02.png" alt="체크포인트" />
+        <img class="product-intro-3" src="../../assets/images/goods_intro_03.png" alt="탱탱쫄면 정보" />
+      </div>
       <p class="why-karly">WHY KARLY</p>
       <div class="container">
         <div class="container-unit">
@@ -124,7 +125,12 @@
               </clipPath>
             </defs>
           </svg>
-          <p>나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접 먹어보고, 경험해보고 성분, 맛 안정성 등 다각도의 기준을 통과한 상품만을 판매합니다.</p>
+          <p>
+            나와 내 가족이 먹고 쓸 상품을 고르는<br />
+            마음으로 매주 상품을 직접 먹어보고,<br />
+            경험해보고 성분, 맛 안정성 등 다각도의<br />
+            기준을 통과한 상품만을 판매합니다.
+          </p>
         </div>
         <div class="container-unit">
           <svg width="222" height="88" viewBox="0 0 222 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,8 +152,12 @@
               </clipPath>
             </defs>
           </svg>
-
-          <p>전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너, 마켓칼리. 3천여 개가 넘는 칼리 단독 브랜드, 스펙의 Karly Only 상품을 믿고 만나보세요.</p>
+          <p>
+            전국 각지와 해외의 훌륭한 생산자가<br />
+            믿고 선택하는 파트너, 마켓칼리.<br />
+            3천여 개가 넘는 칼리 단독 브랜드, 스펙의<br />
+            Karly Only 상품을 믿고 만나보세요.
+          </p>
         </div>
         <div class="container-unit">
           <svg width="196" height="88" viewBox="0 0 196 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +179,12 @@
               </clipPath>
             </defs>
           </svg>
-          <p>온라인 업계 최초로 산지에서 문 앞까지 상온, 냉장, 냉동 상품을 분리 포장 후최적의 온도를 유지하는 냉장 배송 시스템,풀콜드체인으로 상품을 신선하게 전해드립니다.</p>
+          <p>
+            온라인 업계 최초로 산지에서 문 앞까지<br />
+            상온, 냉장, 냉동 상품을 분리 포장 후<br />
+            최적의 온도를 유지하는 냉장 배송 시스템,<br />
+            풀콜드체인으로 상품을 신선하게 전해드립니다.
+          </p>
         </div>
         <div class="container-unit">
           <svg width="267" height="88" viewBox="0 0 267 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +206,13 @@
               </clipPath>
             </defs>
           </svg>
-          <p>매주 대형 마트와 주요 온라인 마트의 가격변동 상황을 확인해 신선식품은 품질을타협하지 않는 선에서 최선의 가격으로,가공식품은 언제나 합리적인 가격으로 정기 조정합니다.</p>
+          <p>
+            매주 대형 마트와 주요 온라인 마트의 가격<br />
+            변동 상황을 확인해 신선식품은 품질을<br />
+            타협하지 않는 선에서 최선의 가격으로<br />
+            가공식품은 언제나 합리적인 가격으로<br />
+            정기 조정합니다.
+          </p>
         </div>
         <div class="container-unit">
           <svg width="279" height="88" viewBox="0 0 279 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,19 +236,23 @@
               </clipPath>
             </defs>
           </svg>
-          <p>친환경 포장재부터 생산자가 상품에만 집중할 수 있는 직매입 유통구조까지,지속 가능한 유통을 고민하며 컬리를 있게하는 모든 환경(생산자,커뮤니티,직원)이 더 나아질 수 있도록 노력합니다.</p>
+          <p>
+            친환경 포장재부터 생산자가 상품에만<br />
+            집중할 수 있는 직매입 유통구조까지,<br />
+            지속 가능한 유통을 고민하며 컬리를 있게<br />
+            하는 모든 환경(생산자,커뮤니티,직원)<br />
+            더 나아질 수 있도록 노력합니다.
+          </p>
         </div>
       </div>
 
       <div class="review-section">
         <div class="review">
-          <strong class="review-head">상품후기</strong>
-          <div>
-            <strong>글후기 50원 적립금 혜택이 있어요.</strong>
-            <p>퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</p>
-            <p>후기 작성은 배송완료일로부터 30일 이내 가능합니다.</p>
-            <p>작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</p>
-          </div>
+          <h3 class="review-head">상품후기</h3>
+          <strong>글후기 50원 적립금 혜택이 있어요.</strong>
+          <p>· 퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</p>
+          <p>· 후기 작성은 배송완료일로부터 30일 이내 가능합니다.</p>
+          <p>· 작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</p>
         </div>
         <a href="/" class="more">후기 작성하기</a>
       </div>
@@ -235,69 +260,71 @@
       <div class="review-menu">
         <p>총 2개</p>
         <div>
-          <a class="recommned" href="/">추천순</a>
+          <a class="recommend" href="/">추천순</a>
+          <span class="divider">|</span>
           <a class="lately" href="/">최신 등록순</a>
         </div>
       </div>
-      <div class="review-list">
-        <div class="notify">
+      <ul class="review-list">
+        <li class="notify">
           <p><span class="notify-1">공지 </span>금주의 베스트 후기 안내</p>
           <p><span class="notify-1">공지 </span>상품 후기 적립금 정책 안내</p>
-        </div>
+        </li>
 
-        <div class="review-items">
-          <p class="review-meta">
+        <li class="review-items">
+          <div class="review-meta">
             <span class="best">베스트</span>
             <span class="purple">퍼플</span>
             <span class="name">김*진</span>
-          </p>
-          <p class="review-item">
-            <div class="review-content">
-              <p class="review-title">[풀무원] 탱탱쫄면 (4개입)</p>
+          </div>
+          <div class="review-content">
+            <p class="review-title">[풀무원] 탱탱쫄면 (4개입)</p>
+            <div>
               <p class="review-content">너무 맛있어여~</p>
               <p>라면이 쫄깃하고 양념도 짱맛나요!!</p>
-              <p class="review-time">2022.11.10</p>
             </div>
-          </p>
-        </div>
-        <div class="review-items">
-          <p class="review-meta">
+            <p class="review-time">2022.11.10</p>
+          </div>
+        </li>
+        <li class="review-items">
+          <div class="review-meta">
             <span class="best">베스트</span>
             <span class="purple">퍼플</span>
             <span class="name">김*식</span>
-          </p>
-          <p class="review-item">
-            <div class="review-content">
-              <p class="review-title">[풀무원] 탱탱쫄면 (4개입)</p>
+          </div>
+          <div class="review-content">
+            <p class="review-title">[풀무원] 탱탱쫄면 (4개입)</p>
+            <div>
               <p class="review-content">또 주문할것 같습니다.</p>
               <p>너무 맛있어요 내스타일이야~!</p>
-              <p class="review-time">2022.11.10</p>
             </div>
-          </p>
-        </div>
-        <div class="review-items">
-          <p class="review-meta">
+            <p class="review-time">2022.11.10</p>
+          </div>
+        </li>
+        <li class="review-items">
+          <div class="review-meta">
             <span class="best">베스트</span>
             <span class="purple">퍼플</span>
             <span class="name">김*범</span>
-          </p>
-          <p class="review-item">
-            <div class="review-content">
-              <p class="review-title">[풀무원] 탱탱쫄면 (4개입)</p>
+          </div>
+          <div class="review-content">
+            <p class="review-title">[풀무원] 탱탱쫄면 (4개입)</p>
+            <div>
               <p class="review-content">너무 맛있어여.</p>
               <p>라면이 쫄깃하고 양념도 짱맛나요!!</p>
-              <p class="review-time">2022.11.10</p>
             </div>
-          </p>
-        </div>
-      </div>
+
+            <p class="review-time">2022.11.10</p>
+          </div>
+        </li>
+      </ul>
       <div class="button-group">
-        <button class="button-reft">
+        <button class="button-reft" type="button" aria-label="이전으로 가기">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
           </svg>
         </button>
-        <button class="button-right">
+        <button class="button-right" type="button" aria-label="이후로 가기">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
           </svg>
@@ -305,24 +332,20 @@
       </div>
       <div class="question-section">
         <div class="question">
-          <strong class="question-head">상품 문의</strong>
-          <div>
-            <p>상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</p>
-            <p>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</p>
-          </div>
+          <h3 class="question-head">상품 문의</h3>
+          <p>· 상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</p>
+          <p>· 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</p>
         </div>
-          <a href="/" class="more">문의하기</a>
+        <a href="/" class="more">문의하기</a>
       </div>
 
       <table>
         <thead class="question-menu">
           <tr class="tab-menu-1">
             <th>제목</th>
-            <div>
-              <th>작성자</th>
-              <th>작성일</th>
-              <th>답변상태</th>
-            </div>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>답변상태</th>
           </tr>
         </thead>
         <tbody>
@@ -359,7 +382,7 @@
                 </svg>
               </button>
             </td>
-            
+
             <td>김*진</td>
             <td>2022.10.09</td>
             <td class="waiting">답변대기</td>
@@ -440,8 +463,8 @@
             <td class="answered">답변완료</td>
           </tr>
           <tr class="question-body">
-           <td class="locked">
-              비밀입니다.<button>
+            <td class="locked">
+              비밀입니다.<button type="button">
                 <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_7491_2597)">
                     <path
@@ -466,6 +489,18 @@
           </tr>
         </tbody>
       </table>
+      <div class="button-group">
+        <button class="button-reft" type="button" aria-label="이전으로 가기">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
+          </svg>
+        </button>
+        <button class="button-right" type="button" aria-label="앞으로 가기">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
+          </svg>
+        </button>
+      </div>
     </section>
   </body>
 </html>
