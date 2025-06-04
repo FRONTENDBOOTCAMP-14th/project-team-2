@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="로그인 페이지 - 아이디와 비밀번호를 입력하여 로그인하세요" />
-    <meta name="keywords" content="로그인, 회원가입, 아이디, 비밀번호" />
+    <meta name="description" content="회원가입 페이지 - 새로운 계정을 만들어 서비스를 이용하세요" />
+    <meta name="keywords" content="회원가입, 계정생성, 가입, 이용약관" />
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="login.css" />
-    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>회원가입 페이지</title>
   </head>
   <body>
     <div class="top-banner">
@@ -604,25 +604,212 @@
       </div>
     </header>
     <main class="container">
-      <h2 class="title">로그인</h2>
+      <h2 class="title">회원가입</h2>
+      <form class="login-form">
+        <div class="login-form-field">
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                아이디
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <label for="login-id" class="sr-only">아이디를 입력해주세요</label>
+            <input type="text" id="login-id" name="login-id" class="login-input" placeholder="아이디를 입력해주세요" required />
+            <button type="button" class="login-btn login-btn-small">중복확인</button>
+          </div>
 
-      <form class="login-form" role="form" aria-label="로그인 폼">
-        <div class="login-form-section">
-          <label for="username" class="sr-only">아이디</label>
-          <input type="text" id="username" name="username" class="login-input" placeholder="아이디를 입력해주세요" required aria-describedby="username-help" />
-          <label for="password" class="sr-only">비밀번호</label>
-          <input type="password" id="password" name="password" class="login-input" placeholder="비밀번호를 입력해주세요" required aria-describedby="password-help" />
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                비밀번호
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <label for="login-password" class="sr-only">비밀번호를 입력해주세요</label>
+            <input type="password" id="login-password" name="login-password" class="login-input" placeholder="비밀번호를 입력해주세요" required />
+          </div>
 
-          <div class="login-forget">
-            <a href="#" class="login-link">아이디 찾기</a>
-            <div class="login-divider"></div>
-            <a href="#" class="login-link">비밀번호 찾기</a>
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                비밀번호 확인
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <label for="login-password-required" class="sr-only">비밀번호를 한번 더 입력해주세요</label>
+            <input type="password" id="login-password-required" name="login-password-required" class="login-input" placeholder="비밀번호를 한번 더 입력해주세요" required />
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                이름
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <label for="login-name" class="sr-only">이름을 입력해주세요</label>
+            <input type="text" id="login-name" name="login-name" class="login-input" placeholder="이름을 입력해주세요" required />
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                이메일
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <input type="email" class="login-input" placeholder="예) marketkarly@karly.com" required />
+            <button type="button" class="login-btn login-btn-small">중복확인</button>
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                휴대폰
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <label for="login-authentication-number" class="sr-only">인증번호를 입력해주세요</label>
+            <input type="tel" id="login-authentication-number" name="login-authentication-number" class="login-input" placeholder="숫자만 입력해주세요." required />
+            <button type="button" class="login-btn login-btn-small">인증번호 받기</button>
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">
+                주소
+                <span class="login-label-required" aria-hidden="true">*</span>
+              </div>
+            </div>
+            <div class="login-address">
+              <button type="button" class="login-btn login-btn-address">주소 검색</button>
+              <div class="login-address-note">배송지에 따라 상품 정보가 달라질 수 있습니다.</div>
+            </div>
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">성별</div>
+            </div>
+            <div class="login-radio">
+              <div class="login-radio-group">
+                <input type="radio" name="gender" id="male" class="login-radio-input" value="male" />
+                <label for="male" class="login-radio-label">남자</label>
+              </div>
+              <div class="login-radio-group">
+                <input type="radio" name="gender" id="female" class="login-radio-input" value="female" />
+                <label for="female" class="login-radio-label">여자</label>
+              </div>
+              <div class="login-radio-group">
+                <input type="radio" name="gender" id="none" class="login-radio-input" value="none" checked />
+                <label for="none" class="login-radio-label">선택안함</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">생년월일</div>
+            </div>
+            <label for="login-birthdate" class="sr-only">생년월일을 입력해주세요</label>
+            <input type="text" id="login-birthdate" name="login-birthdate" class="login-input login-input-birthdate" placeholder="YYYY/MM/DD" />
+          </div>
+
+          <div class="login-form-row">
+            <div class="login-label">
+              <div class="login-label-text">추가입력 사항</div>
+            </div>
+            <div class="login-radio">
+              <div class="login-radio-group">
+                <input type="radio" name="additional" id="referral" class="login-radio-input" value="referral" />
+                <label for="referral" class="login-radio-label">친구초대 추천인 아이디</label>
+              </div>
+              <div class="login-radio-group">
+                <input type="radio" name="additional" id="event" class="login-radio-input" value="event" />
+                <label for="event" class="login-radio-label">참여 이벤트명</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-note">
+            필수입력사항
+            <span class="login-label-required" aria-hidden="true">*</span>
           </div>
         </div>
 
-        <div class="login-buttons">
-          <button type="submit" class="login-btn login-btn-primary">로그인</button>
-          <a href="../desktop-register/register.html" class="login-btn login-btn-secondary">회원가입</a>
+        <div class="login-agreement">
+          <div class="login-agreement-label">
+            <div class="login-label-text" id="agreement-description">
+              이용약관동의
+              <span class="login-label-required">*</span>
+            </div>
+          </div>
+          <div class="login-agreement-content">
+            <div class="login-agreement-all">
+              <div class="login-agreement-all-row">
+                <input type="checkbox" id="all-agree" class="login-checkbox-input" aria-describedby="agreement-description" />
+                <label for="all-agree" class="login-agreement-all-text">전체 동의합니다.</label>
+              </div>
+              <div class="login-agreement-all-note">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
+            </div>
+
+            <div class="login-agreement-item">
+              <div class="login-agreement-row">
+                <div class="login-agreement-left">
+                  <input type="checkbox" id="terms" class="login-checkbox-input" required aria-describedby="view-terms" />
+                  <label for="terms" class="login-agreement-text">이용약관 동의 (필수)</label>
+                </div>
+                <a href="#" class="login-agreement-link" id="view-terms">
+                  약관보기
+                  <div class="login-arrow"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="login-agreement-item">
+              <div class="login-agreement-row">
+                <div class="login-agreement-left">
+                  <input type="checkbox" id="privacy" class="login-checkbox-input" required aria-describedby="view-privacy" />
+                  <label for="privacy" class="login-agreement-text">개인정보 수집 · 이용 동의 (필수)</label>
+                </div>
+                <a href="#" class="login-agreement-link" id="view-privacy">
+                  약관보기
+                  <div class="login-arrow"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="login-agreement-item">
+              <div class="login-agreement-row">
+                <div class="login-agreement-left">
+                  <input type="checkbox" id="marketing" class="login-checkbox-input" aria-describedby="view-marketing" />
+                  <label for="marketing" class="login-agreement-text">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
+                </div>
+                <a href="#" class="login-agreement-link" id="view-marketing">
+                  약관보기
+                  <div class="login-arrow"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="login-agreement-item">
+              <div class="login-agreement-row">
+                <div class="login-agreement-left">
+                  <input type="checkbox" id="age" class="login-checkbox-input" required aria-describedby="view-age" />
+                  <label for="age" class="login-agreement-text">본인은 만 14세 이상입니다. (필수)</label>
+                </div>
+                <a href="#" class="login-agreement-link" id="view-age">
+                  약관보기
+                  <div class="login-arrow"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="login-submit">
+          <button type="submit" class="login-btn login-btn-submit">가입하기</button>
         </div>
       </form>
     </main>
