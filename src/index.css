@@ -74,6 +74,26 @@
     flex-flow: column nowrap;
     gap: var(--xl-gap);
   }
+  .index-team-intro {
+    margin-block-end: 20px;
+  }
+  .team-description {
+    width: 90%;
+    word-break: keep-all;
+    margin-inline: auto;
+    text-align: center;
+    font-size: var(--s-textSize);
+    padding-block-end: 20px;
+    line-height: var(--m-textLineHeight);
+  }
+  .team-point {
+    display: block;
+    font-weight: 900;
+    color: var(--primary-200);
+    font-size: var(--m-textSize);
+    line-height: var(--l-textLineHeight);
+    padding-block: var(--xs-gap);
+  }
 }
 .accordion-container {
   display: flex;
@@ -147,11 +167,22 @@
       border-bottom: 1px solid var(--gray-200);
       color: var(--gray-m-200);
       font-size: var(--s-textSize);
+
+      :hover {
+        svg {
+          rotate: 45deg;
+        }
+      }
     }
     summary {
       padding-block: 10px;
       color: var(--gray-m-200);
       font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      svg {
+        transition: all 0.3s ease-in-out;
+      }
     }
     .personal-goal {
       display: block;
@@ -176,6 +207,11 @@
       background: var(--gray-50);
       background: #f1f1f1;
       border-radius: 5px;
+      :hover {
+        svg {
+          rotate: 45deg;
+        }
+      }
     }
     summary {
       /* list-style: none;
@@ -183,6 +219,11 @@
       padding: 20px 0 20px 15px;
       margin-inline-end: 15px;
       font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      svg {
+        transition: all 0.3s ease-in-out;
+      }
     }
     /* summary::-webkit-details-marker {
       display: none;
@@ -206,6 +247,10 @@
         width: 48%;
       }
     }
+
+    .index-team-intro {
+      margin-block-end: 25px;
+    }
   }
   .index-goal {
     .index-goal-container {
@@ -220,7 +265,7 @@
   }
 }
 @media (min-width: 1280px) {
-  .main {
+  .main-width {
     padding-inline: 0;
   }
   .index-section {
@@ -245,40 +290,53 @@
         margin-block-start: 15%;
       }
     }
-  }
-  .index-content {
-    gap: 20%;
-  }
-  .index-goal {
-    .goal-title {
+    .index-team-intro {
       margin-block-end: 30px;
-      font-size: var(--l-textSize);
     }
-    .index-team-item {
-      &:nth-of-type(2) {
-        padding-block: var(--xl-gap);
-      }
+    .team-description {
+      font-size: var(--m-textSize);
     }
-    p {
+    .team-point {
+      display: block;
+      font-weight: 900;
+      color: var(--primary-200);
+      font-size: var(--size-20);
+      line-height: var(--l-textLineHeight);
+    }
+  }
+}
+.index-content {
+  gap: 20%;
+}
+.index-goal {
+  .goal-title {
+    margin-block-end: 30px;
+    font-size: var(--l-textSize);
+  }
+  .index-team-item {
+    &:nth-of-type(2) {
+      padding-block: var(--xl-gap);
+    }
+  }
+  p {
+    font-size: 18px;
+  }
+  .index-personal-item {
+    details {
+      font-size: var(--m-textSize);
+    }
+    summary {
       font-size: 18px;
     }
-    .index-personal-item {
-      details {
-        font-size: var(--m-textSize);
-      }
-      summary {
-        font-size: 18px;
-      }
-    }
   }
-  .index-review {
-    .index-review-list {
-      gap: 30px;
-    }
-    .index-review-item {
-      summary {
-        font-size: 18px;
-      }
+}
+.index-review {
+  .index-review-list {
+    gap: 30px;
+  }
+  .index-review-item {
+    summary {
+      font-size: 18px;
     }
   }
 }
