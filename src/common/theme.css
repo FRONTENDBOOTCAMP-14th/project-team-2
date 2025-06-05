@@ -1,0 +1,64 @@
+:root {
+  /* 폰트 사이즈 */
+  --xs-textSize: 12px;
+  --s-textSize: 14px;
+  --m-textSize: 16px;
+  --size-20: 20px;
+
+  --l-textSize: 22px;
+  --xl-textSize: 28px;
+  --xxl-textSize: 38px;
+
+  /* 행간 */
+  --s-textLineHeight: 1.2;
+  --m-textLineHeight: 1.5;
+  --l-textLineHeight: 1.6;
+
+  /* 색상 */
+  --black: #000;
+  --white: #fff;
+
+  --gray-100: #e1e1e1;
+  --gray-200: #c4c4c4;
+  --gray-m-200: #6c6c6c;
+  --gray-300: #a6a6a6;
+  --gray-400: #898989;
+  --content: #333;
+  --acent-yellow: #fa622f;
+
+  --content: #333;
+
+  --secondary-100: #d7acff;
+  --secondary-200: #bd76ff;
+  --secondary-300: #a544ff;
+  --primary-100: #710097;
+  --primary-200: #5f0080;
+  --primary-300: #400055;
+
+  --error: #f03f40;
+  --orange: #fa622f;
+  --gray-50: #ebeef3;
+  --gray-60: #f9f9f9;
+  --gray-100: #e1e1e1;
+  --gray-400: #898989;
+
+  /* 간격 */
+  --xs-gap: 4px;
+  --s-gap: 8px;
+  --m-gap: 12px;
+  --l-gap: 16px;
+  --xl-gap: 20px;
+  --xxl-gap: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

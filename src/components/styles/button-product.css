@@ -1,0 +1,83 @@
+/* button 스타일링 */
+
+/* 접근성 관련 CSS */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 체크 박스 */
+.bg-icon {
+  input:checked + label {
+    background-image: url(../../../assets/svg/checked.svg);
+  }
+
+  label {
+    block-size: var(--size);
+    align-content: center;
+    text-indent: calc(var(--size) + 6px);    
+    background: url(../../../assets/svg/unchecked.svg) no-repeat;
+    background-size: var(--size);
+  }
+}
+
+.svg-icon {
+  label {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 6px;
+  }
+}
+
+.form-checkbox {
+  --size: 24px;
+  position: relative;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.list-navbtn {
+  .outline-button {
+    border: 1px solid var(--gray-100);
+    border-radius: 20px;
+    background: none;
+    color: var(--secondary-300);
+    padding: 8px;
+   
+  
+  }
+  
+  .basic{
+    color: var(--gray-m-200);
+  }
+}
+
+select {
+  appearance: none;  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+ 
+}
+
+.combo-box{
+  padding: 8px;
+  text-align: center;
+  border-color: var(--gray-100);
+  color: var(--gray-m-200);
+  border-radius: 20px;
+
+  padding-right: 1.5em; /* 직접 여백 조정 */
+  background: url('../../../assets/svg/arrow-under.svg') no-repeat right 0.5em center;
+  background-size: 1em;
+}

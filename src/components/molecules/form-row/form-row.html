@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormRow Component</title>
+    <!-- <link rel="stylesheet" href="style/FormRow.css">
+    <link rel="stylesheet" href="style/Input.css">
+    <link rel="stylesheet" href="style/Button.css"> -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="login-form-row-component">
+      <div class="login-form-row">
+        <div class="login-input-wrapper">
+          <label for="form-username" class="login-input-label">
+            아이디
+            <span class="login-input-required">*</span>
+          </label>
+          <div class="login-input-with-button">
+            <input type="text" id="form-username" class="login-input" placeholder="아이디를 입력해주세요" required />
+            <button type="button" class="login-btn login-btn-small">중복확인</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-form-row">
+        <div class="login-input-wrapper">
+          <label for="form-password" class="login-input-label">
+            비밀번호
+            <span class="login-input-required">*</span>
+          </label>
+          <input type="password" id="form-password" class="login-input" placeholder="비밀번호를 입력해주세요" required />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

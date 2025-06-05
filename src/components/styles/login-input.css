@@ -1,0 +1,26 @@
+.login-input {
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #898989;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.login-input:focus {
+    border-color: #5F0080;
+    color: #333333;
+}
+
+.login-input:hover {
+    border-color: #898989;
+}
+
+.login-input::placeholder {
+    color: #C4C4C4;
+    font-style: italic;
+} 

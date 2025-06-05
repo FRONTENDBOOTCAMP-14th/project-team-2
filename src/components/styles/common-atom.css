@@ -1,0 +1,13 @@
+.body {
+  padding: 50px;
+}
+a,
+button {
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+}
+
+input {
+  appearance: none;
+}

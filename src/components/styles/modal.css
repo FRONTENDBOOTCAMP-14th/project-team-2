@@ -1,0 +1,39 @@
+.modal {
+  padding: 2rem;
+  border: 1px solid var(--secondary-100);
+  border-radius: 4px;
+  inline-size: clamp(200px, 100%, 500px);
+  text-align: center;
+  word-break: keep-all;
+  box-shadow: 0 2px 4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-title {
+  font-size: var(--m-textSize);
+  font-weight: 400;
+  line-height: var(--l-textLineHeight);
+  margin-block-end: 20px;
+}
+
+.modal-btn {
+  --40-gap: 40px;
+
+  padding: var(--m-gap) var(--40-gap);
+  background: var(--primary-200);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+    background: var(--white);
+    border: 1px solid var(--primary-200);
+    color: var(--primary-200);
+  }
+}
