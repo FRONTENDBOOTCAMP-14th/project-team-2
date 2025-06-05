@@ -25,12 +25,13 @@
   translate: 0 -50%;
   svg {
     display: block;
+    scale: 0.8;
   }
 }
 
 .index-header-nav {
   position: absolute;
-  right: 40%;
+  right: 35%;
   top: 50%;
   translate: 50% -50%;
   transition: all 0.3s ease;
@@ -40,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .index-header-nav-link {
