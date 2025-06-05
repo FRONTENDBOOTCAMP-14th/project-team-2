@@ -6,9 +6,9 @@
   font-weight: 700;
 }
 
-details summary::-webkit-details-marker {
+/* details summary::-webkit-details-marker {
   display: none;
-}
+} */
 
 /* 페이지이동 */
 .accordion {
