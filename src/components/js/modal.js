@@ -1,10 +1,10 @@
 const modal = document.querySelector('.modal');
-const closeBtn = document.querySelector('.modal-btn');
+const closeModalBtn = document.querySelector('.modal-btn');
 
 window.addEventListener('DOMContentLoaded', () => {
   modal.showModal();
 });
 
-closeBtn.addEventListener('click', () => {
+closeModalBtn.addEventListener('click', () => {
   modal.close();
 });

@@ -102,7 +102,11 @@
 }
 .index-content {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  justify-content: center;
+  > section {
+    inline-size: 100%;
+  }
 }
 .index-goal {
   .index-goal-container {
@@ -304,39 +308,44 @@
       line-height: var(--l-textLineHeight);
     }
   }
-}
-.index-content {
-  gap: 20%;
-}
-.index-goal {
-  .goal-title {
-    margin-block-end: 30px;
-    font-size: var(--l-textSize);
-  }
-  .index-team-item {
-    &:nth-of-type(2) {
-      padding-block: var(--xl-gap);
+  .index-content {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 40px;
+    > section {
+      inline-size: 48%;
     }
   }
-  p {
-    font-size: 18px;
-  }
-  .index-personal-item {
-    details {
-      font-size: var(--m-textSize);
+  .index-goal {
+    .goal-title {
+      margin-block-end: 30px;
+      font-size: var(--l-textSize);
     }
-    summary {
+    .index-team-item {
+      &:nth-of-type(2) {
+        padding-block: var(--xl-gap);
+      }
+    }
+    p {
       font-size: 18px;
     }
+    .index-personal-item {
+      details {
+        font-size: var(--m-textSize);
+      }
+      summary {
+        font-size: 18px;
+      }
+    }
   }
-}
-.index-review {
-  .index-review-list {
-    gap: 30px;
-  }
-  .index-review-item {
-    summary {
-      font-size: 18px;
+  .index-review {
+    .index-review-list {
+      gap: 30px;
+    }
+    .index-review-item {
+      summary {
+        font-size: 18px;
+      }
     }
   }
 }
